@@ -22,6 +22,12 @@ body {
     background: #333;
     overflow-x: hidden;
 }
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -155,12 +161,6 @@ article {
     background: #d12727;
     color: white;
 }
-article a {
-    color: inherit;
-}
-article a:hover {
-    text-decoration: none;
-}
 .img-large {
     max-width: 96%;
 }
@@ -170,4 +170,9 @@ h5 {
 h6 {
     font-size: inherit;
     margin-top: 10px;
+}
+footer {
+    text-align: center;
+    color: #666;
+    padding: 20px;
 }

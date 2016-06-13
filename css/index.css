@@ -24,7 +24,6 @@ video {
 }
 .jumbotron {
     position: absolute;
-    /*top: 151px;*/
     bottom: 0;
     height: calc(90vh - 151px);
     width: 100vw;
@@ -44,15 +43,15 @@ h3 {
 }
 
 .banners {
-    position: absolute;
-    top: 134px;
     width: 100vw;
     height: 200px;
     overflow-y: scroll;
+    text-align: center;
 }
 .banners ul {
+    padding: 0 20px;
     width: 160vw;
-    height: 250px;
+    height: 200px;
 }
 .banners li {
     vertical-align: top;
@@ -63,7 +62,6 @@ h3 {
     background: #0f4bcb;
     color: #fff;
     padding: 10px;
-    text-align: center;
 }
 .banners img {
     width: 75px;
