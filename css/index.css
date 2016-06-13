@@ -25,7 +25,7 @@ video {
 .jumbotron {
     position: absolute;
     bottom: 0;
-    height: calc(90vh - 151px);
+    height: calc(100vh - 139px);
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ h3 {
 }
 .banners ul {
     padding: 0 20px;
-    width: 160vw;
+    width: 2185px;
     height: 200px;
 }
 .banners li {
@@ -76,6 +76,10 @@ h3 {
     border-bottom: 20px transparent solid;
     top: 100%;
     left: 0;
+}
+.banners li,
+.banners li:after {
+    -webkit-filter: drop-shadow(0 10px 5px rgba(0,0,0,.1));
 }
 
 article {

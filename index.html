@@ -3,18 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vae Victis - 1418</title>
     <link rel="icon" type='image/x-icon' href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="scripts.js"></script>
 </head>
 
 <body>
     <header>
         <img src="img/fist.svg">
-        <h2>1418</h2>
+        <div>
+            <h2>Vae Victis</h2>
+            <h3>FRC Team 1418 - George Mason High School</h3>
+        </div>
         <ul>
             <li id="email">
                 <a href>
@@ -54,16 +57,18 @@
     </header>
     <div class="video-ext-container">
         <div class="video-container">
-            <video src="video.mp4" autoplay loop></video>
+            <!-- This video's src is added by JavaScript.
+                That way it won't load the extra data on a mobile device. -->
+            <video src autoplay loop></video>
         </div>
     </div>
     <div class="jumbotron">
-        <h1>"Vae Victis!"</h1>
+        <h1>Carpe Diem</h1>
         <h3>Our team, whose name means "woe to the vanquished," has been one of the most successful and inventive FIRST Robotics teams in the Chesapeake District.</h3>
         <a href="robot" class="button">Our Robot</a>
     </div>
     <article>
-        <p>We are Vae Victis, a Robotics team from George Mason High School in Falls Church, VA. Founded in 2004, we participate in the <a href="http://firstinspires.org/robotics/frc">FIRST Robotics Competition (FRC)</a>. Our team has maintained a high place in FRC competitions by having an active and engaged student body of about 35 students and mentors who work on robots on and off season. We attend competitions, volunteer, take part in community events, build robots, and have lots of fun. The team is comprised of high school students of all ages who are all very committed to the team.</p>
+        <p>We are team 1418 Vae Victis, a <a href="http://firstinspires.org/robotics/frc">FIRST Robotics Competition (FRC)</a> team from George Mason High School in Falls Church, VA. Since our founding in 2004, our team has grown in every way, and has maintained a high place in competition and in the community. To do this, we maintain an active and engaged student body of about 25 students who work with the team on and off season. We attend competitions, volunteer, take part in community events, build robots, and have lots of fun.</p>
         <p>In the 2016 season, we took first place in the Greater DC District competition, the Bethesda District Competition, and the FIRST Chesapeake district championship, qualifying us for the world championship. After a hard fight at worlds, we made it to the division semifinals in the 2016 Newton Division, widely believed to have been the strongest group of teams in FIRST history.</p>
         <p>We are excited for the 2017 season to start! If you'd like to help us with fundraising, please visit <a href="sponsorship">this page</a>.
     </article>
@@ -76,7 +81,7 @@
             <li><img src="img/first.svg">2016 District of Columbia Winner</li>
             <li><img src="img/first.svg">2016 Innovation in Control (DC)</li>
             <li><img src="img/first.svg">2015 Innovation in Control (DC)</li>
-            <li><img src="img/first.svg">2014 Woodie Flowers Finalist (Ballou)</li>
+            <li><img src="img/first.svg">2014 Woodie Flowers Finalist</li>
             <li><img src="img/first.svg">2014 Industrial Design (Virginia)</li>
             <li><img src="img/first.svg">2012 Gracious Profes. Award (DC)</li>
             <li><img src="img/first.svg">2010 Virginia State Champions</li>
@@ -90,6 +95,8 @@
     <footer>
         <p>© Team 1418. Website by <a href="http://erikboesen.com">Erik Boesen</a>.</p>
     </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -40,10 +40,9 @@ header,
     font-family: 'Adam', sans-serif;
 }
 header {
-    padding: 10px;
+    padding: 15px;
     padding-bottom: 0;
     position: absolute;
-    top: 0;
     background: #333;
     width: 100%;
 }
@@ -51,17 +50,19 @@ header > * {
     display: inline-block;
     vertical-align: top;
 }
-header img {
+header > img {
     width: 180px;
     margin-bottom: 1px;
 }
 h2 {
-    font-size: 130px;
-    line-height: .65;
-    margin-top: 35px;
+    font-size: 100px;
+    margin-left: -20px;
 }
-h5 {
-    font-size: 30px;
+h3 {
+    margin-top: -10px;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 1px;
 }
 
 /* Social buttons */
@@ -69,6 +70,8 @@ header ul {
     position: relative;
     cursor: default;
     list-style: none;
+    display: inline-block;
+    margin-left: 5px;
 }
 header ul li {
     margin: -5px;
@@ -105,10 +108,9 @@ nav li {
 nav ul {
     list-style: none;
     padding: 0;
-    z-index: 1000;
 }
 nav > ul {
-    margin: 40px 40px 0 0;
+    margin: 40px;
     float: right;
 }
 nav a {
@@ -120,7 +122,6 @@ nav a {
 nav li {
     float: left;
     padding: 0;
-    font-weight: 300;
 }
 nav li:hover {
     background: #444;
@@ -129,31 +130,15 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     background: #2c2c2c;
-    padding: 0;
-}
-nav ul:nth-child(3) ul {
-    width: 230px;
-}
-nav ul:nth-child(3) a {
-    padding: 9px 14px;
 }
 nav ul ul li {
     width: 100%;
 }
-nav ul ul a {
-    padding: 6px 15px;
-}
 nav ul li:hover > ul {
     display: block;
 }
-article {
-    margin-top: 151px;
-    padding: 40px 3in;
-    background: #222;
-    line-height: 1.8;
-}
+
 .button {
     padding: 12px 10px 8px;
     margin: 10px;
@@ -161,11 +146,20 @@ article {
     background: #d12727;
     color: white;
 }
-.img-large {
-    max-width: 96%;
+
+article {
+    margin: 137px auto 0;
+    padding: 40px;
+    background: #222;
+    line-height: 1.8;
+}
+h5, h6, p, .img-large {
+    max-width: 10in;
+    margin: 5px auto;
 }
 h5 {
     margin-top: 30px;
+    font-size: 30px;
 }
 h6 {
     font-size: inherit;
@@ -175,4 +169,8 @@ footer {
     text-align: center;
     color: #666;
     padding: 20px;
+}
+
+@media (max-width: 8in) {
+
 }
