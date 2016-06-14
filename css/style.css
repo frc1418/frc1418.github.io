@@ -17,33 +17,24 @@
 body {
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 1em;
     color: white;
     background: #333;
     overflow-x: hidden;
 }
-a {
-    color: inherit;
-}
-a:hover {
-    text-decoration: none;
-}
+a { color: inherit; }
+a:hover { text-decoration: none; }
 h1,
 h2,
 h3,
-h4,
 h5,
-h6,
 header,
 .jumbotron,
 .banners {
     font-family: 'Adam', sans-serif;
 }
 header {
-    padding: 15px;
-    padding-bottom: 0;
+    padding: 15px 15px 0;
     background: #333;
-    width: 100%;
 }
 header > * {
     display: inline-block;
@@ -133,7 +124,7 @@ header h3 {
 }
 #nav-button.open span:nth-child(1) {
     top: 18px;
-    transform: rotate(135deg);
+    transform: rotate(-135deg);
 }
 #nav-button.open span:nth-child(2) {
     opacity: 0;
@@ -141,7 +132,7 @@ header h3 {
 }
 #nav-button.open span:nth-child(3) {
     top: 18px;
-    transform: rotate(-135deg);
+    transform: rotate(135deg);
 }
 nav {
     display: inline;
@@ -279,13 +270,11 @@ footer {
     }
     nav ul ul li {
         margin-left: 20px;
+        padding-left: 10px;
+        border-left: solid 4px white;
     }
     nav li:hover {
         background: #333;
-    }
-    nav ul ul li:before {
-        content: '- ';
-        font-size: 25px;
     }
     nav a {
         font-size: 50px;
@@ -322,6 +311,7 @@ footer {
     }
     header > img {
         display: block;
+        z-index: 50;
     }
     h3 {
         display: none;
@@ -346,5 +336,8 @@ footer {
     }
     nav a {
         font-size: 30px;
+    }
+    .img-row img {
+        width: 100%;
     }
 }
