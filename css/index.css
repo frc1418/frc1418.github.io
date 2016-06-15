@@ -5,9 +5,16 @@
     top: 0;
     right: 0;
     left: 0;
-    display: block;
     z-index: 1000;
     background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+#load svg {
+    width: 100px;
+    height: 487px;
 }
 header {
     position: absolute;

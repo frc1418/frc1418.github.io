@@ -4,10 +4,10 @@
     unicode-range: U+0000-00FF;
 }
 @font-face {
-    font-family: 'Merriweather';
-    font-weight: 300;
-    src: local('Merriweather Light'), local('Merriweather-Light'), url('merriweather.woff2') format('woff2');
-    unicode-range: U+0000-00FF;
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(opensans.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
 }
 * {
     margin: 0;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: white;
     background: #333;
@@ -100,7 +100,7 @@ header h3 {
     transform: rotate(0);
     transition: .5s ease-in-out;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 200;
 }
 #nav-button span {
     display: block;
@@ -136,8 +136,9 @@ header h3 {
 }
 nav {
     display: inline;
-    position: relative;
-    top: 35px;
+    position: absolute;
+    margin-top: 40px;
+    right: 10px;
     z-index: 100;
 }
 nav ul,
@@ -236,6 +237,10 @@ footer {
     text-align: center;
     color: #666;
     padding: 20px;
+}
+footer img {
+    width: 50px;
+    margin-top: 10px;
 }
 @media (max-width: 1200px) {
     #nav-button {

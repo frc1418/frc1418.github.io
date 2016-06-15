@@ -1,36 +1,24 @@
-var p = {
-    load: document.getElementById('load'),
-	email: document.getElementById('email'),
-	navButton: document.getElementById('nav-button'),
-	nav: document.getElementsByTagName('nav')[0],
-	links: document.getElementsByTagName('a'),
-};
+// Manages opening and closing of menu.
+var navButton = document.getElementById('nav-button'),
+	nav = document.getElementsByTagName('nav')[0];
 
-p.navButton.onclick = function() {
-	if (p.navButton.className === 'open') {
-		p.navButton.className = '';
-		p.nav.className = '';
+navButton.onclick = function() {
+	if (navButton.className === 'open') {
+		navButton.className = '';
+		nav.className = '';
 	} else {
-		p.navButton.className = 'open';
-		p.nav.className = 'open';
+		navButton.className = 'open';
+		nav.className = 'open';
 	}
 };
 
+// This will replace all instances of "ATSYMBOL" with @, and all instances of "PERIOD" with a period (.).
+// Emails are by default obfuscated like this, and they are fixed with JS. This prevents bots from harvesting emails off the site. This is actually a way more serious problem than you may think. Please don't remove this.
 
-function email(name, domain, tld) {
-	window.open('mailto:' + name + '@' + domain + '.' + tld);
+// Generate a list of all links on the page.
+var links = document.getElementsByTagName('a');
+// Go through all the links
+for (i = 0; i < links.length; i++) {
+    // If any of them contain instances of "ATSYMBOL" or "PERIOD" replace them as appropriate.
+	links[i].href = links[i].href.replace(/ATSYMBOL/, '@').replace(/PERIOD/, '.');
 }
-
-for (i = 0; i < p.links.length; i++) {
-	p.links[i].href = p.links[i].href.replace(/ATSYMBOL/, '@').replace(/PERIOD/, '.');
-}
-document.onreadystatechange = function() {
-	var state = document.readyState;
-	if (state == 'interactive') {
-		p.load.style.display = 'block';
-	} else if (state == 'complete') {
-		setTimeout(function() {
-			p.load.style.display = 'none';
-		}, 1000);
-	}
-};
