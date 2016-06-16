@@ -4,10 +4,10 @@
     unicode-range: U+0000-00FF;
 }
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(opensans.woff2) format('woff2');
-  unicode-range: U+0000-00FF;
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(opensans.woff2) format('woff2');
+    unicode-range: U+0000-00FF;
 }
 * {
     margin: 0;
@@ -21,8 +21,12 @@ body {
     background: #333;
     overflow-x: hidden;
 }
-a { color: inherit; }
-a:hover { text-decoration: none; }
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -200,6 +204,11 @@ table {
     max-width: 10in;
     display: block;
     margin: 5px auto;
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 0;
 }
 td {
     width: 30%;
