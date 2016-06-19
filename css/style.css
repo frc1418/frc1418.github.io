@@ -168,11 +168,12 @@ nav li {
 nav li:hover {
     background: #444;
 }
-nav .active {
-    background: #444;
+nav .active,
+nav .active:hover {
+    background: #222;
 }
 nav .active a {
-    color: #aaa;
+    color: #ddd;
     cursor: default;
 }
 nav ul ul {
@@ -322,7 +323,8 @@ footer img {
         position: relative;
         overflow: hidden;
     }
-    nav .active {
+    nav .active,
+    nav .active:hover {
         background: #333;
     }
     nav .active a {
