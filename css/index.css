@@ -62,10 +62,11 @@ h3 {
 }
 article div {
     max-width: 13in;
+    margin: 0 auto;
 }
 article img {
-    width: 45%;
-    margin: 20px;
+    width: 31%;
+    margin: 0 20px;
     float: left;
 }
 article p {
@@ -73,6 +74,8 @@ article p {
     max-width: 100%;
 }
 .banners {
+    display: block;
+    margin: 0 auto;
     width: 100vw;
     height: 200px;
     overflow-y: scroll;
