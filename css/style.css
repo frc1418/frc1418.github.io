@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Roboto';
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    src: local('Roboto Light'), local('Roboto-Light'), url(roboto.woff2) format('woff2');
     unicode-range: U+0000-00FF;
 }
 * {
