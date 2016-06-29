@@ -129,6 +129,8 @@ article p {
         position: static;
     }
     article img {
-        display: none;
+        float: none;
+        width: 100%;
+        margin: 0;
     }
 }
