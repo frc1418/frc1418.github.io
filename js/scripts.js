@@ -13,7 +13,7 @@ navButton.onclick = function() {
 };
 
 // This will replace all instances of "ATSYMBOL" with @, and all instances of "PERIOD" with a period (.).
-// Emails are by default obfuscated like this, and they are fixed with JS. This prevents bots from harvesting emails off the site. This is actually a way more serious problem than you may think. Please don't remove this.
+// Emails are by default obfuscated like this, and they are fixed with JS. This prevents bots from harvesting emails off the site. This harvesting iss a way more serious problem than you may think. Please don't remove this.
 
 // Generate a list of all links on the page.
 var links = document.getElementsByTagName('a');
