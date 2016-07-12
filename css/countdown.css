@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Adam';
+    src: url('adam.otf') format('opentype');
+    unicode-range: U+0000-00FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Adam';
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 80px;
+    padding: 0 10px;
+    min-width: 100px;
+}
