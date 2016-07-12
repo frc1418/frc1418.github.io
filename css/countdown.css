@@ -13,7 +13,7 @@ html, body {
 }
 body {
     font-family: 'Adam';
-    background: #222;
+    background: #111;
     color: white;
     display: flex;
     justify-content: center;
@@ -21,11 +21,14 @@ body {
     flex-direction: column;
     text-align: center;
 }
+h1 {
+    margin-bottom: 20px;
+}
 th {
     font-size: 20px;
 }
 td {
-    font-size: 80px;
-    padding: 0 10px;
-    min-width: 100px;
+    font-size: 12vw;
+    padding: 10px;
+    min-width: 20vw;
 }
