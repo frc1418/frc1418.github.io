@@ -62,7 +62,7 @@ header h3 {
 }
 
 /* Social buttons */
-
+/* TODO: These display weirdly sometimes. */
 .social {
     position: relative;
     cursor: default;
