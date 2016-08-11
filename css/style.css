@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
     box-sizing: border-box;
 }
 body {
@@ -20,6 +21,7 @@ body {
     color: white;
     background: #333;
     overflow-x: hidden;
+    line-height: 1;
 }
 a {
     color: inherit;
@@ -51,9 +53,11 @@ header > img {
 h2 {
     font-size: 100px;
     margin-left: -20px;
+    vertical-align: baseline;
 }
 h3 {
     font-size: 20px;
+    vertical-align: baseline;
 }
 header h3 {
     letter-spacing: 1px;
