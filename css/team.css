@@ -1,17 +1,19 @@
 article {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 article > div {
-    box-sizing: content-box;
+    display: inline-block;
+    text-align: center;
 }
 article div div {
-    max-width: 3in;
+    width: 3in;
     display: inline-block;
     vertical-align: top;
     margin: 10px;
+    text-align: left;
 }
 article img {
     width: 100%;
