@@ -73,50 +73,6 @@ article p {
     margin: 0 auto;
     max-width: 100%;
 }
-.banners {
-    display: block;
-    margin: 0 auto;
-    width: 100vw;
-    height: 200px;
-    overflow-y: scroll;
-    text-align: center;
-}
-.banners::-webkit-scrollbar {
-    display: none;
-}
-.banners ul {
-    padding: 0 20px;
-    width: 2185px;
-    height: 200px;
-}
-.banners li {
-    vertical-align: top;
-    display: inline-block;
-    margin: 0 3px 30px;
-    width: 120px;
-    position: relative;
-    background: #0f4bcb;
-    color: white;
-    padding: 10px;
-}
-.banners img {
-    width: 75px;
-    margin-bottom: 5px;
-}
-.banners li:after {
-    content: '';
-    position: absolute;
-    display: block;
-    border: 60px solid #0f4bcb;
-    border-top-width: 5px;
-    border-bottom: 20px transparent solid;
-    top: 100%;
-    left: 0;
-}
-.banners li,
-.banners li:after {
-    -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
-}
 @media (max-width: 850px) {
     .jumbotron,
     .video-ext-container,

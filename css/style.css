@@ -52,7 +52,7 @@ header > a img {
 }
 header > a img,
 h2,
-h3 {
+header h3 {
     cursor: pointer;
 }
 h2 {
@@ -375,6 +375,9 @@ footer img {
     nav .active > a:after {
         right: 0;
     }
+    nav > ul > li:last-child ul {
+        margin-left: 0;
+    }
     article img {
         width: 100%;
     }
@@ -388,7 +391,7 @@ footer img {
         display: block;
         z-index: 50;
     }
-    h3 {
+    h3, .banners {
         display: none;
     }
     .social {
