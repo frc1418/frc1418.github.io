@@ -52,7 +52,7 @@ header > a img {
 }
 header > a img,
 h2,
-h3 {
+header h3 {
     cursor: pointer;
 }
 h2 {
@@ -374,6 +374,9 @@ footer img {
     nav a:active:after,
     nav .active > a:after {
         right: 0;
+    }
+    nav > ul > li:last-child ul {
+        margin-left: 0;
     }
     article img {
         width: 100%;
