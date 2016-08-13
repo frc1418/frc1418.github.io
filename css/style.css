@@ -388,7 +388,7 @@ footer img {
         display: block;
         z-index: 50;
     }
-    h3 {
+    h3, .banners {
         display: none;
     }
     .social {
