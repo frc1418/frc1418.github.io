@@ -46,18 +46,26 @@ header > * {
     display: inline-block;
     vertical-align: top;
 }
-header > img {
+header > a img {
     width: 180px;
-    margin-bottom: 1px;
+    margin-bottom: -4px;
+}
+header > a img,
+h2,
+h3 {
+    cursor: pointer;
 }
 h2 {
     font-size: 100px;
     margin-left: -20px;
-    vertical-align: baseline;
 }
 h3 {
     font-size: 20px;
-    vertical-align: baseline;
+}
+header > a,
+h2 a,
+h3 a {
+    text-decoration: none;
 }
 header h3 {
     letter-spacing: 1px;
@@ -191,6 +199,9 @@ nav ul ul li {
 }
 nav ul li:hover > ul {
     display: block;
+}
+nav > ul > li:last-child ul {
+    margin-left: -40px;
 }
 .button {
     padding: 12px 10px 8px;
