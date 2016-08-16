@@ -70,7 +70,7 @@ h3 a {
 header h3 {
     letter-spacing: 1px;
     position: relative;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 /* Social buttons */
