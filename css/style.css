@@ -47,7 +47,7 @@ header > * {
     vertical-align: top;
 }
 header > a img {
-    width: 180px;
+    width: 220px;
     margin-bottom: -4px;
 }
 header > a img,
@@ -70,7 +70,8 @@ h3 a {
 header h3 {
     letter-spacing: 1px;
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* Social buttons */
@@ -91,7 +92,8 @@ header h3 {
 }
 .social img {
     cursor: pointer;
-    margin-left: 2px;
+    margin-left: 10px;
+    margin-bottom: 13px;
     height: 30px;
     width: 30px;
     -webkit-transition: .3s;
