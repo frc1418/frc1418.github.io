@@ -13,55 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <a href="/"><img src="img/fist.svg"></a>
-        <div>
-            <h2><a href="/">Vae Victis</a></h2>
-            <h3><a href="/">FRC Team 1418 - George Mason High School</a></h3>
-        </div>
-        <ul class="social">
-            <li>
-                <a href="mailto:robotics1418ATSYMBOLgmailPERIODcom">
-                    <img src="img/social/email.svg">
-                </a>
-            </li>
-            <li>
-                <a href="http://facebook.com/robotics1418">
-                    <img src="img/social/facebook.svg">
-                </a>
-            </li>
-            <li>
-                <a href="http://github.com/frc1418">
-                    <img src="img/social/github.svg">
-                </a>
-            </li>
-            <li>
-                <a href="http://twitter.com/Robotics1418">
-                    <img src="img/social/twitter.svg">
-                </a>
-            </li>
-        </ul>
-        <div id="nav-button"><span></span><span></span><span></span></div>
-        <nav>
-            <ul>
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="robot">2016 Robot</a>
-                    <ul>
-                        <li><a href="2015">2015</a></li>
-                        <li><a href="2014">2014</a></li>
-                    </ul>
-                </li>
-                <li><a href="team">The Team</a></li>
-                <li><a href="sponsorship">Sponsor Us</a></li>
-                <li><a>More</a>
-                    <ul>
-                        <li><a href="contact">Contact</a></li>
-                        <li><a href="outreach">Outreach</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <?php include("header.php"); ?>
     <div class="video-ext-container">
         <div class="video-container">
             <!-- This video's src is added by JavaScript.
@@ -90,13 +42,8 @@
         <li><img src="img/first.svg">2016 District of Columbia Champs</li>
         <li><img src="img/first.svg">2016 Innovation in Control (DC)</li>
     </ul>
-    <footer>
-        <p>© Team 1418. Website by <a href="http://erikboesen.com">Erik Boesen</a>.</p>
-        <p><a href="https://team1418.wix.com/team1418">Old site</a></p>
-        <a href="http://www.firstinspires.org"><img src="img/first.png"></a>
-    </footer>
-    <script src="js/scripts.js"></script>
-    <script src="js/index.js"></script>
+  <?php
+    include "footer.php";
+  ?>
 </body>
-
 </html>

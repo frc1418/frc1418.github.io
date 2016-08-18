@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2014 Robot | Team 1418</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/banners.css">
+</head>
+
+<body>
+  <?php include("../header.php"); ?>
+  <article>
+      <h1>2014 Robot</h1>
+      <ul class="banners">
+          <li><img src="/img/first.svg">2014 Woodie Flowers Finalist</li>
+          <li><img src="/img/first.svg">2014 Industrial Design (Virginia)</li>
+      </ul>
+      <p>The FIRST challenge for this year was called Aerial Assist. The challenge included throwing and catching a large ball. You got points for throwing, catching, and scoring with the ball. For more information, see the <a href="https://www.youtube.com/watch?v=oxp4dkMQ1Vo">official game animation</a>.</p>
+      <h5>Design</h5>
+      <p>The main frame of the robot is made of 80/20 stock aluminum. We chose 80/20 because it is strong, yet light. The catapult is made of c-channel and sheet aluminum. Our intake system is composed of an arm, controlled by pistons, which has an axle and motor on it. The motor turns 6 inch wheels, which accumulate the ball. We decided to go with mecanum drive this year, because we believe it is vital to be able to get to a ball quickly, and pick it up. The mecanum allows us to strafe around defensive robots, allowing us to be a strong offensive team against a strong defensive team.</p>
+      <h5>Catapult</h5>
+      <p>After 6 different ways of shooting the ball, the team finally settled on a catapult system. It is 100% accurate, and can throw the ball across the playing field.</p>
+      <p>The way the catapult works is by using a cim motor attached to a winch transmission. The transmission has a ratcheting wrench inside, to act as a winch. Once the catapult is wound down, our drive team presses a button on our drive stations Graphical User Interface (GUI), which pushes out a piston, freeing the axle the tensioning rope was wound on. The force from tightly wound speargun grade rubber tubing provides the force necessary for the catapult to launch the ball into the high goal.</p>
+      <h5>Intake</h5>
+      <p>Before we settled on wheels spinning to bring in the ball, we first designed a accumulator that had spinning rollers, which would be lowered onto the ball to bring it into the robot. After realizing that it would be very easy to accidently knock the ball away, we developed our current system, of two wheels on a spinning an axle.</p>
+      <p>Once the catapult is lowered, our drive team can drive up to a ball, and intake it. Because of its wide design and long reach of its arms, the robot can accumulate a ball 45 degrees on either side of straight on. With this quick intake system and fast shooting, our team scored a total of 331 points during the teleoperated period.</p>
+      <div class="img-row">
+          <img src="/img/2014-a.jpg">
+          <img src="/img/2014-b.jpg">
+          <img src="/img/2014-c.png">
+      </div>
+      <h5>Programming</h5>
+      <p>This year, we programmed the robot in Python. Our newest mentor, Dustin Spicuzza, helped us transition from LabView, which we used in previous years, to Python.</p>
+      <img src="/img/pydriverstation.jpg">
+      <p>The driver station was programmed to function like a tablet. Using Glade, and pyGTK, we were able to create a fully functional 'application,' complete with large icons, readouts of values, and toggle buttons. This design allows the driver station to be changed in the event we need to add functions, as well as being simple. Last year, the team used an XBox controller, but it proved to be difficult to control the robot effectively, and with our new interface, everything is labeled, resizeable, and new and old functions can be removed and added as needed.</p>
+      <div class="iframe-ext-wrapper">
+          <div class="iframe-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/phT3iOk9Pus" allowfullscreen></iframe>
+          </div>
+      </div>
+  </article>
+  <?php include("../footer.php"); ?>
+</body>
+</head>
