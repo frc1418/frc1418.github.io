@@ -19,7 +19,6 @@
 
 <?php
   include_once("../header.php");
-  $pagename = "contact";
 ?>
 
   <article>
