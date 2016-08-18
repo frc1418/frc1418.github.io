@@ -14,7 +14,7 @@
         $order = "NOT_SET";
         ob_start();
         if(is_dir($file)){
-          include($file);
+          include("$file/order.php");
         }else{
           include($file);
         }
