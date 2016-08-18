@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <?php include_once("header.php"); ?>
+  <?php include ("header.php"); ?>
     <div class="video-ext-container">
         <div class="video-container">
             <!-- This video's src is added by JavaScript.
@@ -43,7 +43,7 @@
         <li><img src="/img/first.svg">2016 Innovation in Control (DC)</li>
     </ul>
   <?php
-    include_once("footer.php");
+    include ("footer.php");
   ?>
 </body>
 </html>
