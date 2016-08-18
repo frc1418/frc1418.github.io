@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <?php include("header.php"); ?>
+  <?php include_once("header.php"); ?>
     <div class="video-ext-container">
         <div class="video-container">
             <!-- This video's src is added by JavaScript.
@@ -28,22 +28,22 @@
     </div>
     <article>
         <div>
-            <img src="img/team.jpg">
+            <img src="/img/team.jpg">
             <p>We are team 1418 Vae Victis, a <a href="http://firstinspires.org/robotics/frc">FIRST Robotics Competition (FRC)</a> team from George Mason High School in Falls Church, VA. Since our founding in 2004, our team has grown in every way, and has maintained a high place in competition and in the community. To do this, we maintain an active and engaged student body of about 25 students who work with the team on and off season. We attend competitions, volunteer, take part in community events, build robots, and have lots of fun.</p>
             <p>In the 2016 season, we took first place in the Greater DC District competition, the Bethesda District competition, and the FIRST Chesapeake District championship. This qualified us for the World Championship. After a challenging but thrilling fight at worlds, we made it to the division quarterfinals in the 2016 Newton Division, widely believed to have been the strongest group of teams in FIRST history.</p>
             <p>We are excited for the 2017 season to start! If you'd like to help us with fundraising, please visit <a href="sponsorship">this page</a>.</p>
         </div>
     </article>
     <ul class="banners">
-        <li><img src="img/first.svg">2016 Chesapeake Regional Champions</li>
-        <li><img src="img/first.svg">2016 Innovation in Control Chesapeake</li>
-        <li><img src="img/first.svg">2016 Bethesda District Champions</li>
-        <li><img src="img/first.svg">2016 Industrial Design (Bethesda)</li>
-        <li><img src="img/first.svg">2016 District of Columbia Champs</li>
-        <li><img src="img/first.svg">2016 Innovation in Control (DC)</li>
+        <li><img src="/img/first.svg">2016 Chesapeake Regional Champions</li>
+        <li><img src="/img/first.svg">2016 Innovation in Control Chesapeake</li>
+        <li><img src="/img/first.svg">2016 Bethesda District Champions</li>
+        <li><img src="/img/first.svg">2016 Industrial Design (Bethesda)</li>
+        <li><img src="/img/first.svg">2016 District of Columbia Champs</li>
+        <li><img src="/img/first.svg">2016 Innovation in Control (DC)</li>
     </ul>
   <?php
-    include "footer.php";
+    include_once("footer.php");
   ?>
 </body>
 </html>

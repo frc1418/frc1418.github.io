@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <?php include("header.php"); ?>
+  <?php include_once("header.php"); ?>
   <article>
       <p>Without our generous sponsors, we would not have the opportunity to get the most out of this wonderful program. Below you can find a list of our sponsors.</p>
       <p>If you are interested in sponsoring us, we would love to hear from you!</p>
@@ -56,6 +56,6 @@
           </tr>
       </table>
   </article>
-  <?php include("footer.php"); ?>
+  <?php include_once("footer.php"); ?>
 </body>
 </html>

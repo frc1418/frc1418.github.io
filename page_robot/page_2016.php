@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <?php include("../header.php"); ?>
+  <?php include_once("../header.php"); ?>
   <article>
       <h1>2016 Robot</h1>
       <ul class="banners">
@@ -58,6 +58,6 @@
       </div>
       <img src="/img/worlds.jpg" alt="The team at the 2016 St. Louis World Championships">
   </article>
-  <?php include("../footer.php"); ?>
+  <?php include_once("../footer.php"); ?>
 </body>
 </html>

@@ -1,23 +1,42 @@
 <?php
   function createMenu($directory){
     echo "<ul>";
-    foreach(glob($directory."/page_*") as $file){
-      $name = basename($file, ".php");
-      $name = str_replace("page_", "", $name);
+    echo "<script>console.log(\"called\")</script>";
+    echo "<script>console.log(\"$directory\")</script>";
 
-      $root = str_replace("header.php", "", __FILE__);
-      $filePath = str_replace($root, "", $file);
+    for($i=0; $i<=10; $i++) {
+      echo "<script>console.log($i)</script>";
+      foreach(glob($directory."/page_*") as $file){
+        $name = basename($file, ".php");
+        $name = str_replace("page_", "", $name);
 
-      if(is_dir($file)){
-        echo "<li><a>$name</a>";
-        createMenu($file);
-      }else if($pagename == $name){
-        echo "<li class=\"active\"><a href=\"$filePath\">$name</a>";
-      }else{
-        echo "<li><a href=\"$filePath\">$name</a>";
+
+        $order = "NOT_SET";
+        ob_start();
+        if(is_dir($file)){
+          include($file);
+        }else{
+          include($file);
+        }
+        ob_end_clean();
+
+        if((is_string($order) && $i == 10) || (!is_string($order) && $order == $i)){
+          echo "<script>console.log(\"adding: $file order: $order\")</script>";
+          $root = str_replace("header.php", "", __FILE__);
+          $filePath = str_replace($root, "", $file);
+
+          if(is_dir($file)){
+            echo "<li><a>$name</a>";
+            echo "<script>console.log(\"$file\")</script>";
+            createMenu($file);
+          }else if($pagename == $name){
+            echo "<li class=\"active\"><a href=\"$filePath\">$name</a>";
+          }else{
+            echo "<li><a href=\"$filePath\">$name</a>";
+          }
+        }
+        echo "</li>";
       }
-
-      echo "</li>";
     }
     echo "</ul>";
   }

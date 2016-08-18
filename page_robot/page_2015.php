@@ -12,7 +12,7 @@
 </head>
 
   <body>
-  <?php include("../header.php"); ?>
+  <?php include_once("../header.php"); ?>
   <article>
       <h1>2015 Robot</h1>
       <ul class="banners">
@@ -66,6 +66,6 @@
           <img src="/img/2015-c.jpg">
       </div>
   </article>
-  <?php include("footer.php"); ?>
+  <?php include_once("footer.php"); ?>
 </body>
 </html>

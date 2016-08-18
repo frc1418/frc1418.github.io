@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <?php include("../header.php"); ?>
+  <?php include_once("../header.php"); ?>
   <article>
       <h5>Greater Washington DC FRC Workshop</h5>
       <p>Every December since 2009, Team 1418 has hosted a workshop featuring classes that teach important skills to both team members and mentors. The available courses range from Pneumatics to 3D Printing to Game strategy to Scouting. Vae Victis was proud to successfully host the event as well as teach many of the courses this year and plans to do the same for many years to come.</p>
@@ -27,6 +27,6 @@
       <h5>Summer Camps</h5>
       <p>Vae Victis is in the process of starting two summer camps, the first to educate younger students about LEGO robotics, and the second to teach High School students interested in joining 1418 or other teams. Stay tuned for more information.</p>
   </article>
-  <?php include("../footer.php"); ?>
+  <?php include_once("../footer.php"); ?>
 </body>
 </head>

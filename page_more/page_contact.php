@@ -18,7 +18,7 @@
 <body>
 
 <?php
-  include("../header.php");
+  include_once("../header.php");
   $pagename = "contact";
 ?>
 
@@ -60,6 +60,6 @@
           </tbody>
       </table>
   </article>
-<?php include("../footer.php"); ?>
+<?php include_once("../footer.php"); ?>
 </body>
 </html>

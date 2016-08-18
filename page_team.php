@@ -12,7 +12,10 @@
 </head>
 
 <body>
-  <?php include("header.php"); ?>
+  <?php
+    $order = 0;
+    include_once("header.php");
+  ?>
   <article>
       <h1>The Team</h1>
       <div>
@@ -106,6 +109,6 @@
           <div></div>
       </div>
   </article>
-  <?php include("footer.php"); ?>
+  <?php include_once("footer.php"); ?>
 </body>
 </html>
