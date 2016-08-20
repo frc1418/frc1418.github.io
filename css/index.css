@@ -77,8 +77,7 @@ article p {
     .jumbotron,
     .video-ext-container,
     .video-container,
-    video,
-    .banners {
+    video {
         display: none;
     }
     header {
