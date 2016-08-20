@@ -74,7 +74,10 @@ header h3 {
 }
 
 /* Social buttons */
+
+
 /* TODO: These display weirdly sometimes. */
+
 .social {
     position: relative;
     cursor: default;
@@ -279,7 +282,8 @@ article li {
 table {
     text-align: center;
 }
-tbody, tr {
+tbody,
+tr {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -290,7 +294,8 @@ td {
     width: 30%;
     vertical-align: top;
 }
-td ul, td li {
+td ul,
+td li {
     list-style-type: none;
     padding: 0;
 }
@@ -299,7 +304,29 @@ footer {
     color: #666;
     padding: 20px;
 }
-footer img {
+footer h5,
+footer table {
+    color: white;
+}
+footer table td {
+    padding: 20px;
+}
+footer table td {
+    vertical-align: middle;
+}
+footer td:first-child {
+    text-align: right;
+}
+footer td:last-child {
+    text-align: left;
+}
+.sponsor-large {
+    width: 60%;
+}
+footer ul {
+    line-height: 1.25;
+}
+.first-logo {
     width: 50px;
     margin-top: 10px;
 }
@@ -381,6 +408,10 @@ footer img {
     article img {
         width: 100%;
     }
+    footer h5,
+    footer table {
+        display: none;
+    }
 }
 @media (max-width: 850px) {
     header {
@@ -391,7 +422,8 @@ footer img {
         display: block;
         z-index: 50;
     }
-    h3, .banners {
+    .banners,
+    h3 {
         display: none;
     }
     .social {
@@ -420,7 +452,8 @@ footer img {
     }
 }
 @media (max-width: 585px) {
-    tbody, tr {
+    tbody,
+    tr {
         display: block;
         margin: 0 auto;
         width: 100%;
