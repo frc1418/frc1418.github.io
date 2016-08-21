@@ -314,12 +314,6 @@ footer table td {
 footer table td {
     vertical-align: middle;
 }
-footer td:first-child {
-    text-align: right;
-}
-footer td:last-child {
-    text-align: left;
-}
 .sponsor-large {
     width: 60%;
 }
