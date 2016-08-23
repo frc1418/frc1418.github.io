@@ -336,6 +336,7 @@ footer ul {
         width: 100vw;
         height: 100vh;
         position: fixed;
+        overflow: scroll;
         transition: .2s;
     }
     nav.open {
@@ -343,14 +344,16 @@ footer ul {
         transition: .3s;
     }
     nav > ul {
-        display: flex;
-        flex-direction: column;
         margin: 0;
         padding: 20px;
         right: auto;
         position: relative;
         width: 100vw;
         height: 100vh;
+    }
+    nav li {
+        display: block;
+        clear: both;
     }
     nav ul ul {
         display: block;
