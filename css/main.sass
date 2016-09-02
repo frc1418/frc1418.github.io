@@ -1,22 +1,26 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset  'utf-8'
-// Variables to reuse
-$on-palm: 600px
-$on-laptop: 800px
+
+$grey: #333
+$parafont: 'Roboto', sans-serif
+$titlefont: 'Adam', 'Roboto', sans-serif
+$vaered: #d12727
+
+
 
 @font-face
   font-family: 'Adam'
-  src: url(/assets/font/adam.otf) format('opentype')
+  src: url(../assets/font/adam.otf) format('opentype')
   unicode-range: U+0000-00FF
 
 
 @font-face
   font-family: 'Roboto'
   font-weight: 300
-  src: local('Roboto Light'), local('Roboto-Light'), url(/assets/font/roboto.woff2) format('woff2')
+  src: local('Roboto Light'), local('Roboto-Light')
+  src: url(../assets/font/roboto.woff2) format('woff2')
   unicode-range: U+0000-00FF
 
 
@@ -27,10 +31,10 @@ $on-laptop: 800px
   box-sizing: border-box
 
 body
-  font-family: 'Roboto', sans-serif
+  font-family: $parafont
   font-weight: 100
   color: white
-  background: #333
+  background: $grey
   overflow-x: hidden
   line-height: 1
 
@@ -40,11 +44,11 @@ a
     text-decoration: none
 
 h1, h2, h3, h5, header, .jumbotron, .banners
-  font-family: 'Adam', sans-serif
+  font-family: $titlefont
 
 header
   padding: 15px 15px 0
-  background: #333
+  background: $grey
   >
     *
       display: inline-block
@@ -72,10 +76,8 @@ header h3
   position: relative
   margin-top: -10px
 
-/* Social buttons
 
-/* TODO: These display weirdly sometimes.
-
+// Social buttons
 .social
   position: relative
   cursor: default
@@ -100,8 +102,7 @@ header h3
       -webkit-filter: invert(0.5)
       filter: invert(0.5)
 
-/* Nav
-
+// Navigation menu
 #nav-button
   display: none
   width: 50px
@@ -186,7 +187,7 @@ nav
   padding: 12px 10px 8px
   margin: 10px
   text-decoration: none
-  background: #d12727
+  background: $vaered
   color: white
 
 article
@@ -230,7 +231,7 @@ article > img, .img-row, table
 .iframe-wrapper
   position: relative
   padding-bottom: 56.25%
-  /* 16:9
+  // 16:9
   padding-top: 25px
   height: 0
   iframe
@@ -302,7 +303,7 @@ footer ul
     top: 0
     margin: 0
     left: 100vw
-    background: #333
+    background: $grey
     width: 100vw
     height: 100vh
     position: fixed
@@ -329,7 +330,7 @@ footer ul
         padding-left: 10px
         border-left: solid 4px white
     li:hover
-      background: #333
+      background: $grey
     a
       font-size: 50px
       display: inline-block
@@ -339,9 +340,9 @@ footer ul
       position: relative
       overflow: hidden
     .active
-      background: #333
+      background: $grey
       &:hover
-        background: #333
+        background: $grey
       a
         color: white
     a
