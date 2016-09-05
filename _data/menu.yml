@@ -1,0 +1,25 @@
+- title: Home
+  weight: 0
+  url: /
+- title: The Robot
+  url: /pages/robot/2016.html
+  subitems:
+  - title: 2016
+    url: /pages/robot/2016.html
+  - title: 2015
+    url: /pages/robot/2015.html
+  - title: 2014
+    url: /pages/robot/2014.html
+- title: The Team
+  url: /pages/team.html
+- title: Sponsor Us
+  url: /pages/sponsorship.html
+- title: More
+  url: /pages/more/contact.html
+  subitems:
+  - title: Calendar
+    url: /pages/more/calendar.html
+  - title: Contact
+    url: /pages/more/contact.html
+  - title: Outreach
+    url: /pages/more/outreach.html

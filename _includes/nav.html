@@ -1,0 +1,17 @@
+{% assign navurl = page.url %}
+  {% for item in include.nav %}
+    {% if navurl contains item.url and item.url != "/" %}
+      <li class="active" ><a href="{{ item.url }}">{{ item.title }}</a>
+    {% elsif navurl == item.url %}
+      <li class="active" ><a href="{{ item.url }}">{{ item.title }}</a>
+    {% else %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a>
+    {% endif %}
+
+    {% if item.subitems %}
+      <ul>
+      {% include nav.html nav=item.subitems %}
+      </ul>
+    {% endif %}
+    </li>
+  {% endfor %}

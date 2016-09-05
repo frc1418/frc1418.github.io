@@ -1,5 +1,5 @@
 <header>
-    <a href="/"><img src="assets/img/fist.svg"></a>
+    <a href="/"><img src="/assets/img/fist.svg"></a>
     <div>
         <h2><a href="/">Vae Victis</a></h2>
         <h3><a href="/">FRC Team 1418 - George Mason High School</a></h3>
@@ -7,29 +7,30 @@
     <ul class="social">
         <li>
             <a href="mailto:robotics1418ATSYMBOLgmailPERIODcom">
-                <img src="assets/img/social/email.svg">
+                <img src="/assets/img/social/email.svg">
             </a>
         </li>
         <li>
             <a href="http://facebook.com/robotics1418">
-                <img src="assets/img/social/facebook.svg">
+                <img src="/assets/img/social/facebook.svg">
             </a>
         </li>
         <li>
             <a href="http://github.com/frc1418">
-                <img src="assets/img/social/github.svg">
+                <img src="/assets/img/social/github.svg">
             </a>
         </li>
         <li>
             <a href="http://twitter.com/Robotics1418">
-                <img src="assets/img/social/twitter.svg">
+                <img src="/assets/img/social/twitter.svg">
             </a>
         </li>
     </ul>
     <div id="nav-button"><span></span><span></span><span></span></div>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+	  {% include nav.html nav=site.data.menu %}
+	  <!--
             <li><a href="robot">2016 Robot</a>
                 <ul>
                     <li><a href="2015">2015</a></li>
@@ -44,6 +45,7 @@
                     <li><a href="outreach">Outreach</a></li>
                 </ul>
             </li>
+	    -->
         </ul>
     </nav>
 </header>
