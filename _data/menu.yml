@@ -17,6 +17,8 @@
 - title: More
   url: /pages/more/contact.html
   subitems:
+  - title: Calendar
+    url: /pages/more/calendar.html
   - title: Contact
     url: /pages/more/contact.html
   - title: Outreach
