@@ -1,0 +1,5 @@
+{% comment %}
+title: The Robot
+weight: 1
+url: pages/robot/2016.html
+{% endcomment %} 
