@@ -6,6 +6,7 @@ This website uses the Jekyll templating system and is hosted as a GitHub page.
 TODO: Add more stuff here.
 
 ## Dependencies
+* ruby
 * [Jekyll](https://jekyllrb.com)
 * bundler
 
