@@ -4,37 +4,28 @@ header
   position: absolute
   width: 100%
 
-.video-ext-container
-  height: 100vh
-  position: relative
-  z-index: -10
-  overflow: hidden
-
-.video-container
-  top: -50%
-  left: -50%
-  width: 200vw
-  height: 200vh
-
-video
+#bg
+  position: fixed
   top: 0
   left: 0
   right: 0
   bottom: 0
-  margin: auto
-  min-width: 50%
-  min-height: 50%
-  position: relative
+  height: 100vh
+  background:
+    image: url(../assets/img/background.gif)
+    size: cover
+    repeat: no-repeat
+  overflow: hidden
+  z-index: -10
   -webkit-filter: blur(5px) brightness(0.5)
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="5" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.5" /><feFuncG type="linear" slope="0.5" /><feFuncB type="linear" slope="0.5" /></feComponentTransfer></filter></svg>#filter')
   -webkit-filter: blur(5px) brightness(0.5)
   filter: blur(5px) brightness(0.5)
 
 .jumbotron
-  position: absolute
-  bottom: 0
-  height: calc(100vh - 139px)
+  height: 100vh
   width: 100vw
+  padding-top: 139px
   display: -webkit-box
   display: -webkit-flex
   display: -ms-flexbox
@@ -73,6 +64,9 @@ article
   p
     margin: 0 auto
     max-width: 100%
+
+.banners
+  background: #333
 
 @media (max-width: 850px)
   .jumbotron, .video-ext-container, .video-container, video
