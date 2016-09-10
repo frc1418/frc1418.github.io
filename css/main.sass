@@ -160,11 +160,8 @@ nav
     display: block
     color: white
     padding: 12px 15px 8px
-    // Differentiate category headers that don't link to anything but are there to organize pages.
-    // i.e. the "More" category on the navbar.
-    &:not([href*="/"])
-      color: #ccc
-      cursor: default
+  span
+    color: #ccc
   li
     float: left
     padding: 0
@@ -183,6 +180,7 @@ nav
       position: absolute
       top: 100%
       background: #2c2c2c
+      padding: 0
       li
         width: 100%
     li:hover > ul
@@ -339,11 +337,12 @@ footer ul
         border-left: solid 4px white
     li:hover
       background: $grey
-    a
+    li > *
       font-size: 50px
       display: inline-block
       padding: 10px 0
       vertical-align: middle
+    a
       transform: translateZ(0)
       position: relative
       overflow: hidden
@@ -397,7 +396,7 @@ footer ul
     line-height: 1.2
   h2
     margin-left: 10px
-  nav a
+  nav li > *
     font-size: 30px
   .img-row img
     width: 100%
