@@ -22,4 +22,5 @@ twitter_username: robotics1418
 github_username:  frc1418
 
 # Build settings
-markdown: kramdown
+sass:
+    style: compressed
