@@ -11,12 +11,16 @@ scripts:
 <div class="video-ext-container">
     <div class="video-container">
         <!-- This video's src is added by JavaScript.
-                That way it won't load the extra data on a mobile device. -->
-        <video src autoplay loop></video>
+            That way it won't load the extra data on a mobile device.
+            The muted attribute must be included despite the video having no sound.
+            Otherwise Safari will report that the page is playing audio. -->
+        <video src autoplay loop muted></video>
     </div>
 </div>
 <div class="jumbotron">
+    <!-- TODO: Replace this header. "Welcome" doesn't make any sense. -->
     <h1>Welcome</h1>
+    <!-- TODO: Replace this tagline with something less narcissistic -->
     <h3>Our team, whose name means "woe to the vanquished," has been one of the most successful and inventive FIRST Robotics teams in the Chesapeake District.</h3>
     <a href="/robot/2016" class="button">2016 Robot</a>
 </div>
@@ -24,7 +28,7 @@ scripts:
     <div>
         <img src="/assets/img/team.jpg">
         <p>We are team 1418 Vae Victis, a <a href="http://firstinspires.org/robotics/frc">FIRST Robotics Competition (FRC)</a> team from George Mason High School in Falls Church, VA. Since our founding in 2004, our team has grown in every way, and has maintained a high place in competition and in the community. To do this, we maintain an active and engaged student body of about 25 students who work with the team on and off season. We attend competitions, volunteer, take part in community events, build robots, and have lots of fun.</p>
-        <p>In the 2016 season, we were part of the winning and first-seeded alliance in the FIRST Chesapeake Northern Virginia Event at Battlefield High School in Haymarket, VA. Then, we led the first-seeded alliance to victory at the FIRST Chesapeake Greater DC Event at Walt Whitman High School in Bethesda, Maryland. We then led the first-seeded alliance to another stunning victory at the FIRST Chesapeake District Championship sponsored by Booz Allen Hamilton in the University of Maryland’s Xfinity Center in College Park, Maryland. This qualified us for the FIRST World Championship. After a challenging but thrilling fight at worlds, we made it to the division quarterfinals in the 2016 Newton Division, widely believed to have been one of the strongest division of teams in FIRST history.</p>
+        <p>In the 2016 season, we were part of the winning and first-seeded alliance in the FIRST Chesapeake Northern Virginia Event at Battlefield High School in Haymarket, VA. Then, we led the first-seeded alliance to victory at the FIRST Chesapeake Greater DC Event at Walt Whitman High School in Bethesda, Maryland. We then led the first-seeded alliance to another stunning victory at the FIRST Chesapeake District Championship sponsored by Booz Allen Hamilton in the University of Maryland’s Xfinity Center in College Park, Maryland. This qualified us for the FIRST World Championship. After a challenging but thrilling fight at worlds, we made it to the division quarterfinals in the 2016 Newton Division, one of the strongest divisions in FIRST history.</p>
         <p>We are excited for the 2017 season to start! If you'd like to help us with fundraising, please visit <a href="sponsorship">this page</a>.</p>
     </div>
 </article>

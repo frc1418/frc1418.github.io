@@ -1,0 +1,29 @@
+---
+---
+article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    > div
+        display: block
+        clear: both
+        margin: 10px 0
+        h5
+            margin: 0
+        img
+            width: 200px
+            float: left
+            margin:
+                right: 20px
+                bottom: 20px
+
+@media (max-width: 450px)
+    article
+        > div
+            h5
+                text-align: center
+            img
+                float: none
+                margin: 0
+                width: 100%

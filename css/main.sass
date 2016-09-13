@@ -36,6 +36,8 @@ body
   background: $grey
   overflow-x: hidden
   line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 a
   color: inherit
@@ -57,12 +59,10 @@ header
       margin-bottom: -4px
       cursor: pointer
 
-h2, header h3
-  cursor: pointer
-
 h2
+  position: relative
+  top: 0
   font-size: 100px
-  margin-left: -20px
 
 h3
   font-size: 20px
@@ -71,6 +71,7 @@ header > a, h2 a, h3 a
   text-decoration: none
 
 header h3
+  margin-left: 25px
   letter-spacing: 1px
   position: relative
   margin-top: -10px
@@ -152,11 +153,13 @@ nav
     list-style: none
   > ul
     float: right
-  a
+  li > *
     text-decoration: none
     display: block
     color: white
     padding: 12px 15px 8px
+  span
+    color: #ccc
   li
     float: left
     padding: 0
@@ -175,6 +178,7 @@ nav
       position: absolute
       top: 100%
       background: #2c2c2c
+      padding: 0
       li
         width: 100%
     li:hover > ul
@@ -314,6 +318,7 @@ footer ul
     > ul
       margin: 0
       padding: 20px
+      padding-bottom: 20px
       right: auto
       position: relative
       width: 100vw
@@ -330,11 +335,12 @@ footer ul
         border-left: solid 4px white
     li:hover
       background: $grey
-    a
+    li > *
       font-size: 50px
       display: inline-block
       padding: 10px 0
       vertical-align: middle
+    a
       transform: translateZ(0)
       position: relative
       overflow: hidden
@@ -388,7 +394,7 @@ footer ul
     line-height: 1.2
   h2
     margin-left: 10px
-  nav a
+  nav li > *
     font-size: 30px
   .img-row img
     width: 100%
