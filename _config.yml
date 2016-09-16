@@ -24,3 +24,12 @@ github_username:  frc1418
 # Build settings
 sass:
     style: compressed
+exclude:
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+include:
+    - _pages
