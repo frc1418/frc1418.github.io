@@ -1,7 +1,7 @@
 ---
 ---
 
-@charset  'utf-8'
+@charset    'utf-8'
 
 $grey: #333
 $parafont: 'Roboto', sans-serif
@@ -10,405 +10,405 @@ $vaered: #d12727
 $basicchars: U+0000-00FF
 
 @font-face
-  font-family: 'Adam'
-  src: url(../assets/font/adam.otf) format('opentype')
-  unicode-range: $basicchars
+    font-family: 'Adam'
+    src: url(../assets/font/adam.otf) format('opentype')
+    unicode-range: $basicchars
 
 
 @font-face
-  font-family: 'Roboto'
-  font-weight: 300
-  src: local('Roboto Light'), local('Roboto-Light')
-  src: url(../assets/font/roboto.woff2) format('woff2')
-  unicode-range: $basicchars
+    font-family: 'Roboto'
+    font-weight: 300
+    src: local('Roboto Light'), local('Roboto-Light')
+    src: url(../assets/font/roboto.woff2) format('woff2')
+    unicode-range: $basicchars
 
 
 *
-  margin: 0
-  padding: 0
-  font-size: 100%
-  box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-size: 100%
+    box-sizing: border-box
 
 body
-  font-family: $parafont
-  font-weight: 100
-  color: white
-  background: $grey
-  overflow-x: hidden
-  line-height: 1
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+    font-family: $parafont
+    font-weight: 100
+    color: white
+    background: $grey
+    overflow-x: hidden
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
 
 a
-  color: inherit
-  &:hover
-    text-decoration: none
+    color: inherit
+    &:hover
+        text-decoration: none
 
 h1, h2, h3, h5, header, .jumbotron, .banners
-  font-family: $titlefont
+    font-family: $titlefont
 
 header
-  padding: 15px 15px 0
-  background: $grey
-  >
-    *
-      display: inline-block
-      vertical-align: top
-    a img
-      width: 180px
-      margin-bottom: -4px
-      cursor: pointer
+    padding: 15px 15px 0
+    background: $grey
+    >
+        *
+            display: inline-block
+            vertical-align: top
+        a img
+            width: 180px
+            margin-bottom: -4px
+            cursor: pointer
 
 h2
-  position: relative
-  top: 0
-  font-size: 100px
+    position: relative
+    top: 0
+    font-size: 100px
 
 h3
-  font-size: 20px
+    font-size: 20px
 
 header > a, h2 a, h3 a
-  text-decoration: none
+    text-decoration: none
 
 header h3
-  margin-left: 25px
-  letter-spacing: 1px
-  position: relative
-  margin-top: -10px
+    margin-left: 25px
+    letter-spacing: 1px
+    position: relative
+    margin-top: -10px
 
 
 // Social buttons
 .social
-  position: relative
-  cursor: default
-  list-style: none
-  display: inline-block
-  margin-left: 5px
-  li
-    margin: -5px
-  a
-    cursor: pointer
-    z-index: 100
-  img
-    cursor: pointer
-    margin-left: 2px
-    height: 30px
-    width: 30px
-    -webkit-transition: .3s
-    transition: .3s
-    &:hover
-      -webkit-transition: .5s
-      transition: .5s
-      -webkit-filter: invert(0.5)
-      filter: invert(0.5)
+    position: relative
+    cursor: default
+    list-style: none
+    display: inline-block
+    margin-left: 5px
+    li
+        margin: -5px
+    a
+        cursor: pointer
+        z-index: 100
+    img
+        cursor: pointer
+        margin-left: 2px
+        height: 30px
+        width: 30px
+        -webkit-transition: .3s
+        transition: .3s
+        &:hover
+            -webkit-transition: .5s
+            transition: .5s
+            -webkit-filter: invert(0.5)
+            filter: invert(0.5)
 
 // Navigation menu
 #nav-button
-  display: none
-  width: 50px
-  height: 40px
-  position: fixed
-  top: 20px
-  right: 20px
-  transform: rotate(0)
-  transition: .5s ease-in-out
-  cursor: pointer
-  z-index: 200
-  span
-    display: block
-    position: absolute
-    height: 2px
-    width: 100%
-    background: white
-    opacity: 1
-    left: 0
+    display: none
+    width: 50px
+    height: 40px
+    position: fixed
+    top: 20px
+    right: 20px
     transform: rotate(0)
-    transition: .25s ease-in-out
-    &:nth-child(1)
-      top: 0
-    &:nth-child(2)
-      top: 18px
-    &:nth-child(3)
-      top: 36px
-  &.open span
-    &:nth-child(1)
-      top: 18px
-      transform: rotate(-135deg)
-    &:nth-child(2)
-      opacity: 0
-      right: -60px
-    &:nth-child(3)
-      top: 18px
-      transform: rotate(135deg)
+    transition: .5s ease-in-out
+    cursor: pointer
+    z-index: 200
+    span
+        display: block
+        position: absolute
+        height: 2px
+        width: 100%
+        background: white
+        opacity: 1
+        left: 0
+        transform: rotate(0)
+        transition: .25s ease-in-out
+        &:nth-child(1)
+            top: 0
+        &:nth-child(2)
+            top: 18px
+        &:nth-child(3)
+            top: 36px
+    &.open span
+        &:nth-child(1)
+            top: 18px
+            transform: rotate(-135deg)
+        &:nth-child(2)
+            opacity: 0
+            right: -60px
+        &:nth-child(3)
+            top: 18px
+            transform: rotate(135deg)
 
 nav
-  display: inline
-  position: absolute
-  margin-top: 40px
-  right: 10px
-  z-index: 100
-  ul, li
-    position: relative
-  ul
-    list-style: none
-  > ul
-    float: right
-  li > *
-    text-decoration: none
-    display: block
-    color: white
-    padding: 12px 15px 8px
-  span
-    color: #ccc
-  li
-    float: left
-    padding: 0
-    &:hover
-      background: #444
-  .active
-    background: #222
-    &:hover
-      background: #222
-    a
-      color: #ddd
-      cursor: default
-  ul
+    display: inline
+    position: absolute
+    margin-top: 40px
+    right: 10px
+    z-index: 100
+    ul, li
+        position: relative
     ul
-      display: none
-      position: absolute
-      top: 100%
-      background: #2c2c2c
-      padding: 0
-      li
-        width: 100%
-    li:hover > ul
-      display: block
-  > ul > li:last-child ul
-    margin-left: -40px
+        list-style: none
+    > ul
+        float: right
+    li > *
+        text-decoration: none
+        display: block
+        color: white
+        padding: 12px 15px 8px
+    span
+        color: #ccc
+    li
+        float: left
+        padding: 0
+        &:hover
+            background: #444
+    .active
+        background: #222
+        &:hover
+            background: #222
+        a
+            color: #ddd
+            cursor: default
+    ul
+        ul
+            display: none
+            position: absolute
+            top: 100%
+            background: #2c2c2c
+            padding: 0
+            li
+                width: 100%
+        li:hover > ul
+            display: block
+    > ul > li:last-child ul
+        margin-left: -40px
 
 .button
-  padding: 12px 10px 8px
-  margin: 10px
-  text-decoration: none
-  background: $vaered
-  color: white
+    padding: 12px 10px 8px
+    margin: 10px
+    text-decoration: none
+    background: $vaered
+    color: white
 
 article
-  padding: 40px
-  background: #222
-  line-height: 1.8
-  h1
-    font-size: 60px
+    padding: 40px
+    background: #222
+    line-height: 1.8
+    h1
+        font-size: 60px
 
 h5, p
-  max-width: 10in
-  display: block
-  margin: 5px auto
-
-article
-  ul, > img
     max-width: 10in
     display: block
     margin: 5px auto
 
+article
+    ul, > img
+        max-width: 10in
+        display: block
+        margin: 5px auto
+
 .img-row, table, .iframe-ext-wrapper
-  max-width: 10in
-  display: block
-  margin: 5px auto
+    max-width: 10in
+    display: block
+    margin: 5px auto
 
 iframe
-  display: block
-  margin: 20px auto
-  border: 0
+    display: block
+    margin: 20px auto
+    border: 0
 
 td
-  width: 30%
+    width: 30%
 
 article > img, .img-row, table
-  margin: 20px auto
+    margin: 20px auto
 
 .img-row img
-  width: 31%
-  margin: 1%
+    width: 31%
+    margin: 1%
 
 .iframe-wrapper
-  position: relative
-  padding-bottom: 56.25%
-  // 16:9
-  padding-top: 25px
-  height: 0
-  iframe
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
+    position: relative
+    padding-bottom: 56.25%
+    // 16:9
+    padding-top: 25px
+    height: 0
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
 
 table img
-  width: 100%
+    width: 100%
 
 article h1
-  text-align: center
+    text-align: center
 
 h5
-  margin-top: 30px
-  font-size: 30px
+    margin-top: 30px
+    font-size: 30px
 
 article
-  ul
-    padding-left: 20px
-  li
-    padding-left: 15px
+    ul
+        padding-left: 20px
+    li
+        padding-left: 15px
 
 table
-  text-align: center
+    text-align: center
 
 tbody, tr
-  display: block
-  width: 100%
-  margin: 0 auto
-  max-width: 8in
+    display: block
+    width: 100%
+    margin: 0 auto
+    max-width: 8in
 
 td
-  display: inline-block
-  width: 30%
-  vertical-align: top
-  ul, li
-    list-style-type: none
-    padding: 0
+    display: inline-block
+    width: 30%
+    vertical-align: top
+    ul, li
+        list-style-type: none
+        padding: 0
 
 footer
-  text-align: center
-  color: #666
-  background: $grey
-  padding: 20px
-  h5
-    color: white
-  table
-    color: white
-    td
-      padding: 20px
-      vertical-align: middle
+    text-align: center
+    color: #666
+    background: $grey
+    padding: 20px
+    h5
+        color: white
+    table
+        color: white
+        td
+            padding: 20px
+            vertical-align: middle
 
 .sponsor-large
-  width: 60%
+    width: 60%
 
 footer ul
-  line-height: 1.25
+    line-height: 1.25
 
 .first-logo
-  width: 50px
-  margin-top: 10px
+    width: 50px
+    margin-top: 10px
 
 @media (max-width: 1200px)
-  #nav-button
-    display: block
-  nav
-    top: 0
-    margin: 0
-    right: -120vw
-    background: $grey
-    width: 100vw
-    height: 100vh
-    position: fixed
-    overflow: scroll
-    transition: .2s
-    &.open
-      right: 0
-      transition: .3s
-    > ul
-      margin: 0
-      padding: 20px
-      padding-bottom: 20px
-      right: auto
-      position: relative
-      width: 100vw
-      height: 100vh
-    li
-      display: block
-      clear: both
-    ul ul
-      display: block
-      position: static
-      li
-        margin-left: 20px
-        padding-left: 10px
-        border-left: solid 4px white
-    li:hover
-      background: $grey
-    li > *
-      font-size: 50px
-      display: inline-block
-      padding: 10px 0
-      vertical-align: middle
-    a
-      transform: translateZ(0)
-      position: relative
-      overflow: hidden
-    .active
-      background: $grey
-      &:hover
+    #nav-button
+        display: block
+    nav
+        top: 0
+        margin: 0
+        right: -120vw
         background: $grey
-      a
-        color: white
-    a
-      &:after
-        content: ''
-        position: absolute
-        right: 100%
-        left: 0
-        bottom: 0
-        background: white
-        height: 4px
-        transition: .3s ease-out
-      &:hover:after, &:focus:after, &:active:after
-        right: 0
-    .active > a:after
-      right: 0
-    > ul > li:last-child ul
-      margin-left: 0
-  article img
-    width: 100%
-  footer
-    h5, table
-      display: none
+        width: 100vw
+        height: 100vh
+        position: fixed
+        overflow: scroll
+        transition: .2s
+        &.open
+            right: 0
+            transition: .3s
+        > ul
+            margin: 0
+            padding: 20px
+            padding-bottom: 20px
+            right: auto
+            position: relative
+            width: 100vw
+            height: 100vh
+        li
+            display: block
+            clear: both
+        ul ul
+            display: block
+            position: static
+            li
+                margin-left: 20px
+                padding-left: 10px
+                border-left: solid 4px white
+        li:hover
+            background: $grey
+        li > *
+            font-size: 50px
+            display: inline-block
+            padding: 10px 0
+            vertical-align: middle
+        a
+            transform: translateZ(0)
+            position: relative
+            overflow: hidden
+        .active
+            background: $grey
+            &:hover
+                background: $grey
+            a
+                color: white
+        a
+            &:after
+                content: ''
+                position: absolute
+                right: 100%
+                left: 0
+                bottom: 0
+                background: white
+                height: 4px
+                transition: .3s ease-out
+            &:hover:after, &:focus:after, &:active:after
+                right: 0
+        .active > a:after
+            right: 0
+        > ul > li:last-child ul
+            margin-left: 0
+    article img
+        width: 100%
+    footer
+        h5, table
+            display: none
 
 @media (max-width: 850px)
-  header
-    position: static
-    padding-bottom: 20px
-    > img
-      display: block
-      z-index: 50
-  .banners, h3
-    display: none
-  .social
-    margin-left: 20px
-    display: block
-    li
-      display: inline-block
-      margin: 2px
-    img
-      height: 40px
-      width: 40px
-  h1
-    line-height: 1.2
-  h2
-    margin-left: 10px
-  nav li > *
-    font-size: 30px
-  .img-row img
-    width: 100%
+    header
+        position: static
+        padding-bottom: 20px
+        > img
+            display: block
+            z-index: 50
+    .banners, h3
+        display: none
+    .social
+        margin-left: 20px
+        display: block
+        li
+            display: inline-block
+            margin: 2px
+        img
+            height: 40px
+            width: 40px
+    h1
+        line-height: 1.2
+    h2
+        margin-left: 10px
+    nav li > *
+        font-size: 30px
+    .img-row img
+        width: 100%
 
 @media (min-width: 756px) and (max-width: 850px)
-  header
-    padding-right: 90px
+    header
+        padding-right: 90px
 
 @media (max-width: 585px)
-  tbody, tr
-    display: block
-    margin: 0 auto
-    width: 100%
-  td
-    display: block
-    width: 100%
+    tbody, tr
+        display: block
+        margin: 0 auto
+        width: 100%
+    td
+        display: block
+        width: 100%
