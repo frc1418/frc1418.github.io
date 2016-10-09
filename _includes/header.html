@@ -1,8 +1,8 @@
 <header>
     <a href="/"><img src="/assets/img/fist.svg"></a>
     <div>
-        <h2><a href="/">Vae Victis</a></h2>
-        <h3><a href="/">FRC Team 1418 - George Mason High School</a></h3>
+        <div><h2><a href="/">Vae Victis</a></h2></div>
+        <div><h3><a href="/">FRC Team 1418 - George Mason High School</a></h3></div>
     </div>
     <ul class="social">
         <li>
@@ -27,7 +27,8 @@
         </li>
     </ul>
     <div id="nav-button"><span></span><span></span><span></span></div>
-    <nav>
+    <!-- TODO: This is a messy solution to prevent the body from scrolling, and there's a slight potential for permanent window freeze. Find a better way to do this. -->
+    <nav onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/robots">Robots</a>
