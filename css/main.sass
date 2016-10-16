@@ -11,7 +11,7 @@ $basicchars: U+0000-00FF
 
 @font-face
     font-family: 'Adam'
-    src: url(../assets/font/adam.otf) format('opentype')
+    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.ttf) format('truetype')
     unicode-range: $basicchars
 
 
@@ -54,21 +54,13 @@ header
         *
             display: inline-block
             vertical-align: top
-        .header-group
-            width: 530px
         a img
             width: 180px
             margin-bottom: -4px
             cursor: pointer
     > a, h2 a, h3 a
         text-decoration: none
-    h2, h3
-        position: absolute
-        line-height: 0
-    h2
-        top: 65px
     h3
-        top: 130px
         margin-left: 25px
         letter-spacing: 1px
         margin-top: -10px
