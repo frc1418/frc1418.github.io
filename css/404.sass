@@ -7,16 +7,40 @@ html, body
     height: 100%
 body
     background-color: $grey
-    border-bottom: solid 5px $vaered
     height: 100vh
     display: flex
     justify-content: center
     align-items: center
+    flex-direction: column
 
 h1
-    color: $vaered
+    color: #222
     font-size: 30vw
     margin-bottom: -100px
+    span
+        color: $vaered
+        &::after
+            width: 280px
+            display: inline-block
+            content: ''
+            animation: 1s linear infinite cycle
+
+@-webkit-keyframes cycle
+    0%
+        content: '4'
+    100%
+        content: '0'
+
+@keyframes cycle
+    0%
+        content: '4'
+    100%
+        content: '0'
+
+h3
+    margin-top: 50px
+    font-size: 30px
+    color: #222
 
 a
     text-decoration: none

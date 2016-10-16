@@ -1,7 +1,7 @@
 ---
 ---
 
-@charset    'utf-8'
+@charset 'utf-8'
 
 $grey: #333
 $parafont: 'Roboto', sans-serif
@@ -54,27 +54,30 @@ header
         *
             display: inline-block
             vertical-align: top
+        .header-group
+            width: 530px
         a img
             width: 180px
             margin-bottom: -4px
             cursor: pointer
+    > a, h2 a, h3 a
+        text-decoration: none
+    h2, h3
+        position: absolute
+        line-height: 0
+    h2
+        top: 65px
+    h3
+        top: 130px
+        margin-left: 25px
+        letter-spacing: 1px
+        margin-top: -10px
 
 h2
-    position: relative
-    top: 0
     font-size: 100px
 
 h3
     font-size: 20px
-
-header > a, h2 a, h3 a
-    text-decoration: none
-
-header h3
-    margin-left: 25px
-    letter-spacing: 1px
-    position: relative
-    margin-top: -10px
 
 
 // Social buttons
@@ -104,12 +107,14 @@ header h3
 
 // Navigation menu
 #nav-button
+    background: #333
+    border: solid 20px #333
     display: none
-    width: 50px
-    height: 40px
+    width: 90px
+    height: 80px
     position: fixed
-    top: 20px
-    right: 20px
+    top: 0
+    right: 0
     transform: rotate(0)
     transition: .5s ease-in-out
     cursor: pointer
@@ -382,6 +387,12 @@ footer ul
         > img
             display: block
             z-index: 50
+        .header-group
+            width: auto
+        h2, h3
+            position: relative
+            line-height: 1
+            top: auto
     .banners, h3
         display: none
     .social
