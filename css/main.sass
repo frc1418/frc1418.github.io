@@ -11,7 +11,7 @@ $basicchars: U+0000-00FF
 
 @font-face
     font-family: 'Adam'
-    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.ttf) format('truetype')
+    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
     unicode-range: $basicchars
 
 
@@ -56,17 +56,19 @@ header
             vertical-align: top
         a img
             width: 180px
-            margin-bottom: -4px
+            margin-bottom: -2px
             cursor: pointer
     > a, h2 a, h3 a
         text-decoration: none
     h3
-        margin-left: 25px
+        margin:
+            left: 25px
+            top: 5px
         letter-spacing: 1px
-        margin-top: -10px
 
 h2
     font-size: 100px
+    line-height: .85
 
 h3
     font-size: 20px
@@ -78,7 +80,9 @@ h3
     cursor: default
     list-style: none
     display: inline-block
-    margin-left: 5px
+    margin:
+        left: 5px
+        top: 3px
     li
         margin: -5px
     a
@@ -154,7 +158,7 @@ nav
         text-decoration: none
         display: block
         color: white
-        padding: 12px 15px 8px
+        padding: 12px 15px
     span
         color: #ccc
     li
@@ -190,7 +194,7 @@ nav
 
 .button
     font-family: $titlefont
-    padding: 12px 10px 8px
+    padding: 12px 10px
     text-align: right
     margin: 20px
     text-decoration: none
