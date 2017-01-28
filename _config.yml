@@ -7,7 +7,6 @@ twitter_username: robotics1418
 github_username:  frc1418
 
 # Build settings
-#exclude: [vendor]
 sass:
     style: compressed
 exclude:
@@ -17,6 +16,7 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - package.json
+    - ruby/
 include:
     - _pages
 gems:
