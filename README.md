@@ -4,16 +4,17 @@ This repository contains the content that is served on [1418.team](http://1418.t
 This website uses the Jekyll templating system and is hosted as a GitHub page out of this repository.
 
 ## Dependencies
-* Ruby (should come with OS)
-* bundler (should come with Ruby)
-* [Jekyll](https://jekyllrb.com)
+* Ruby
+* `bundler` and [`jekyll`](https://jekyllrb.com):
+
+        gem install bundler jekyll
 
 ## Setup
 1. While in cloned folder, run:
 
         bundle install
 
-2. To start Jekyll, run:
+2. Then, to start Jekyll, run:
 
         bundle exec jekyll serve
 
