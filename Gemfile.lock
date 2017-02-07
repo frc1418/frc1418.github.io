@@ -21,6 +21,7 @@ GEM
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
+    ffi (1.9.14-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
     github-pages (94)
@@ -107,6 +108,9 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nokogiri (1.6.8-x64-mingw32)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     octopress-autoprefixer (2.0.0)
@@ -136,13 +140,14 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   github-pages
   octopress-autoprefixer
 
 RUBY VERSION
-   ruby 2.2.2p95
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.14.3
