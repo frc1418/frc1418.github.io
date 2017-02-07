@@ -3,6 +3,7 @@ _site
 .jekyll-metadata
 .DS_Store
 .bundle
+ruby
 
 # Emacs autosave files
 *~
