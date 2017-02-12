@@ -11,7 +11,7 @@ if (window.innerWidth >= 850) {
     };
 }
 
-var greetings = ['BIENVENIDOS', '歡迎', 'BIENVENUE', 'WILLKOMMEN', 'أهلاً و سهل', 'TERVETULOA', 'WELKOM', 'VELKOMMEN', 'BONVENON', 'FI\'I', 'ようこそ', 'SELAMAT DATANG', 'ÜDVÖZLET', 'ברוך הבא', 'स्वागतम्', 'PE\'EL', 'CREOSO'];
+var greetings = ['BIENVENIDOS', '欢迎', 'BIENVENUE', 'WILLKOMMEN', 'أهلاً و سهل', 'TERVETULOA', 'CREOSO', 'WELKOM', 'VELKOMMEN', 'BONVENON', 'FI\'I', 'ようこそ', 'SELAMAT DATANG', 'BEM-VINDO', 'PE\'EL', 'ÜDVÖZLET', 'ברוך הבא', 'स्वागतम्', 'WELCOME'];
 
 var counter = 0;
 setInterval(function() {
@@ -21,4 +21,4 @@ setInterval(function() {
     } else {
         counter += 1;
     }
-}, 3000);
+}, 1500);
