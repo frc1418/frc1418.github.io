@@ -48,8 +48,16 @@ h1, h2, h3, h5, header, .jumbotron, .banners
     font-family: $titlefont
 
 header
+    -webkit-transition: height 2s
+    transition: height 2s
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+    width: 100%
     padding: 15px 15px 0
     background: $grey
+
     >
         *
             display: inline-block
@@ -73,6 +81,24 @@ h2
 h3
     font-size: 20px
 
+header.shrink
+    //min-height: 35px
+    //display: none
+    -webkit-transition: height 20s
+    transition: height 20s
+    min-height: 80px
+    .social
+        display: none
+    //nav
+    //    display: none
+    #logo
+        height: 50px
+    .header-group
+        display: none
+    nav
+        position: relative
+        margin-bottom: 0
+        margin-top: 2
 
 // Social buttons
 .social
@@ -205,6 +231,7 @@ article
     padding: 40px
     background: #222
     line-height: 1.8
+    margin-top: 60px
     h1
         font-size: 60px
 
