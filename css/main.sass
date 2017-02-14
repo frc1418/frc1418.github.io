@@ -48,8 +48,16 @@ h1, h2, h3, h5, header, .jumbotron, .banners
     font-family: $titlefont
 
 header
+    -webkit-transition: height 2s
+    transition: height 2s
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+    width: 100%
     padding: 15px 15px 0
     background: $grey
+
     >
         *
             display: inline-block
@@ -73,6 +81,90 @@ h2
 h3
     font-size: 20px
 
+header.shrink
+    //min-height: 35px
+    //display: none
+    -webkit-transition: height 20s
+    transition: height 20s
+    min-height: 80px
+    .social
+        display: none
+    //nav
+    //    display: none
+    #logo
+        height: 50px
+    .header-group
+        display: none
+    #nav-button
+        display: block
+    nav
+        top: 0
+        margin: 0
+        //right: -120vw
+        left: 100vw
+        background: $grey
+        width: 100vw
+        height: 100vh
+        position: fixed
+        overflow: scroll
+        transition: .2s
+        &.open
+            //right: 0
+            left: 0
+            transition: .3s
+        > ul
+            margin: 0
+            padding: 20px
+            padding-bottom: 20px
+            right: auto
+            position: relative
+            width: 100vw
+            height: 100vh
+        li
+            display: block
+            clear: both
+            &:last-of-type
+                margin-bottom: 15px
+        ul ul
+            display: block
+            position: static
+            li
+                margin-left: 20px
+                padding-left: 10px
+                border-left: solid 4px white
+        li:hover
+            background: $grey
+        li > *
+            font-size: 50px
+            display: inline-block
+            padding: 10px 0
+            vertical-align: middle
+        a
+            transform: translateZ(0)
+            position: relative
+            overflow: hidden
+        .active
+            background: $grey
+            &:hover
+                background: $grey
+            a
+                color: white
+        a
+            &:after
+                content: ''
+                position: absolute
+                right: 100%
+                left: 0
+                bottom: 0
+                background: white
+                height: 4px
+                transition: .3s ease-out
+            &:hover:after, &:focus:after, &:active:after
+                right: 0
+        .active:after
+            right: 0
+        > ul > li:last-child ul
+            margin-left: 0
 
 // Social buttons
 .social
@@ -205,6 +297,7 @@ article
     padding: 40px
     background: #222
     line-height: 1.8
+    margin-top: 60px
     h1
         font-size: 60px
 
