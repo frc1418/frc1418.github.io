@@ -7,6 +7,7 @@ $grey: #333
 $parafont: 'Roboto', sans-serif
 $titlefont: 'Adam', 'Roboto', sans-serif
 $vaered: #d12727
+$lightvaered: #D94F4F
 $basicchars: U+0000-00FF
 
 @font-face
@@ -39,6 +40,12 @@ body
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 
+::-moz-selection
+    background-color: $vaered
+
+::selection
+    background-color: $vaered
+
 a
     color: inherit
     &:hover
@@ -64,7 +71,7 @@ header
     >
         *
             display: inline-block
-            vertical-align: middle
+            vertical-align: top
         a img
             width: 180px
             margin-bottom: -2px
@@ -85,21 +92,15 @@ h3
     font-size: 20px
 
 header.shrink
-    //min-height: 35px
-    //display: none
-    -webkit-transition: height 20s
-    transition: height 20s
+    transition: 20s height
     min-height: 80px
     .social
         display: none
-    //nav
-    //    display: none
     #logo
         height: 50px
-    .header-group
-
-        //height: 50px
-    .title
+        transform: rotate(-90deg)
+        transition: .1s
+    .title, h3
         display: none
     .title-simple
         display: inline
@@ -108,12 +109,12 @@ header.shrink
             text-decoration: none
     .header-group
         h5
-            margin-left: 0px
-            top: 10px
+            font-size: 50px
+            margin-left: -78px
             vertical-align: middle
+            position: relative
     nav
         position: relative
-        //margin-bottom: 0px
         top: 6px
 
 
@@ -267,7 +268,7 @@ article
     max-width: 10in
     display: block
     margin: 5px auto
-	
+
 .img-row2, table, .iframe-ext-wrapper
     max-width: 10in
     display: block
@@ -290,8 +291,8 @@ article > img, .img-row, table
 
 .img-row2 img
     width: 47%
-    margin: 1%	
-	
+    margin: 1%
+
 .iframe-wrapper
     position: relative
     padding-bottom: 56.25%
