@@ -20,6 +20,7 @@ exclude:
     - vendor
     - vendor/cache
     - ruby
+    - .bundle
 include:
     - _pages
 gems:
