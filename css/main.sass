@@ -7,6 +7,7 @@ $grey: #333
 $parafont: 'Roboto', sans-serif
 $titlefont: 'Adam', 'Roboto', sans-serif
 $vaered: #d12727
+$lightvaered: #D94F4F
 $basicchars: U+0000-00FF
 
 @font-face
@@ -39,6 +40,12 @@ body
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 
+::-moz-selection
+    background-color: $vaered
+
+::selection
+    background-color: $vaered
+
 a
     color: inherit
     &:hover
@@ -48,8 +55,19 @@ h1, h2, h3, h5, header, .jumbotron, .banners
     font-family: $titlefont
 
 header
+    -webkit-transition: height 2s
+    transition: height 2s
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+    width: 100%
     padding: 15px 15px 0
     background: $grey
+
+    .title-simple
+        display: none
+
     >
         *
             display: inline-block
@@ -72,6 +90,32 @@ h2
 
 h3
     font-size: 20px
+
+header.shrink
+    transition: 20s height
+    min-height: 80px
+    .social
+        display: none
+    #logo
+        height: 50px
+        transform: rotate(-90deg)
+        transition: .1s
+    .title, h3
+        display: none
+    .title-simple
+        display: inline
+        a
+            color: white
+            text-decoration: none
+    .header-group
+        h5
+            font-size: 50px
+            margin-left: -78px
+            vertical-align: middle
+            position: relative
+    nav
+        position: relative
+        top: 6px
 
 
 // Social buttons
@@ -205,6 +249,7 @@ article
     padding: 40px
     background: #222
     line-height: 1.8
+    margin-top: 60px
     h1
         font-size: 60px
 
@@ -224,6 +269,11 @@ article
     display: block
     margin: 5px auto
 
+.img-row-2, table, .iframe-ext-wrapper
+    max-width: 10in
+    display: block
+    margin: 5px auto
+
 iframe
     display: block
     margin: 20px auto
@@ -237,6 +287,10 @@ article > img, .img-row, table
 
 .img-row img
     width: 31%
+    margin: 1%
+
+.img-row-2 img
+    width: 47%
     margin: 1%
 
 .iframe-wrapper

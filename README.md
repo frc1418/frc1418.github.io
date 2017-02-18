@@ -9,6 +9,10 @@ This website uses the Jekyll templating system and is hosted as a GitHub page ou
 
         gem install bundler jekyll
 
+    or locally:
+
+        gem install bundler jekyll --user
+
 ## Setup
 1. While in cloned folder, run:
 

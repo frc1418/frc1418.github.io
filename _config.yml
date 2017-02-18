@@ -17,6 +17,10 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - package.json
+    - vendor
+    - vendor/cache
+    - ruby
+    - .bundle
 include:
     - _pages
 gems:
