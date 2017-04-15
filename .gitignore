@@ -5,6 +5,7 @@ _site
 .bundle
 ruby
 openssl.patch
+vendor
 
 # Emacs autosave files
 *~

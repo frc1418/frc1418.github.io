@@ -23,7 +23,6 @@ $basicchars: U+0000-00FF
     src: url(../assets/font/roboto.woff2) format('woff2')
     unicode-range: $basicchars
 
-
 *
     margin: 0
     padding: 0
@@ -54,20 +53,32 @@ a
 h1, h2, h3, h5, header, .jumbotron, .banners
     font-family: $titlefont
 
+#skip-container
+    position: absolute
+    z-index: -1
+    clip: rect(1px, 1px, 1px, 1px)
+    &:focus
+        clip: auto
+        visibility: auto
+        z-index: 2000
+
 header
-    -webkit-transition: height 2s
-    transition: height 2s
+    -webkit-transition: height 0.2s
+    transition: height 0.2s
     position: fixed
     top: 0
     left: 0
     z-index: 1000
+    height: 140px
     width: 100%
     padding: 15px 15px 0
     background: $grey
 
     .title-simple
         display: none
-
+    #logo
+        -webkit-transition: 0.2s
+        transition: 0.2s
     >
         *
             display: inline-block
@@ -92,14 +103,16 @@ h3
     font-size: 20px
 
 header.shrink
-    transition: 20s height
+    -webkit-transition: height 0.2s
+    transition: height 0.2s
     height: 80px
     .social
         display: none
     #logo
-        height: 50px
-        transform: rotate(-90deg)
-        transition: .1s
+        transform: rotate(-90deg) scale(0.4)
+        -webkit-transition: 0.2s
+        transition: 0.2s
+        margin-top: -2.3em
     .title, h3
         display: none
     .title-simple
@@ -114,8 +127,8 @@ header.shrink
             vertical-align: middle
             position: relative
     nav
-        position: relative
-        top: 6px
+        position: fixed
+        top: -17px
 
 
 // Social buttons
@@ -156,6 +169,7 @@ header.shrink
     top: 0
     right: 0
     transform: rotate(0)
+    -webkit-transition: .5s ease-in-out
     transition: .5s ease-in-out
     cursor: pointer
     z-index: 200
@@ -168,6 +182,7 @@ header.shrink
         opacity: 1
         left: 0
         transform: rotate(0)
+        -webkit-transition: .25s ease-in-out
         transition: .25s ease-in-out
         &:nth-child(1)
             top: 0
@@ -245,7 +260,7 @@ nav
     background: $vaered
     color: white
 
-article
+main
     padding: 40px
     background: #222
     line-height: 1.8
@@ -258,7 +273,7 @@ h5, p
     display: block
     margin: 5px auto
 
-article
+main
     ul, > img
         max-width: 10in
         display: block
@@ -282,7 +297,7 @@ iframe
 td
     width: 30%
 
-article > img, .img-row, table
+main > img, .img-row, table
     margin: 20px auto
 
 .img-row img
@@ -309,14 +324,14 @@ article > img, .img-row, table
 table img
     width: 100%
 
-article h1
+main h1
     text-align: center
 
 h5
     margin-top: 30px
     font-size: 30px
 
-article
+main
     ul
         padding-left: 20px
     li
@@ -374,9 +389,11 @@ footer ul
         height: 100vh
         position: fixed
         overflow: scroll
+        -webkit-transition: .2s
         transition: .2s
         &.open
             right: 0
+            -webkit-transition: .3s
             transition: .3s
         > ul
             margin: 0
@@ -424,6 +441,7 @@ footer ul
                 bottom: 0
                 background: white
                 height: 4px
+                -webkit-transition: .3s ease-out
                 transition: .3s ease-out
             &:hover:after, &:focus:after, &:active:after
                 right: 0
@@ -431,7 +449,7 @@ footer ul
             right: 0
         > ul > li:last-child ul
             margin-left: 0
-    article img
+    main img
         width: 100%
     footer
         h5, table
