@@ -7,7 +7,6 @@ twitter_username: robotics1418
 github_username:  frc1418
 
 # Build settings
-#exclude: [vendor]
 sass:
     style: compressed
 exclude:
@@ -23,5 +22,5 @@ exclude:
     - .bundle
 include:
     - _pages
-gems:
+plugins:
     - octopress-autoprefixer
