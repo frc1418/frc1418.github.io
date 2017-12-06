@@ -53,11 +53,14 @@ a
 h1, h2, h3, h5, header, .jumbotron, .banners
     font-family: $titlefont
 
-.content-skip
-    visibility: invisible
-    z-index: 200
+#skip-container
+    position: absolute
+    z-index: -1
+    clip: rect(1px, 1px, 1px, 1px)
     &:focus
-        visibility: visible
+        clip: auto
+        visibility: auto
+        z-index: 2000
 
 header
     -webkit-transition: height 0.2s
