@@ -1,15 +1,18 @@
 // Manages opening and closing of menu.
 var navButton = document.getElementById('nav-button'),
-	nav = document.getElementsByTagName('nav')[0];
+	nav = document.getElementsByTagName('nav')[0],
+    	body = document.getElementsByTagName('body')[0];
 
 // Manage menu opening & closing
 navButton.onclick = function() {
 	if (navButton.className === 'open') {
 		navButton.className = '';
 		nav.className = '';
+		body.style.overflow = null;
 	} else {
 		navButton.className = 'open';
 		nav.className = 'open';
+		body.style.overflow = 'hidden';
 	}
 };
 
