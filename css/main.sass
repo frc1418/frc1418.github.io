@@ -106,6 +106,7 @@ header.shrink
     -webkit-transition: height 0.2s
     transition: height 0.2s
     height: 80px
+    position: fixed
     .social
         display: none
     #logo
@@ -128,7 +129,11 @@ header.shrink
             position: relative
     nav
         position: fixed
-        top: -17px
+
+@media (min-width: 1200px)
+    header.shrink
+        nav
+            top: -17px
 
 
 // Social buttons
@@ -405,7 +410,6 @@ footer ul
             right: auto
             position: relative
             width: 100vw
-            height: 100vh
         li
             display: block
             clear: both
