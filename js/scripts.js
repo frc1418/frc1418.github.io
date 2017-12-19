@@ -2,6 +2,7 @@
 var navButton = document.getElementById('nav-button'),
 	nav = document.getElementsByTagName('nav')[0],
     	body = document.getElementsByTagName('body')[0];
+			header = document.getElementsByTagName('header')[0];
 
 // Manage menu opening & closing
 navButton.onclick = function() {
@@ -27,7 +28,21 @@ body.onresize = function() {
 		}
 	}
 };
-
+//Shrink header on mobile and resized window
+body.onload = function() {
+	if (body.clientWidth < 1200) {
+    header.className = 'shrink';
+  } else {
+    header.className = '';
+  }
+}
+body.onresize = function() {
+	if (body.clientWidth < 1200) {
+    header.className = 'shrink';
+  } else {
+    header.className = '';
+  }
+}
 // Go through all the nav items; if the nav item is currently active give it the .active class to highlight it
 var navItems = document.querySelectorAll('nav a');
 for (i = 0; i < navItems.length; i++) {
