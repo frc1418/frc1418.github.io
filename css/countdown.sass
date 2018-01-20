@@ -1,5 +1,8 @@
 ---
 ---
+
+$vaered: #d12727
+
 @font-face
     font-family: 'Adam'
     src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.ttf) format('opentype')
@@ -23,6 +26,12 @@ body
     align-items: center
     flex-direction: column
     text-align: center
+
+::-moz-selection
+    background-color: $vaered
+
+::selection
+    background-color: $vaered
 
 h1
     margin-bottom: 20px
