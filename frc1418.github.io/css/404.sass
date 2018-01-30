@@ -1,0 +1,61 @@
+---
+---
+$grey: #333
+$vaered: #d12727
+$basicchars: U+0000-00FF
+
+@font-face
+    font-family: 'Adam'
+    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
+    unicode-range: $basicchars
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    height: 100%
+
+body
+    font-family: 'Adam', 'Roboto', sans-serif
+    background-color: $grey
+    color: #222
+    height: 100vh
+    padding: 50px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+h1
+    font-size: 30vw
+    margin: 0
+    a
+        color: #222
+        text-decoration: none
+    span
+        color: $vaered
+        display: inline-block
+        &::after
+            width: 22vw
+            display: inline-block
+            content: '4'
+            animation: 1s linear infinite cycle
+
+@-webkit-keyframes cycle
+    0%
+        content: '4'
+    100%
+        content: '0'
+
+@keyframes cycle
+    0%
+        content: '4'
+    100%
+        content: '0'
+
+h3
+    font-size: 30px
+    max-width: 7.5in
