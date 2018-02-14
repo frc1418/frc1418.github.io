@@ -11,11 +11,11 @@ if (window.innerWidth >= 850) {
     };
 }
 
-var greetings = ['BIENVENIDOS', '欢迎', 'BIENVENUE', 'WILLKOMMEN', 'أهلاً و سهل', 'TERVETULOA', 'CREOSO', 'WELKOM', 'VELKOMMEN', 'BONVENON', 'FI\'I', 'ようこそ', 'SELAMAT DATANG', 'BEM-VINDO', 'PE\'EL', 'ÜDVÖZLET', 'ברוך הבא', 'स्वागतम्', 'WELCOME'];
+var greetings = ['¡BIENVENIDOS!', '欢迎!', 'BIENVENUE !', 'WILLKOMMEN!', '!أهلاً و سهل', 'TERVETULOA!', 'CREOSO!', 'WELKOM!', 'VELKOMMEN!', 'BONVENON!', 'FI\'I!', 'ようこそ', 'SELAMAT DATANG!', 'BEM-VINDO!', 'PE\'EL!', 'ÜDVÖZLET!', 'ברוך הבא', 'स्वागतम्!', 'WELCOME!'];
 
 var counter = 0;
 setInterval(function() {
-    document.getElementById('welcome').innerHTML = greetings[counter] + '!';
+    document.getElementById('welcome').innerHTML = greetings[counter];
     if (counter >= greetings.length - 1) {
         counter = 0;
     } else {
