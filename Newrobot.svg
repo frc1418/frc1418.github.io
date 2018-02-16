@@ -1,18 +1,21 @@
 <svg width="400" height="400">
-    <g transform="rotate(-35.5)">
-  <rect x="5" y="160" width="12.25" height="172" stroke="grey" stroke-width="3"/>
+  <!---The arms and crane--->
+  <g transform="rotate(-35.5)">
+      <rect x="5" y="160" width="12.25" height="172" stroke="grey" stroke-width="3"/>
+      <rect x="17.25" y="240" width="30.5" height="12.25" stroke="grey" stroke-width="3"/>
   <g transform="rotate(35.5)">
   <g transform="rotate(-60)">
-  <rect x="-15" y="120" width="12.25" height="250" stroke="grey" stroke-width="3"/>
-  <polygon points="-2,370 -40,370 -40,395 -30,395" stroke="grey" stroke-width="3"/>
+      <rect x="-15" y="120" width="12.25" height="250" stroke="grey" stroke-width="3"/>
+      <polygon points="-2,370 -40,370 -40,395 -30,395" stroke="grey" stroke-width="3"/>
   <g transform="rotate(60)">
-    <rect x="95" y="60" width="12.25" height="200" stroke="grey" stroke-width="3"/>
-    <circle cx="110" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
+  <rect x="95" y="60" width="12.25" height="200" stroke="grey" stroke-width="3"/>
+  <!---The wheels--->
+  <circle cx="110" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
   <circle cx="150" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
   <circle cx="190" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
   <circle cx="230" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="black"/>
   <rect x="90" y="256.125" width="160" height="20" stroke="grey" stroke-width="3"/>
-  <text x="160" y="271" font-family="lucida console" font-size="14" fill="red">
+  <text x="154" y="271" font-family="roboto" font-size="15" fill="red">
     1418
   </text>
 </svg>
