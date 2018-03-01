@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="400" height="400">
+  <!---The arms and crane--->
+  <g transform="rotate(-35.5)">
+      <rect x="5" y="160" width="12.25" height="172" stroke="silver" stroke-width="3" fill/>
+      <rect x="-8" y="200" rx="6" ry="6" width="13" height="50" stroke="silver" stroke-width="3"/>
+      <rect x="-8" y="250" rx="6" ry="6" width="13" height="50" stroke="silver" stroke-width="3"/>
+      <rect x="17.25" y="240" width="30.5" height="12.25" stroke="silver" stroke-width="3"/>
+  <g transform="rotate(35.5)">
+  <g transform="rotate(-60)">
+      <rect x="-15" y="120" width="12.25" height="250" stroke="silver" stroke-width="3"/>
+      <polygon points="-2,370 -40,370 -40,395 -30,395" stroke="silver" stroke-width="3"/>
+      <!---Hook TBA <!---Mfirstpx, firstpy Ccontrol1x,control2y secondpx,secondpy control2x,control2y--->
+      <!---<path d="M-3.75 225 T 2.75 235, 16 225" stroke="black" stroke-width="3" fill="transparent"/>--->
+  <g transform="rotate(60)">
+  <rect x="95" y="60" width="12.25" height="200" stroke="silver" stroke-width="3"/>
+  <!---The wheels--->
+  <circle cx="110" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
+  <circle cx="150" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
+  <circle cx="190" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="red"/>
+  <circle cx="230" cy="266.125" r="14" stroke="grey" stroke-width="3" fill="black"/>
+  <rect x="90" y="256.125" width="160" height="20" stroke="silver" stroke-width="3"/>
+  <text x="154" y="271" font-family="roboto" font-size="15" fill="red">
+    1418
+  </text>
+  <!---<img xlink:href="https://openclipart.org/download/248870/GearsType4Teeth40.svg" x="100" y="100" width="75px"/>--->
+</svg>
