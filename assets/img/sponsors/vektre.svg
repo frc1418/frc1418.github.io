@@ -1,4 +1,5 @@
 <?xml version="1.0" standalone="no"?>
+<<<<<<< HEAD
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +8,9 @@
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
+=======
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 520">
+>>>>>>> f729b605965226fd96b2e7866af2d7399d59754f
 <g transform="translate(0,520) scale(0.1,-0.1)"
 fill="#ffffff" stroke="none">
 <path d="M1371 4919 c-171 -20 -307 -76 -394 -162 -63 -63 -100 -130 -129
