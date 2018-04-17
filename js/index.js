@@ -15,7 +15,7 @@ var greetings = ['¡BIENVENIDOS!', '欢迎!', 'BIENVENUE !', 'WILLKOMMEN!', '!أ
 
 var counter = 0;
 setInterval(function() {
-    document.getElementById('welcome').innerHTML = greetings[counter];
+    document.getElementById('welcome').textContent = greetings[counter];
     if (counter >= greetings.length - 1) {
         counter = 0;
     } else {
