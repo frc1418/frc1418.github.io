@@ -57,9 +57,9 @@ setInterval(function() {
 	if (seconds.toString().length < 2) seconds = '0' + seconds.toString();
 
 	// Display times left
-	clock.title.innerHTML = 'Time left until ' + events[0].name + ':';
-	clock.d.innerHTML = days;
-	clock.hr.innerHTML = hours;
-	clock.min.innerHTML = minutes;
-	clock.s.innerHTML = seconds;
+	clock.title.textContent = 'Time left until ' + events[0].name + ':';
+	clock.d.textContent = days;
+	clock.hr.textContent = hours;
+	clock.min.textContent = minutes;
+	clock.s.textContent = seconds;
 }, 100);
