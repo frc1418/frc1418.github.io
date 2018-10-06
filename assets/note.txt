@@ -1,0 +1,2 @@
+To anyone who finds this:
+It's probably okay to delete the `img` link in this directory. I only kept it here for backward compatibility since the /images directory was previously here and I didn't want to break any existing links. If you're reasing this enough time has passed that it probably doesn't matter anymore.
