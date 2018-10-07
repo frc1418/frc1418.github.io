@@ -1,9 +1,51 @@
 var colleges = [
     {
-        name: 'WPI',
+        name: 'Worcester Polytechnic Institute',
         position: {
             lat: 42.2746,
-            lng: -71.8063
+            lng: -71.8063,
+        },
+    },
+    {
+        name: 'University of Virginia',
+        position: {
+            lat: 38.0336,
+            lng: -78.5080,
+        }
+    },
+    {
+        name: 'William & Mary',
+        position: {
+            lat: 37.2717,
+            lng: -76.7134,
+        }
+    },
+    {
+        name: 'Pennsylvania State University',
+        position: {
+            lat: 40.7982,
+            lng: -77.8599,
+        },
+    },
+    {
+        name: 'John\'s Hopkins University',
+        position: {
+            lat: 39.3299,
+            lng: -76.6205,
+        }
+    },
+    {
+        name: 'Massachusetts Institute of Technology',
+        position: {
+            lat: 42.3601,
+            lng: -71.0942
+        }
+    },
+    {
+        name: 'University of California, Los Angeles',
+        position: {
+            lat: 34.0689,
+            lng: -118.4452,
         },
     }
 ];
