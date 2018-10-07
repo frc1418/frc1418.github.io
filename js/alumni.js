@@ -11,20 +11,20 @@ function initMap() { // Initialize Google Map
         streetViewControl: false,
         rotateControl: false,
         fullscreenControl: false,
-        backgroundColor: '#173340',
+        backgroundColor: '#333333',
         styles: [
             {
                 featureType: 'water',
                 elementType: 'geometry',
                 stylers: [{
-                    color: '#193341'
+                    color: '#222222'
                 }]
             },
             {
                 featureType: 'landscape',
                 elementType: 'geometry',
                 stylers: [{
-                    color: '#2c5a71'
+                    color: '#444444'
                 }]
             },
             {
@@ -32,7 +32,7 @@ function initMap() { // Initialize Google Map
                 elementType: 'geometry',
                 stylers: [
                     {
-                        color: '#29768a'
+                        color: '#444444'
                     },
                     {
                         lightness: -37
@@ -43,14 +43,7 @@ function initMap() { // Initialize Google Map
                 featureType: 'poi',
                 elementType: 'geometry',
                 stylers: [{
-                    color: '#406d80'
-                }]
-            },
-            {
-                featureType: 'transit',
-                elementType: 'geometry',
-                stylers: [{
-                    color: '#406d80'
+                    color: '#666666'
                 }]
             },
             {
@@ -60,7 +53,7 @@ function initMap() { // Initialize Google Map
                         visibility: 'on'
                     },
                     {
-                        color: '#3e606f'
+                        color: '#666666'
                     },
                     {
                         weight: 2
@@ -84,7 +77,7 @@ function initMap() { // Initialize Google Map
                         weight: 0.6
                     },
                     {
-                        color: '#1a3541'
+                        color: '#d12727'
                     }
                 ]
             },
@@ -98,7 +91,7 @@ function initMap() { // Initialize Google Map
                 featureType: 'poi.park',
                 elementType: 'geometry',
                 stylers: [{
-                    color: '#2c5a71'
+                    color: '#333333'
                 }]
             }
         ]
