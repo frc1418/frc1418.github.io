@@ -1,4 +1,15 @@
-function initMap() { // Initialize Google Map
+var colleges = [
+    {
+        name: 'WPI',
+        position: {
+            lat: 42.2746,
+            lng: -71.8063
+        },
+    }
+];
+
+// Called by Maps API upon loading.
+function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { // Define Map Settings
         center: {
             lat: 35,
@@ -96,4 +107,11 @@ function initMap() { // Initialize Google Map
             }
         ]
     });
+
+    for (college of colleges) {
+        new google.maps.Marker({
+            position: college.position,
+            title: college.name,
+        }).setMap(map);
+    }
 }
