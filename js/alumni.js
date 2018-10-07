@@ -1,11 +1,10 @@
-
 function initMap() { // Initialize Google Map
     map = new google.maps.Map(document.getElementById('map'), { // Define Map Settings
         center: {
-            lat: parseFloat(params.get('lat')) || 30,
-            lng: parseFloat(params.get('lng')) || 0
+            lat: 30,
+            lng: 0
         },
-        zoom: parseInt(params.get('zoom')) || 2,
+        zoom: 3,
         disableDefaultUI: true,
         zoomControl: true,
         mapTypeControl: false,
