@@ -29,4 +29,4 @@ This website uses the Jekyll templating system and is hosted as a GitHub page ou
 * [Carter Fendley](https://github.com/CarterFendley) - Code
 
 ## License
-This software is protected under the MIT license. Basically, do whatever you want as long as you give credit where credit is due and don't hold us liable for anything that happens. More information can be found in [`LICENSE`](LICENSE).
+This software is protected under the [MIT license](LICENSE). You may reuse this code as long as you provide credit where it's due and don't hold us liable for anything that happens. However, we would prefer that other teams take the time to develop their own websites rather than stealing ours entirely or in substantial part.
