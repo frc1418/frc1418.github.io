@@ -47,7 +47,14 @@ var colleges = [
             lat: 34.0689,
             lng: -118.4452,
         },
-    }
+    },
+    {
+        name: 'Yale University',
+        position: {
+            lat: 41.3163,
+            lng: -72.9223,
+        },
+    },
 ];
 
 // Called by Maps API upon loading.
