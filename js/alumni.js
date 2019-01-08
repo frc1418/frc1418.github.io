@@ -55,6 +55,34 @@ var colleges = [
             lng: -72.9223,
         },
     },
+    {
+        name: 'Virginia Tech',
+        position: {
+            lat: 37.2284,
+            lng: -80.4234,
+        },
+    },
+    {
+        name: 'Virginia Commonwealth University',
+        position: {
+            lat: 37.5495,
+            lng: -77.4510,
+        },
+    },
+    {
+        name: 'Michigan State University',
+        position: {
+            lat: 42.7018,
+            lng: -84.4822,
+        },
+    },
+    {
+        name: 'Cornell University',
+        position: {
+            lat: 42.4534,
+            lng: -76.4735,
+        },
+    },
 ];
 
 // Called by Maps API upon loading.
