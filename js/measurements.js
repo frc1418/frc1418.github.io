@@ -15,10 +15,8 @@ for (unit of UNITS) {
 select.onchange = function() {
     for (measurement of elem_measurements.getElementsByClassName('measurement')) {
         var multiplier = MULTIPLIERS[UNITS.indexOf(select.value)];
-        console.log(measurement.attributes.magnitude.value);
-        console.log(multiplier * measurement.attributes.magnitude.value);
         measurement.textContent = measurement.attributes.magnitude.value * multiplier;
     }
 }
 elem_unit.appendChild(select);
-select.value = 'meters';
+select.onchange();
