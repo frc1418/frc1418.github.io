@@ -21,4 +21,4 @@ select.onchange = function() {
     }
 }
 elem_unit.appendChild(select);
-
+select.value = 'meters';
