@@ -7,14 +7,14 @@ stylesheets:
 - powerup
 - fixedbackground
 description: Our robot and the challenge for the 2018 season
+year: 2018
 ---
 <main>
     <h1>2018 Robot</h1>
     <ul class="banners">
-        <li><img src="/images/first.svg">2018<br> Northern Virginia Judges' Award</li>
-        <li><img src="/images/first.svg">2018<br> Greater DC Innovation in Control</li>
-        <li><img src="/images/first.svg">2018<br> FIRST Dean's List Finalist Award</li>
-        <li><img src="/images/first.svg">2018<br> FIRST Dean's List Award</li>
+        {% for banner in page.banners %}
+            <li><img src="/images/first.svg">{{ page.year }}<br> {{ banner.award }}</li>
+        {% endfor %}
     </ul>
     <img src="/images/robots/2018/ROBTWO.JPG" alt="Our current robot (side view).">
     <img src="/images/robots/2018/ROBFOUR.JPG" alt="This shows us working on an earlier version of our robot.">
