@@ -5,12 +5,14 @@ permalink: /robot/2014
 stylesheets:
 - banners
 description: Our robot and the challenge for the 2014 season
+year: 2014
 ---
 <main>
     <h1>2014 Robot</h1>
     <ul class="banners">
-        <li><img src="/images/first.svg">2014 Woodie Flowers Finalist</li>
-        <li><img src="/images/first.svg">2014 Industrial Design (Virginia)</li>
+        {% for banner in page.banners %}
+            <li><img src="/images/first.svg">{{ page.year }}<br> {{ banner.award }}</li>
+        {% endfor %}
     </ul>
     <p>The FIRST challenge for this year was called Aerial Assist. The challenge included throwing and catching a large ball. You got points for throwing, catching, and scoring with the ball. For more information, see the <a href="https://www.youtube.com/watch?v=oxp4dkMQ1Vo">official game animation</a>.</p>
     <h5>Design</h5>

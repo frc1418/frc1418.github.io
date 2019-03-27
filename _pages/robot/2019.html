@@ -10,13 +10,14 @@ stylesheets:
 scripts:
 - measurements
 description: Our robot and the challenge for the 2019 season
+year: 2019
 ---
 <main>
     <h1>2019 Robot</h1>
     <ul class="banners">
-        <li><img src="/images/first.svg">2019<br> Oxon Hill Event Winners</li>
-        <li><img src="/images/first.svg">2019<br> Oxon Hill Innovation in Control</li>
-        <li><img src="/images/first.svg">2019<br> Haymarket Virginia Excellence in Engineering</li>
+        {% for banner in page.banners %}
+            <li><img src="/images/first.svg">{{ page.year }}<br> {{ banner.award }}</li>
+        {% endfor %}
     </ul>
     <img src="/images/robots/2019/2019-profile.JPG" alt="Our current robot (side view).">
     <img src="/images/robots/2019/2019-work.JPG" alt="This shows us working on our robot.">
