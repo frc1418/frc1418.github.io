@@ -1,8 +1,3 @@
-PATH
-  remote: /Users/lestera/Desktop/banner-locator
-  specs:
-    banner-locator (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,6 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     autoprefixer-rails (9.5.0)
       execjs
+    banner-locator (0.1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -253,7 +249,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  banner-locator!
+  banner-locator
   github-pages
   octopress-autoprefixer
   tbarb
