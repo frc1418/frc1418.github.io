@@ -25,4 +25,3 @@ include:
     - _pages
 plugins:
     - octopress-autoprefixer
-    - banner-locator
