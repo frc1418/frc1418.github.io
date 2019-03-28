@@ -20,7 +20,7 @@ awardMap = {}
       next
     end
     awardName = eventName + ' ' + awardName
-    awardList.push({'award'=> awardName})
+    awardList.push(awardName)
   end
   awardMap[year] = awardList
   year -= 1
