@@ -3,26 +3,26 @@ require 'yaml'
 
 tba = TBA.new('AykWePEZPKTjZxW6y7MbiTEpTfUlWrszcX5QBpIDUEZPBCJydltvhfd88MsBXxdS')
 year = DateTime.now.year
-awardMap = {}
+award_map = {}
 10.times do |count|
   awards = tba.team_awards(1418, year)
-  awardList = []
+  award_list = []
   awards.each do |award|
-    awardName = award['name'].split(' Award ')[0]
+    award_name = award['name'].split(' Award ')[0]
     events = tba.team_events(1418, year, true)
-    eventName = ''
+    event_name = ''
     events.each do |event|
       if event['key'] == award['event_key']
-        eventName = event['city']
+        event_name = event['city']
       end
     end
-    if eventName == ''
+    if event_name == ''
       next
     end
-    awardName = eventName + ' ' + awardName
-    awardList.push(awardName)
+    award_name = event_name + ' ' + award_name
+    award_list.push(award_name)
   end
-  awardMap[year] = awardList
+  award_map[year] = award_list
   year -= 1
 end
-File.open("_data/banners.yml", "w") { |file| file.write(awardMap.to_yaml)}
+File.open("_data/banners.yml", "w") { |file| file.write(award_map.to_yaml)}
