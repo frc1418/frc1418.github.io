@@ -50,7 +50,7 @@ a
     &:hover
         text-decoration: none
 
-h1, h2, h3, h5, header, .jumbotron, .banners
+h1, h2, h3, h5, header, .jumbotron, .banners, footer table,
     font-family: $titlefont
 
 #content-skip
@@ -109,12 +109,17 @@ header.shrink
     height: 80px
     position: fixed
     .social
-        display: none
+        margin-top: 18px
+        li
+            margin-left: 5px
+            display: inline-block
     #logo
         transform: rotate(-90deg) scale(0.4)
         -webkit-transition: 0.2s
         transition: 0.2s
-        margin-top: -2.3em
+        margin:
+            top: -2.3em
+            left: -1.3em
     .title, h3
         display: none
     .title-simple
@@ -274,7 +279,7 @@ main
     h1
         font-size: 60px
 
-h5, p
+h5, p, blockquote
     max-width: 10in
     display: block
     margin: 5px auto
@@ -336,6 +341,11 @@ main h1
 h5
     margin-top: 30px
     font-size: 30px
+
+blockquote
+    font-size: 25px
+    font-style: italic
+
 
 main
     ul
@@ -479,15 +489,6 @@ footer ul
             top: auto
     .banners, h3
         display: none
-    .social
-        margin-left: 20px
-        display: block
-        li
-            display: inline-block
-            margin: 2px
-        img
-            height: 40px
-            width: 40px
     h1
         line-height: 1.2
     h2

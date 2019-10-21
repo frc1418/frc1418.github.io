@@ -1,0 +1,5 @@
+<ul class="banners">
+    {% for banner in site.data.banners[include.year] %}
+        <li><img src="/images/first.svg">{{ include.year }}<br> {{ banner }}</li>
+    {% endfor %}
+</ul>

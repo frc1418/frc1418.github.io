@@ -74,23 +74,30 @@ main
     div
         max-width: 13in
         margin: 0 auto
-    img
-        width: 50%
-        margin: 10px 20px 10px
-        float: left
+        >img
+            width: 50%
+            margin: 10px 20px 10px 0px
+            float: left
     p
         margin: 0 auto
         max-width: 100%
 
 .banners
-    background: #333
+    float: right
+    width: 50%
+    margin: 10px 20px 10px 0px
+    overflow: hidden
+
+@media (min-width: 850px) and (max-width: 1070px)
+    .banners
+        display: none
 
 @media (max-width: 850px)
     .jumbotron, .video-ext-container, .video-container, video
         display: none
     header
         position: static
-    main img
+    main > div > img
         float: none
         width: 100%
         margin: 0
