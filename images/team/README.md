@@ -1,5 +1,5 @@
 # Team Pixel Portraits
-[Our portraits were featured in the 2018 Deep Space competition DLC!](https://firstinspiresst01.blob.core.windows.net/first-launch/frc-dlc2-all.zip)
+[Our portrait technique was featured in the 2018 Deep Space competition DLC ("Making 8Bit Art")!](http://web.archive.org/web/20180119151307/https://www.firstinspires.org/2018-frc-teaser)
 
 On the [team page](http://1418.team/team) of our website, members of the team have flat pixel portraits of themselves above their bios. Making these is much easier than it may look on the surface, but the process may be difficult to see at first, so below is a guide.
 
