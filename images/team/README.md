@@ -1,3 +1,6 @@
+# Team Pixel Portraits
+[Our portraits were featured in the 2018 Deep Space competition DLC!](https://firstinspiresst01.blob.core.windows.net/first-launch/frc-dlc2-all.zip)
+
 On the [team page](http://1418.team/team) of our website, members of the team have flat pixel portraits of themselves above their bios. Making these is much easier than it may look on the surface, but the process may be difficult to see at first, so below is a guide.
 
 GIMP, a free & open source photo editor, is used in this guide. You can do it in any capable editor, but GIMP is recommended. You can download it [here](http://www.gimp.org/downloads/).
