@@ -14,11 +14,11 @@ This website uses the Jekyll templating system and is hosted as a GitHub page ou
 ## Setup
 1. While in cloned folder, run:
 
-  bundle install
+    bundle install
 
 2. Then, to start Jekyll, run:
 
-     bundle exec jekyll serve
+    bundle exec jekyll serve
 
 3. Navigate to `localhost:4000` to view the output of the site.
 
