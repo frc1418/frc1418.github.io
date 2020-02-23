@@ -1,0 +1,53 @@
+---
+layout: default
+title: 2020 Robot
+permalink: /robot/2020
+stylesheets:
+- banners
+- fixedbackground
+- measurements
+scripts:
+- measurements
+description: Our robot and the challenge for the 2020 season
+---
+<main>
+    <h1>2020 Robot</h1>
+    {% include banners.html year=2020 %}
+    <img src="/images/robots/2020/2020-Profile.JPG" alt="Our current robot (side view).">
+    <img src="/images/robots/2020/2020-TestRobot.JPG" alt="This shows us testing the robot ball(power cell) shooter.">
+    <ul id="measurements">
+        <li>Height: <span class="measurement" magnitude=1.2></span></li>
+        <li>Height (climber extended): <span class="measurement" magnitude=1.8></span></li>
+        <li>Width: <span class="measurement" magnitude=0.6></span></li>
+        <li>Length: <span class="measurement" magnitude=0.9></span></li>
+    </ul>
+    <p id="unit"></p>
+    <p>The 2020 game alludes to Star Wars; specifically the droids. It involves shooting softballs into various levels of a tower, also known as the Power Port, spinning a color wheel called the control panel (spinning it a number of times and spinning to a specific color), and climbing onto a seesaw with other robots, trying to stay balanced in the process. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=gmiYWTmFRVE">the official video reveal</a>.</p>
+  </h5>Robot Abilities</h5>
+    <ul>
+        <li><strong>Drive Train:</strong> Our 2020 robot uses tank drive to allow for increased stability. The ability to withstand an increased amount of force when impacted by other robots allows us to not be pushed around and miss our shots. Our wheels are connected to a pair of Andymark Nanotube transmissions. </li>
+        <li><strong>Power Cell Shooter System:</strong></li>
+        <ul>
+          <li><strong>Power Cell Intake:</strong> On the back of the robot lies an intake system. It consists of rubber tubing that pulls in power cells (balls) inside of the robot. </li>
+          <li><strong>Power Cell Shooter:</strong> On the front of the robot lies the shooting system for the power cells. It uses a dual motor gearbox and 4 AndyMark 4 inch stealth wheels to launch balls from varying distances.</li>
+        </ul>
+        <li><strong>Climbing Mechanism:</strong> Our climbing mechanism consists of a scissor lift that hooks onto the bar of the seesaw. Afterward, a winch, separate from the scissor lift, lifts the robot off of the ground just enough so we are not touching the ground by the end of the match as well as the 5 second wait period afterward. </li>
+    </ul>
+    <h5>Programming</h5>
+    <p>Just like in previous years, we used Python for our robot code. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
+    <p>We drive using a pilot-copilot operating system, with one driver controlling robot motion and the other controlling all other robot functions, such as the shooter. This allows each driver to control their own independent task, making operating the robot more efficient.</p>
+    <ul>
+    <li><strong>Vision Software:</strong> With vision tape on the tower, having good and accurate vision code is very important, especially since we have to shoot balls a great distance. Programmed in Python, this software uses data from a camera located right under the shooter and lots of math to position the robot correctly. There is also a button on one of the joysticks that runs software that aligns the robot to the vision tape on the tower.
+    </ul>
+    <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>. Here are some quick links:</p>
+    <ul>
+      <!--TODO: change the website code here-->
+        <li><a href="https://github.com/frc1418/2020-robot">Robot code</a></li>
+        <li><a href="https://github.com/frc1418/2020-dashboard">Dashboard code</a></li>
+        <li><a href="https://github.com/frc1418/2020-vision">Vision code</a></li>
+        <li><a href="https://github.com/frc1418/VictiScout">VictiScout scouting system (NEEDS TO BE UPDATED)</a></li>
+    </ul>
+    <h5>Competition Performance</h5>
+    <p>In addition to the two other competitions where we will be competing this year, we will be paticipating in Week 0. Week 0 is the week before our first competition where practice competitions take place. </p>
+    <p>We will be competing in two competitions this year at Battlefield High School (February 28 - March 1) and at South River High School (March 20-22). You can find out more about our competition performance and schedule on our <a href="https://www.thebluealliance.com/team/1418">Blue Alliance page</a>, and look out for videos about our competitions on our <a href="https://www.youtube.com/user/Robotics1418">YouTube page</a>.</p>
+</main>
