@@ -1,5 +1,6 @@
 require 'tbarb'
 require 'yaml'
+require 'date'
 
 TEAM = 1418
 tba = TBA.new('AykWePEZPKTjZxW6y7MbiTEpTfUlWrszcX5QBpIDUEZPBCJydltvhfd88MsBXxdS')
