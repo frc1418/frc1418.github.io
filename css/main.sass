@@ -63,8 +63,7 @@ h1, h2, h3, h5, header, .jumbotron, .banners, footer table,
         z-index: 2000
 
 header
-    -webkit-transition: height 0.2s
-    transition: height 0.2s
+    display: flex
     position: fixed
     top: 0
     left: 0
@@ -74,6 +73,8 @@ header
     padding: 15px 15px 0
     background: $grey
     box-shadow: 3px 3px 12px rgba(12, 12, 12, 0.5)
+    -webkit-transition: height 0.2s
+    transition: height 0.2s
 
     .title-simple
         display: none
@@ -95,6 +96,15 @@ header
             left: 25px
             top: 5px
         letter-spacing: 1px
+    .socal
+        width: min-content
+    > nav
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        flex: 1 0 auto
+        align-items: center
+        margin-left: 7px
 
 h2
     font-size: 100px
@@ -109,8 +119,9 @@ header.shrink
     height: 80px
     position: fixed
     .social
-        margin-top: 18px
-        li
+        flex-direction: row
+        width: auto
+        div
             margin-left: 5px
             display: inline-block
     #logo
@@ -133,13 +144,6 @@ header.shrink
             margin-left: -78px
             vertical-align: middle
             position: relative
-    nav
-        position: fixed
-
-@media (min-width: 1200px)
-    header.shrink
-        nav
-            top: -17px
 
 
 // Social buttons
@@ -148,10 +152,10 @@ header.shrink
     cursor: default
     list-style: none
     display: inline-block
+    width: 26px
     margin:
-        left: 5px
-        top: 4px
-    li
+        left: 15px
+    div
         margin: -5px
     a
         cursor: pointer
@@ -214,8 +218,7 @@ header.shrink
 
 nav
     display: inline
-    position: absolute
-    margin-top: 40px
+    position: relative
     right: 10px
     z-index: 100
     ul, li
@@ -223,7 +226,7 @@ nav
     ul
         list-style: none
     > ul
-        float: right
+        margin-left: auto
     li > *
         text-decoration: none
         display: block
@@ -394,21 +397,21 @@ footer ul
     width: 50px
     margin-top: 10px
 
-@media (max-width: 1200px)
+@media (max-width: 1275px)
     #nav-button
         display: block
-    nav
+    header.shrink > nav
         top: 0
         margin: 0
         right: -120vw
         background: $grey
         width: 100vw
         height: 100vh
-        position: fixed
         overflow: scroll
         visibility: hidden
         -webkit-transition: .2s
         transition: .2s
+        flex-direction: column
         &.open
             right: 0
             -webkit-transition: .3s
@@ -430,6 +433,7 @@ footer ul
         ul ul
             display: block
             position: static
+            background: none
             li
                 margin-left: 20px
                 padding-left: 10px
@@ -445,13 +449,24 @@ footer ul
             transform: translateZ(0)
             position: relative
             overflow: hidden
+        .social
+            align-items: flex-start
+            display: inherit
+            flex-direction: row
+            order: 2
+            margin: 0px
+            div:not(:first-of-type)
+                margin-left: 10px
+            img
+                height: 45px
+                width: 45px
         .active
             background: $grey
             &:hover
                 background: $grey
             a
                 color: white
-        a
+        > ul a
             &:after
                 content: ''
                 position: absolute
@@ -512,7 +527,3 @@ footer ul
         width: 100%
     nav
         height: 100%
-
-@media (max-width: 450px)
-    header.shrink > .social
-        display: none
