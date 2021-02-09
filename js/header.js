@@ -1,4 +1,4 @@
-const headerShrinkWidth = 1275;
+const headerShrinkWidth = 1290;
 header = document.getElementsByTagName('header')[0];
 
 function shrinkHeader() {
