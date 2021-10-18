@@ -24,6 +24,13 @@ This website uses the Jekyll templating system and is hosted as a GitHub page ou
 
 3. Navigate to `localhost:4000` to view the output of the site.
 
+## Troubleshooting
+When running steps in [Setup](#-Setup), there may be an error while installing certain gems. If this is the case, run the following command to update the [Gemfile.lock](/Gemfile.lock), which should fix the problem
+
+       bundle update
+
+Then retry the steps in [Setup](#-Setup)
+
 ## Authors
 * [Erik Boesen](https://github.com/ErikBoesen) - Code, art & design
 * [Carter Fendley](https://github.com/CarterFendley) - Code
