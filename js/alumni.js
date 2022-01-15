@@ -83,6 +83,27 @@ var colleges = [
             lng: -76.4735,
         },
     },
+    {
+        name: 'University of Illinois Urbana-Champaign',
+        position: {
+            lat: 40.1020,
+            lng: -88.2272,
+        },
+    },
+    {
+        name: 'Tufts University',
+        position: {
+            lat: 42.4085,
+            lng: -71.1183,
+        },
+    },
+    {
+        name: 'University of Waterloo',
+        position: {
+            lat: 43.4723,
+            lng: -80.5449,
+        },
+    },
 ];
 
 // Called by Maps API upon loading.
