@@ -111,6 +111,20 @@ var colleges = [
             lng: -86.5133,
         },
     },
+    { 
+        name: 'Duke University',
+        position: {
+            lat: 36.0014,
+            lng: -78.9382,
+        },
+    },
+    { 
+        name: 'University of Padua',
+        position: {
+            lat: 45.4068,
+            lng: 11.8774,
+        },
+    },
 ];
 
 // Called by Maps API upon loading.
