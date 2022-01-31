@@ -104,6 +104,13 @@ var colleges = [
             lng: -80.5449,
         },
     },
+    { 
+        name: 'Indiana University Bloomington',
+        position: {
+            lat: 39.1784,
+            lng: -86.5133,
+        },
+    },
 ];
 
 // Called by Maps API upon loading.
