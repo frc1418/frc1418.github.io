@@ -5,6 +5,8 @@ baseurl: "" # Don't change this, this refers to the site's relative path, like /
 url: "http://1418.team"
 twitter_username: Robotics1418
 github_username: frc1418
+youtube_username: Robotics1418
+instagram_username: 1418roboticsmhs
 facebook_username: robotics1418
 
 # Build settings
