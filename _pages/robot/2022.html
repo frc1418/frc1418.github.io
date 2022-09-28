@@ -1,0 +1,44 @@
+---
+layout: default
+title: 2022 Robot
+permalink: /robot/2022
+stylesheets:
+- fixedbackground
+- measurements
+scripts:
+- measurements
+description: Our robot and the challenge for the 2022 season
+---
+<main>
+    <h1>2022 Robot</h1>
+    <!-- {% include banners.html year=2022 %} -->
+    <img src="/images/robots/2022/2022-profile.JPG" alt="Our current robot (side view).">
+    <!-- <img src="/images/robots/2022/2020-TestRobot.JPG" alt="This shows us testing the robot ball(power cell) shooter."> -->
+    <ul id="measurements">
+        <li>Height: <span class="measurement" magnitude=1.03></span></li>
+        <li>Height (climber extended): <span class="measurement" magnitude=1.66></span></li>
+        <li>Width: <span class="measurement" magnitude=0.79></span></li>
+        <li>Length: <span class="measurement" magnitude=0.72></span></li>
+    </ul>
+    <p id="unit"></p>
+    <p>The 2022 game is loosly based on 3-on-3 basketball, where there the two teams of robots compete to score balls in a central hoop. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=LgniEjI9cCM">the official video reveal</a>.</p>
+  <h5>Robot Abilities</h5>
+    <ul>
+        <li><strong>Drive Train:</strong> Our 2022 robot uses...</li>
+        <li><strong>Tennis Ball Launching System:</strong></li>
+        <ul>
+          <li><strong>Tennis Ball Intake:</strong> On the front of the robot... </li>
+          <li><strong>Pneumatic Launcher:</strong> On the back of the robot...</li>
+        </ul>
+        <li><strong>Climbing Mechanism:</strong> Our climbing mechanism consists of... </li>
+    </ul>
+    <h5>Programming</h5>
+    <p>This year, we decided to write our robot code in Java, as opposed to the Pyhton we have used previously. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
+    <p>We drive using a pilot-copilot operating system, with one driver controlling robot motion and the other controlling all other robot functions, such as the shooter. This allows each driver to control their own independent task, making operating the robot more efficient.</p>
+    <ul>
+    <li><strong>Vision Software:</strong> ? </li>
+    </ul>
+    <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>.</p>
+    <h5>Competition Performance</h5>
+    <p>We will be competing in two competitions this year at Battlefield High School (February 28 - March 1) and at South River High School (March 20-22). You can find out more about our competition performance and schedule on <a href="https://www.thebluealliance.com/team/1418">Blue Alliance</a>, and look out for videos on our <a href="https://www.youtube.com/user/Robotics1418">YouTube</a> and <a href="http://instagram.com/1418roboticsmhs">Instagram</a> pages.</p>
+</main>
