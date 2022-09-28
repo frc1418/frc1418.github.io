@@ -13,8 +13,7 @@ description: Our robot and the challenge for the 2022 season
 ---
 <main>
     <h1>2022 Robot</h1>
-    <!-- {% include banners.html year=2022 %} -->
-    <img src="/images/robots/2022/2022-profile.JPG" alt="Our current robot (side view).">
+    <img src="/images/robots/2022/2022-profile.JPG" alt="Our current robot (front view).">
     <!-- <img src="/images/robots/2022/2022-testrobot.JPG" alt="This shows us testing the robot ball(power cell) shooter."> -->
     <ul id="measurements">
         <li>Height: <span class="measurement" magnitude=1.03></span></li>
@@ -29,14 +28,14 @@ description: Our robot and the challenge for the 2022 season
         <li><strong>Drive Train:</strong> Our 2022 robot uses a tank drivetrain which enabled our robot to have increased speed and stability over our opponents. Our wheels this year are connected to two dual REV NEO brushless motors.</li>
         <li><strong>Tennis Ball Launching System:</strong></li>
         <ul>
-          <li><strong>Tennis Ball Intake:</strong> On the front of the robot there is a sliding mechanism powered by two pistons that slides out and intakes balls into the robot. This is done using one redline motor which turns two axles with wheels on them. </li>
-          <li><strong>Ball Indexing:</strong> In the center of our robot, we have storage space for two of the challenge's large tennis balls. With two belts, each powered by REV NEO motors, we are able to efficiantly move the cargo from the intake to the launcher. </li>
-          <li><strong>Pneumatic Launcher:</strong> On the top of our robot there is our shooter system which consists of a pneumatic wheel, hooked up to a a REV NEO motor, that shoots the ball up and at an angle that guides it in a certain direction. The launcher is configured to shoot from the base of the hub at two speeds, one for the lower hub, and another for the upper hub. </li>
+          <li><strong>Tennis Ball Intake:</strong> The intake, located on the front of the robot, consists of nineteen wheels, two pistons, two axles, and a redline motor. It works by extending the contraption outward and catching a ball on the spinning axles. </li>
+          <li><strong>Ball Indexing:</strong> In the center of our robot, we have storage space for two of the challenge's large tennis balls. With two belts, each powered by REV NEO motors, we can efficiently move the cargo from the intake to the launcher. </li>
+          <li><strong>Pneumatic Launcher:</strong> The launcher system, located on the top of our robot, consists of a pneumatic wheel hooked up to a REV NEO motor that shoots the ball up and at an angle. The launcher is configured to shoot from the base of the hub at two speeds: one for the lower and upper baskets. </li>
         </ul>
         <li><strong>Climbing Mechanism:</strong> Our climbing mechanism uses an AndyMark Climber in a Box, a hooked retractable arm, and a Falcon 500 brushless motor to lift the robot off the ground. </li>
     </ul>
     <h5>Programming</h5>
-    <p>This year, we decided to write our robot code in Java, as opposed to the Pyhton we have used previously. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
+    <p>This year, we decided to write our robot code in Java, as opposed to the Pyhton we have used in previous years. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
     <p>We drive using a pilot-copilot operating system, with one driver controlling robot motion and the other controlling all other robot functions, such as the shooter. This allows each driver to control their own independent task, making operating the robot more efficient.</p>
     <ul>
     <li><strong>Vision Software:</strong> ? </li>
