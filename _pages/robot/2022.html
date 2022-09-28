@@ -4,7 +4,9 @@ title: 2022 Robot
 permalink: /robot/2022
 stylesheets:
 - fixedbackground
+- aeroplane
 - measurements
+- fixedbackground
 scripts:
 - measurements
 description: Our robot and the challenge for the 2022 season
@@ -13,7 +15,7 @@ description: Our robot and the challenge for the 2022 season
     <h1>2022 Robot</h1>
     <!-- {% include banners.html year=2022 %} -->
     <img src="/images/robots/2022/2022-profile.JPG" alt="Our current robot (side view).">
-    <!-- <img src="/images/robots/2022/2020-TestRobot.JPG" alt="This shows us testing the robot ball(power cell) shooter."> -->
+    <!-- <img src="/images/robots/2022/2022-testrobot.JPG" alt="This shows us testing the robot ball(power cell) shooter."> -->
     <ul id="measurements">
         <li>Height: <span class="measurement" magnitude=1.03></span></li>
         <li>Height (climber extended): <span class="measurement" magnitude=1.66></span></li>
@@ -21,16 +23,17 @@ description: Our robot and the challenge for the 2022 season
         <li>Length: <span class="measurement" magnitude=0.72></span></li>
     </ul>
     <p id="unit"></p>
-    <p>The 2022 game is loosly based on 3-on-3 basketball, where there the two teams of robots compete to score balls in a central hoop. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=LgniEjI9cCM">the official video reveal</a>.</p>
+    <p>The 2022 game, sponsored by Boeing, is loosly based on 3-on-3 basketball, where there the two teams of robots compete to score as many large tennis balls as possile in a central hub. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=LgniEjI9cCM">the official video reveal</a>.</p>
   <h5>Robot Abilities</h5>
     <ul>
-        <li><strong>Drive Train:</strong> Our 2022 robot uses...</li>
+        <li><strong>Drive Train:</strong> Our 2022 robot uses a tank drivetrain which enabled our robot to have increased speed and stability over our opponents. Our wheels this year are connected to two dual REV NEO brushless motors.</li>
         <li><strong>Tennis Ball Launching System:</strong></li>
         <ul>
-          <li><strong>Tennis Ball Intake:</strong> On the front of the robot... </li>
-          <li><strong>Pneumatic Launcher:</strong> On the back of the robot...</li>
+          <li><strong>Tennis Ball Intake:</strong> On the front of the robot there is a sliding mechanism powered by two pistons that slides out and intakes balls into the robot. This is done using one redline motor which turns two axles with wheels on them. </li>
+          <li><strong>Ball Indexing:</strong> In the center of our robot, we have storage space for two of the challenge's large tennis balls. With two belts, each powered by REV NEO motors, we are able to efficiantly move the cargo from the intake to the launcher. </li>
+          <li><strong>Pneumatic Launcher:</strong> On the top of our robot there is our shooter system which consists of a pneumatic wheel, hooked up to a a REV NEO motor, that shoots the ball up and at an angle that guides it in a certain direction. The launcher is configured to shoot from the base of the hub at two speeds, one for the lower hub, and another for the upper hub. </li>
         </ul>
-        <li><strong>Climbing Mechanism:</strong> Our climbing mechanism consists of... </li>
+        <li><strong>Climbing Mechanism:</strong> Our climbing mechanism uses an AndyMark Climber in a Box, a hooked retractable arm, and a Falcon 500 brushless motor to lift the robot off the ground. </li>
     </ul>
     <h5>Programming</h5>
     <p>This year, we decided to write our robot code in Java, as opposed to the Pyhton we have used previously. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
@@ -40,5 +43,5 @@ description: Our robot and the challenge for the 2022 season
     </ul>
     <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>.</p>
     <h5>Competition Performance</h5>
-    <p>We will be competing in two competitions this year at Battlefield High School (February 28 - March 1) and at South River High School (March 20-22). You can find out more about our competition performance and schedule on <a href="https://www.thebluealliance.com/team/1418">Blue Alliance</a>, and look out for videos on our <a href="https://www.youtube.com/user/Robotics1418">YouTube</a> and <a href="http://instagram.com/1418roboticsmhs">Instagram</a> pages.</p>
+    <p>We will be competing in two competitions this year at Benjamin Banneker Academic High School (March 12 & 26). You can find out more about our competition performance and schedule on <a href="https://www.thebluealliance.com/team/1418">Blue Alliance</a>, and look out for videos on our <a href="https://www.youtube.com/user/Robotics1418">YouTube</a> and <a href="http://instagram.com/1418roboticsmhs">Instagram</a> pages.</p>
 </main>
