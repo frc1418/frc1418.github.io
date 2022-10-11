@@ -1,0 +1,45 @@
+---
+layout: default
+title: 2022 Robot
+permalink: /robot/2022
+stylesheets:
+- fixedbackground
+- aeroplane
+- measurements
+scripts:
+- measurements
+description: Our robot and the challenge for the 2022 season
+---
+<main>
+    <h1>2022 Robot</h1>
+    <img src="/images/robots/2022/2022-profile.JPG" alt="Our current robot (front view).">
+    <img src="/images/robots/2022/2022-comp.JPG" alt="This shows us with the robot at our first competition.">
+    <ul id="measurements">
+        <li>Height: <span class="measurement" magnitude=1.03></span></li>
+        <li>Height (climber extended): <span class="measurement" magnitude=1.66></span></li>
+        <li>Width: <span class="measurement" magnitude=0.79></span></li>
+        <li>Length: <span class="measurement" magnitude=0.72></span></li>
+    </ul>
+    <p id="unit"></p>
+    <p>The 2022 game, sponsored by Boeing, is loosly based on 3-on-3 basketball, where there the two teams of robots compete to score as many large tennis balls as possile in a central hub. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=LgniEjI9cCM">the official video reveal</a>.</p>
+  <h5>Robot Abilities</h5>
+    <ul>
+        <li><strong>Drive Train:</strong> Our 2022 robot uses a tank drivetrain which enabled our robot to have increased speed and stability over our opponents. Our wheels this year are connected to two dual REV NEO brushless motors.</li>
+        <li><strong>Tennis Ball Launching System:</strong></li>
+        <ul>
+          <li><strong>Tennis Ball Intake:</strong> The intake, located on the front of the robot, consists of nineteen wheels, two pistons, two axles, and a redline motor. It works by extending the contraption outward and catching a ball on the spinning axles.</li>
+          <li><strong>Ball Indexing:</strong> In the center of our robot, we have storage space for two of the challenge's large tennis balls. With two belts, each powered by REV NEO motors, we can efficiently move the cargo from the intake to the launcher.</li>
+          <li><strong>Pneumatic Launcher:</strong> The launcher system, located on the top of our robot, consists of a pneumatic wheel hooked up to a REV NEO motor that shoots the ball up and at an angle. The launcher is configured to shoot from the base of the hub at two speeds: one for the lower and upper baskets.</li>
+        </ul>
+        <li><strong>Climbing Mechanism:</strong> Our climbing mechanism uses an AndyMark Climber in a Box, a hooked retractable arm, and a Falcon 500 brushless motor to lift the robot off the ground. </li>
+    </ul>
+    <h5>Programming</h5>
+    <p>This year, we decided to write our robot code in Java, as opposed to the Pyhton we have used in previous years. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
+    <p>We drive using a pilot-copilot method: the first driver controls robot motion and the second various other operations, making operating the robot more efficient. This year we upgraded the secondary driver from a joystick to a Dualshock 4 controller, allowing for a greater number of tasks to be performed through a familiar medium.</p>
+    <ul>
+    <li><strong>Autonomous:</strong> This year, we wrote an autonomous routine in Java for the competition that could consistently pick up and shoot a tennis ball at the central hub. Using this routine, we are able to gain an advantages early on in matches.</li>
+    </ul>
+    <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>.</p>
+    <h5>Competition Performance</h5>
+    <p>We will be competing in two competitions this year at Benjamin Banneker Academic High School (March 12 & 26). You can find out more about our competition performance and schedule on <a href="https://www.thebluealliance.com/team/1418">Blue Alliance</a>, and look out for videos on our <a href="https://www.youtube.com/user/Robotics1418">YouTube</a> and <a href="http://instagram.com/1418roboticsmhs">Instagram</a> pages.</p>
+</main>
