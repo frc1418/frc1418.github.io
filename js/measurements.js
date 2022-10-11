@@ -15,7 +15,7 @@ for (unit of UNITS) {
 select.onchange = function() {
     for (measurement of elem_measurements.getElementsByClassName('measurement')) {
         var multiplier = MULTIPLIERS[UNITS.indexOf(select.value)];
-        measurement.textContent = Math.floor(measurement.attributes.magnitude.value * multiplier * 100)/100;
+        measurement.textContent = (measurement.attributes.magnitude.value * multiplier).toFixed(2);
     }
 }
 elem_unit.appendChild(select);
