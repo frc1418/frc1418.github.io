@@ -233,7 +233,7 @@ function initMap() {
             title: college.name,
         }).setMap(map);
     }
-    map.addListner("click",()=>{    
+    marker.addListner("click",()=>{    
         map.setZoom(8);
         map.setCenter(marker.getPosition());
     });
