@@ -224,7 +224,7 @@ function initMap() {
                     color: '#333333'
                 }]
             }
-        ] 
+        ]
     });
 
     for (college of colleges) {
