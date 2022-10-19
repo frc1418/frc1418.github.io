@@ -244,7 +244,7 @@ function initMap() {
             }
         ]
     });
-     for (college of colleges) {
+    for (college of colleges) {
         const marker = new google.maps.Marker({
             position: college.position,
             title: college.name,
@@ -273,6 +273,4 @@ function initMap() {
             infowindow.close();
         });
     }
-
- 
 }
