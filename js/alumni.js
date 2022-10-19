@@ -85,7 +85,6 @@ var colleges = [
     },
     {
         name: 'University of Illinois Urbana-Champaign',
-        number:1,
         position: {
             lat: 40.1020,
             lng: -88.2272,
