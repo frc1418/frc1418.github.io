@@ -226,15 +226,16 @@ function initMap() {
             }
         ]
     });
-
     for (college of colleges) {
-        new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: college.position,
             title: college.name,
-        }).setMap(map);
+        });
+        marker.setMap(map);
+        google.maps.event.addListener(marker,'click',function(event){  
+            map.setCenter(marker.getPosition());  
+            map.setZoom(15);
+           
+        });
     }
-    map.addListner("click",()=>{    
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
-    });
 }
