@@ -227,7 +227,7 @@ function initMap() {
         ]
     });
     for (college of colleges) {
-        new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: college.position,
             title: college.name,
         });
