@@ -224,11 +224,7 @@ function initMap() {
                     color: '#333333'
                 }]
             }
-        ] 
-    });
-    map.addListner("click",()=>{    
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
+        ]
     });
 
     for (college of colleges) {
@@ -237,4 +233,8 @@ function initMap() {
             title: college.name,
         }).setMap(map);
     }
+    map.addListner("click",()=>{    
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
+    });
 }
