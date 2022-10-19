@@ -226,10 +226,6 @@ function initMap() {
             }
         ] 
     });
-    map.addListner("click",()=>{    
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
-    });
 
     for (college of colleges) {
         new google.maps.Marker({
@@ -237,4 +233,8 @@ function initMap() {
             title: college.name,
         }).setMap(map);
     }
+    map.addListner("click",()=>{    
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
+    });
 }
