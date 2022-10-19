@@ -1,7 +1,6 @@
 var colleges = [
     {
         name: 'Worcester Polytechnic Institute',
-        number:1,
         position: {
             lat: 42.2746,
             lng: -71.8063,
@@ -9,7 +8,6 @@ var colleges = [
     },
     {
         name: 'University of Virginia',
-        number:1,
         position: {
             lat: 38.0336,
             lng: -78.5080,
@@ -17,7 +15,6 @@ var colleges = [
     },
     {
         name: 'William & Mary',
-        number:1,
         position: {
             lat: 37.2717,
             lng: -76.7134,
@@ -25,7 +22,6 @@ var colleges = [
     },
     {
         name: 'Pennsylvania State University',
-        number:1,
         position: {
             lat: 40.7982,
             lng: -77.8599,
@@ -33,7 +29,6 @@ var colleges = [
     },
     {
         name: 'John\'s Hopkins University',
-        number:1,
         position: {
             lat: 39.3299,
             lng: -76.6205,
@@ -41,7 +36,6 @@ var colleges = [
     },
     {
         name: 'Massachusetts Institute of Technology',
-        number:1,
         position: {
             lat: 42.3601,
             lng: -71.0942
@@ -49,7 +43,6 @@ var colleges = [
     },
     {
         name: 'University of California, Los Angeles',
-        number:1,
         position: {
             lat: 34.0689,
             lng: -118.4452,
@@ -57,7 +50,6 @@ var colleges = [
     },
     {
         name: 'Yale University',
-        number:1,
         position: {
             lat: 41.3163,
             lng: -72.9223,
@@ -65,7 +57,6 @@ var colleges = [
     },
     {
         name: 'Virginia Tech',
-        number:1,
         position: {
             lat: 37.2284,
             lng: -80.4234,
@@ -73,7 +64,6 @@ var colleges = [
     },
     {
         name: 'Virginia Commonwealth University',
-        number:1,
         position: {
             lat: 37.5495,
             lng: -77.4510,
@@ -81,7 +71,6 @@ var colleges = [
     },
     {
         name: 'Michigan State University',
-        number:1,
         position: {
             lat: 42.7018,
             lng: -84.4822,
@@ -89,7 +78,6 @@ var colleges = [
     },
     {
         name: 'Cornell University',
-        number:1,
         position: {
             lat: 42.4534,
             lng: -76.4735,
