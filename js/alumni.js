@@ -224,7 +224,11 @@ function initMap() {
                     color: '#333333'
                 }]
             }
-        ]
+        ] 
+    });
+    map.addListner("click",()=>{    
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
     });
 
     for (college of colleges) {
