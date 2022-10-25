@@ -257,7 +257,7 @@ function initMap() {
         "</div>";
         const infowindow = new google.maps.InfoWindow({
             content: contentString,
-          });
+          });  
         google.maps.event.addListener(marker,'click',function(event){  
             map.setCenter(marker.getPosition());  
             map.setZoom(6);   
@@ -267,8 +267,7 @@ function initMap() {
             });
         });
        
-        google.maps.event.addListener(map,'click',function(event){  
-            map.setCenter({lat:35, lng:(-98)});
+        google.maps.event.addListener(map,'click',function(event){
             map.setZoom(4);  
             infowindow.close();
         });
