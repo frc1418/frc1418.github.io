@@ -143,6 +143,14 @@ var colleges = [
         },
         image: "images/collegeLogos/University_of_Padua.png"
     },
+    {
+        name: 'Vanderbilt University',
+        position: {
+            lat: 36.1446,  
+            lng: -86.8026,
+        },
+        image: "images/collegeLogos/Vanderbilt_University.png"
+    },
 ];
 
 // Called by Maps API upon loading.
