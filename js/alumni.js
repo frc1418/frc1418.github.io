@@ -267,7 +267,7 @@ function initMap() {
             });
         });
        
-        google.maps.event.addListener(map,'click',function(event){  
+        google.maps.event.addListener(map,'click',function(event){
             map.setZoom(4);  
             infowindow.close();
         });
