@@ -252,32 +252,31 @@ function initMap() {
             }
         ]
     });
+    const infoWindow = new google.maps.InfoWindow();
+
     for (college of colleges) {
         const marker = new google.maps.Marker({
             position: college.position,
             title: college.name,
         });
         marker.setMap(map);
-        const contentString =
-        '<div id="content">' +
-        '<h1 id="collegeName" class="firstHeading">'+college.name+'</h1>' +
-        '<img id="collegeImg" src ='+college.image+'>'+
-        "</div>";
-        const infowindow = new google.maps.InfoWindow({
-            content: contentString,
-          });  
-        google.maps.event.addListener(marker,'click',function(event){  
-            map.setCenter(marker.getPosition());  
-            map.setZoom(6);   
-            infowindow.open({
+       
+        google.maps.event.addListener(marker, 'click', function(event){ 
+            const contentString =
+            '<div id="content">' +
+            '<h1 id="collegeName" class="firstHeading">' + marker.getTitle() + '</h1>' +
+            '<img id="collegeImg" src =' + colleges.find(colleges=>colleges.name === marker.getTitle()).image + '>'+
+            "</div>"; 
+            infoWindow.setContent(contentString);
+            map.panTo(marker.getPosition());  
+            infoWindow.open({
                 anchor:marker,
                 map
             });
         });
        
-        google.maps.event.addListener(map,'click',function(event){
-            map.setZoom(4);  
-            infowindow.close();
+        google.maps.event.addListener(map, 'click', function(event){
+            infoWindow.close();
         });
     }
 }
