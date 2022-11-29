@@ -1,5 +1,5 @@
 # Team 1418 Website
-This repository contains the content that is served on [1418.team](http://1418.team).
+This repository contains the content that is served on [1418.team](https://1418.team).
 
 This website uses the Jekyll templating system and is hosted as a GitHub page out of this repository.
 
