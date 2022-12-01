@@ -27,3 +27,4 @@ include:
     - _pages
 plugins:
     - octopress-autoprefixer
+    - jekyll-redirect-from
