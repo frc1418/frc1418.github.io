@@ -261,7 +261,7 @@ function initMap() {
         });
         marker.setMap(map);
        
-        google.maps.event.addListener(marker, 'click', function(event){ 
+        google.maps.event.addListener(marker, 'click', (event) => { 
             const contentString =
             '<div id="content">' +
             '<h1 id="collegeName" class="firstHeading">' + marker.getTitle() + '</h1>' +
@@ -275,7 +275,7 @@ function initMap() {
             });
         });
        
-        google.maps.event.addListener(map, 'click', function(event){
+        google.maps.event.addListener(map, 'click', (event) => {
             infoWindow.close();
         });
     }

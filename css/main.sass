@@ -118,6 +118,8 @@ header.shrink
     transition: height 0.2s
     height: 80px
     position: fixed
+    #social
+        margin-right: 0
     .social
         flex-direction: row
         width: auto
@@ -134,7 +136,7 @@ header.shrink
     .title, h3
         display: none
     .title-simple
-        display: inline
+        display: inline-block
         a
             color: white
             text-decoration: none
@@ -144,19 +146,23 @@ header.shrink
             margin-left: -78px
             vertical-align: middle
             position: relative
+            width: max-content
+            margin-top: 3px
 
 
 // Social buttons
+#social
+    margin-left: 15px
+    margin-right: 10px
 .social
     position: relative
     cursor: default
     list-style: none
     display: inline-block
     width: 26px
-    margin:
-        left: 15px
+    margin-left: 0px
     div
-        margin: -5px
+        margin: 0px
     a
         cursor: pointer
         z-index: 100
@@ -399,7 +405,7 @@ footer ul
     width: 50px
     margin-top: 10px
 
-@media (max-width: 1290px)
+@media (max-width: 1099px)
     #nav-button
         display: block
     header.shrink > nav
@@ -455,13 +461,18 @@ footer ul
             align-items: flex-start
             display: inherit
             flex-direction: row
-            order: 2
             margin: 0px
             div:not(:first-of-type)
-                margin-left: 10px
+                margin-left: 20px
             img
                 height: 45px
                 width: 45px
+        .social-container
+            order: 2
+            margin-top: -40px
+            margin-bottom: 20px
+        #social
+            margin-left: 0px
         .active
             background: $grey
             &:hover
@@ -498,6 +509,7 @@ footer ul
         > img
             display: block
             z-index: 50
+            margin-top: 70
         .header-group
             width: auto
         h2, h3
