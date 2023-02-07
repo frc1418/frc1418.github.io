@@ -458,7 +458,7 @@ footer ul
             overflow: hidden
         .social
             align-items: flex-start
-            display: inherit
+            display: inline
             flex-direction: row
             div:not(:first-of-type)
                 margin-left: 20px
@@ -471,6 +471,7 @@ footer ul
             margin-bottom: 20px
         #social
             margin-left: 0px
+            margin-right: 20px
         .active
             background: $grey
             &:hover
@@ -539,3 +540,5 @@ footer ul
         width: 100%
     nav
         height: 100%
+    .social
+        display: block !important
