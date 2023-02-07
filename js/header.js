@@ -17,11 +17,7 @@ body.onload = () => {
     } else {
         header.className = '';
     }
-    if (window.innerWidth < 432) {
-        miniTitle.innerHTML = '1418';
-    } else if (window.innerWidth < 1319) {
-        miniTitle.innerHTML = 'TEAM 1418';
-    }
+    swapMiniTitle();
 };
 body.onresize = () => {
     if (body.clientWidth <= headerShrinkWidth) {
@@ -39,11 +35,15 @@ body.onresize = () => {
             body.style.overflow = 'hidden';
         }
     }
+    swapMiniTitle();
+};
+
+function swapMiniTitle() {
     if (window.innerWidth < 432) {
         miniTitle.innerHTML = '1418';
     } else if (window.innerWidth < 1319) {
         miniTitle.innerHTML = 'TEAM 1418';
     }
-};
+}
 
 document.addEventListener('scroll', shrinkHeader);
