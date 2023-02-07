@@ -1,5 +1,5 @@
 const headerShrinkWidth = 1319;
-var miniheader = document.getElementById('title-mini');
+var miniTitle = document.getElementById('title-mini');
 header = document.getElementsByTagName('header')[0];
 
 function shrinkHeader() {
@@ -17,13 +17,10 @@ body.onload = () => {
     } else {
         header.className = '';
     }
-    if (window.innerWidth < 432)
-    {
-        miniheader.innerHTML = '1418';
-    }
-    else if (window.innerWidth < 1319)
-    {
-        miniheader.innerHTML = 'TEAM 1418';
+    if (window.innerWidth < 432) {
+        miniTitle.innerHTML = '1418';
+    } else if (window.innerWidth < 1319) {
+        miniTitle.innerHTML = 'TEAM 1418';
     }
 };
 body.onresize = () => {
@@ -42,13 +39,10 @@ body.onresize = () => {
             body.style.overflow = 'hidden';
         }
     }
-    if (window.innerWidth < 432)
-    {
-        miniheader.innerHTML = '1418';
-    }
-    else if (window.innerWidth < 1319)
-    {
-        miniheader.innerHTML = 'TEAM 1418';
+    if (window.innerWidth < 432) {
+        miniTitle.innerHTML = '1418';
+    } else if (window.innerWidth < 1319) {
+        miniTitle.innerHTML = 'TEAM 1418';
     }
 };
 
