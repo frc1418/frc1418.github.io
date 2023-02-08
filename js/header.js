@@ -1,5 +1,5 @@
 const headerShrinkWidth = 1319;
-var miniTitle = document.getElementById('title-mini');
+const miniTitle = document.getElementById('title-mini');
 header = document.getElementsByTagName('header')[0];
 
 function shrinkHeader() {
