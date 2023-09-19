@@ -12,7 +12,7 @@ for (unit of UNITS) {
     select.appendChild(option);
 }
 
-select.onchange = function() {
+select.onchange = () => {
     for (measurement of elem_measurements.getElementsByClassName('measurement')) {
         var multiplier = MULTIPLIERS[UNITS.indexOf(select.value)];
         measurement.textContent = (measurement.attributes.magnitude.value * multiplier).toFixed(2);

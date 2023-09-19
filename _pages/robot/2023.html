@@ -1,0 +1,55 @@
+---
+layout: default
+title: 2023 Robot
+permalink: /robot/2023
+stylesheets:
+- fixedbackground
+- chargedbolt
+- measurements
+scripts:
+- measurements
+description: Our robot and the challenge for the 2023 season
+---
+<main>
+    <h1>2023 Robot</h1>
+    <img src="/images/robots/2023/2023-profile.jpg" alt="Our robot (front view).">
+    <ul id="measurements">
+        <li>Height: <span class="measurement" magnitude=1.17></span> (elevator down)</li>
+        <li>Height: <span class="measurement" magnitude=1.36></span> (elevator up)</li>
+        <li>Width: <span class="measurement" magnitude=0.66></span></li>
+        <li>Length: <span class="measurement" magnitude=0.66></span></li>
+    </ul>
+    <p id="unit"></p>
+    <p>The 2023 game, sponsored by the Gene Haas Foundation, focuses heavily on the delivery of items (cones and cubes). There are six robots on two teams that compete to rack up the most points as fast as possible. To get a more detailed description of the game, see <a href="https://www.youtube.com/watch?v=0zpflsYc4PA">the official video reveal</a>.</p>
+  <h5>Robot Abilities</h5>
+    <ul>
+        <li><strong>Drive Train:</strong> Our 2023 robot uses a square swerve drive, which enables us to strafe in any direction and to turn freely. For our swerve drive we are using MAXSwerve modules and The Thrifty Bot's 3" aluminum billet wheels.</li>
+        <li><strong>Delivery System:</strong></li>
+        <ul>
+            <li><strong>Telescoping Arm:</strong> The telescoping arm is a two-stage system that allows us to reach the farthest node on the scoring grid. We have it mounted on a pivoting motor so that we could position the arm, as well as to protect it from damage.</li>
+            <li><strong>Grabbing Hand:</strong> The grabbing hand of our robot is comprised of two fingers, lined with tire treads for traction while gripping game pieces. Two pneumatic pistons have been employed to open and close the hand. This helps the hand to be more efficient, most evident by the robot's ability to indiscriminately pick up all game pieces.</li>
+            <li><strong>Elevator:</strong> The elevator is a single-stage system comprised of two main parts, the carriage and the frame. We use it to easily reach the top nodes in the scoring grid during autonomous, and then to lower our center of gravity for teleop.</li>
+        </ul>
+        <li><strong>Bumpers:</strong> The reversible bumpers allow us to quickly and efficiently transition alliance color between matches.</li>
+    </ul>
+    <h5>Programming</h5>
+    <p>Our robot is programmed in Java due to the vast amount of Java libraries and resources available to us through WPILib. As this year's team was new to programming swerve drive, we decided to first learn how to swerve drive works by reconstructing and programming our old Swerve Mark 2 chassis from 2017. One useful feature we programmed into this year's robot was reactive LED lights that change color when performing or completing actions, allowing the drive team to be more informed on what was happening.</p>
+    <ul>
+        <li><strong>Autonomous:</strong> This year, we wrote multiple autonomous routines in Java using Pathplanner, the most impressive of which can score two game pieces into top nodes of the grid.</li>
+    </ul>
+    <p> As per usual, this season we updated our scouting application, <a href="https://github.com/frc1418/VictiScout/releases">VictiScout</a>, for this season. In addition, we created a <a href="https://github.com/Git-HorizonZz/VictiScout-Compiler/releases">Compiler</a> app for VictiScout to consolidate data collected by multiple scouters.</p>
+    <p>We drive using a pilot-copilot method: the first driver controls robot motion and the second various other operations, making operating the robot more efficient.</p>
+    <p>All of our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>.</p>
+    <div class="img-row">
+        <img src="/images/robots/2023/2023-b.jpg" alt="The 2023 robot on the charging station.">
+        <img src="/images/robots/2023/2023-c.jpg" alt="The 2023 robot transporting a cube.">
+        <img src="/images/robots/2023/2023-a.jpg" alt="The 2023 robot placing a cone.">
+    </div>
+    <h5>Competition Performance</h5>
+    <p>This year we have competed in a district qualifier in Alexandria, Virginia (March 17-19); a district qualifier in Timonium, Maryland (March 24-26); and a district championship at the Eagle Bank Arena in Fairfax, Virginia (April 5-8). This season, we were awarded the Gracious Professionalism award in each of our competitions. You can find out more about our competition performance on <a href="https://www.thebluealliance.com/team/1418/2023">Blue Alliance</a>, and look out for videos on our <a href="https://www.youtube.com/user/Robotics1418">YouTube</a> and <a href="http://instagram.com/1418roboticsmhs">Instagram</a> pages.</p>
+    <div class="iframe-ext-wrapper">
+        <div class="iframe-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3d2k0-043VE" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>

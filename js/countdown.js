@@ -34,7 +34,7 @@ var clock = {
 var days, hours, minutes, seconds;
 
 // Update countdown every 100ms (.1s)
-setInterval(function() {
+setInterval(() => {
 	// Find the amount of seconds between now and target
 	var now = new Date().getTime();
 	var secondsLeft = (events[0].date - now) / 1000;
