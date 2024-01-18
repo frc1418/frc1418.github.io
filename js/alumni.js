@@ -151,6 +151,38 @@ var colleges = [
         },
         image: "images/collegeLogos/Vanderbilt_University.png"
     },
+    {
+        name: 'George Washington University',
+        position: {
+            lat: 38.8997,  
+            lng: -77.0486,
+        },
+        image: "images/team/placeholder.png"
+    },
+    {
+        name: 'James Madison University',
+        position: {
+            lat: 38.4351,  
+            lng: -78.8698,
+        },
+        image: "images/team/placeholder.png"
+    },
+    {
+        name: 'Georgia Institute of Technology',
+        position: {
+            lat: 33.7756,  
+            lng: -84.3963,
+        },
+        image: "images/team/placeholder.png"
+    },
+    {
+        name: 'University of Colorado Boulder',
+        position: {
+            lat: 40.0073,  
+            lng: -105.2660,
+        },
+        image: "images/team/placeholder.png"
+    }
 ];
 
 // Called by Maps API upon loading.
