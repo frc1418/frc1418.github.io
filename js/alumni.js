@@ -157,7 +157,7 @@ var colleges = [
             lat: 38.8997,  
             lng: -77.0486,
         },
-        image: "images/team/placeholder.png"
+        image: "images/collegeLogos/George_Washington_University.png"
     },
     {
         name: 'James Madison University',
@@ -165,7 +165,7 @@ var colleges = [
             lat: 38.4351,  
             lng: -78.8698,
         },
-        image: "images/team/placeholder.png"
+        image: "images/collegeLogos/James_Madison_University.png"
     },
     {
         name: 'Georgia Institute of Technology',
@@ -173,7 +173,7 @@ var colleges = [
             lat: 33.7756,  
             lng: -84.3963,
         },
-        image: "images/team/placeholder.png"
+        image: "images/collegeLogos/Georgia_Institute_of_Technology.png"
     },
     {
         name: 'University of Colorado Boulder',
@@ -181,7 +181,7 @@ var colleges = [
             lat: 40.0073,  
             lng: -105.2660,
         },
-        image: "images/team/placeholder.png"
+        image: "images/collegeLogos/University_of_Colorado_Boulder.png"
     }
 ];
 
