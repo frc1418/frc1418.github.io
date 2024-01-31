@@ -9,9 +9,9 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     {% if page.stylesheets %}
-        {% for stylesheet in page.stylesheets %}
+    {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="/css/{{ stylesheet }}.css">
-        {% endfor %}
+    {% endfor %}
     {% endif %}
 </head>
 
@@ -19,9 +19,9 @@
     {{ content }}
 
     {% if page.scripts %}
-        {% for script in page.scripts %}
+    {% for script in page.scripts %}
     <script src="/js/{{ script }}.js"></script>
-        {% endfor %}
+    {% endfor %}
     {% endif %}
 </body>
 

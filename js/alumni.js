@@ -21,7 +21,7 @@ var colleges = [
             lat: 37.2717,
             lng: -76.7134,
         },
-        image:"images/collegeLogos/William_&_Mary.png"
+        image: "images/collegeLogos/William_&_Mary.png"
     },
     {
         name: 'Pennsylvania State University',
@@ -29,7 +29,7 @@ var colleges = [
             lat: 40.7982,
             lng: -77.8599,
         },
-        image:"images/collegeLogos/Pennsylvania_State_University.png"
+        image: "images/collegeLogos/Pennsylvania_State_University.png"
     },
     {
         name: 'John\'s Hopkins University',
@@ -37,7 +37,7 @@ var colleges = [
             lat: 39.3299,
             lng: -76.6205,
         },
-        image:"images/collegeLogos/Johns_Hopkins_University.png"
+        image: "images/collegeLogos/Johns_Hopkins_University.png"
     },
     {
         name: 'Massachusetts Institute of Technology',
@@ -45,7 +45,7 @@ var colleges = [
             lat: 42.3601,
             lng: -71.0942
         },
-        image:"images/collegeLogos/Massachusetts_Institute_of_Technology.png"
+        image: "images/collegeLogos/Massachusetts_Institute_of_Technology.png"
     },
     {
         name: 'University of California, Los Angeles',
@@ -53,7 +53,7 @@ var colleges = [
             lat: 34.0689,
             lng: -118.4452,
         },
-        image:"images/collegeLogos/University_of_California_LA.png"
+        image: "images/collegeLogos/University_of_California_LA.png"
     },
     {
         name: 'Yale University',
@@ -61,7 +61,7 @@ var colleges = [
             lat: 41.3163,
             lng: -72.9223,
         },
-        image:"images/collegeLogos/Yale_University.png"
+        image: "images/collegeLogos/Yale_University.png"
     },
     {
         name: 'Virginia Tech',
@@ -69,7 +69,7 @@ var colleges = [
             lat: 37.2284,
             lng: -80.4234,
         },
-        image:"images/collegeLogos/Virginia_Tech.png"
+        image: "images/collegeLogos/Virginia_Tech.png"
     },
     {
         name: 'Virginia Commonwealth University',
@@ -77,7 +77,7 @@ var colleges = [
             lat: 37.5495,
             lng: -77.4510,
         },
-        image:"images/collegeLogos/Virginia_Commonwealth_University.png"
+        image: "images/collegeLogos/Virginia_Commonwealth_University.png"
     },
     {
         name: 'Michigan State University',
@@ -119,7 +119,7 @@ var colleges = [
         },
         image: "images/collegeLogos/University_of_Waterloo.png"
     },
-    { 
+    {
         name: 'Indiana University Bloomington',
         position: {
             lat: 39.1784,
@@ -127,7 +127,7 @@ var colleges = [
         },
         image: "images/collegeLogos/Indiana_University_Bloomington.png"
     },
-    { 
+    {
         name: 'Duke University',
         position: {
             lat: 36.0014,
@@ -135,7 +135,7 @@ var colleges = [
         },
         image: "images/collegeLogos/Duke_University.png"
     },
-    { 
+    {
         name: 'University of Padua',
         position: {
             lat: 45.4068,
@@ -146,7 +146,7 @@ var colleges = [
     {
         name: 'Vanderbilt University',
         position: {
-            lat: 36.1446,  
+            lat: 36.1446,
             lng: -86.8026,
         },
         image: "images/collegeLogos/Vanderbilt_University.png"
@@ -154,7 +154,7 @@ var colleges = [
     {
         name: 'George Washington University',
         position: {
-            lat: 38.8997,  
+            lat: 38.8997,
             lng: -77.0486,
         },
         image: "images/collegeLogos/George_Washington_University.png"
@@ -162,7 +162,7 @@ var colleges = [
     {
         name: 'James Madison University',
         position: {
-            lat: 38.4351,  
+            lat: 38.4351,
             lng: -78.8698,
         },
         image: "images/collegeLogos/James_Madison_University.png"
@@ -170,7 +170,7 @@ var colleges = [
     {
         name: 'Georgia Institute of Technology',
         position: {
-            lat: 33.7756,  
+            lat: 33.7756,
             lng: -84.3963,
         },
         image: "images/collegeLogos/Georgia_Institute_of_Technology.png"
@@ -178,7 +178,7 @@ var colleges = [
     {
         name: 'University of Colorado Boulder',
         position: {
-            lat: 40.0073,  
+            lat: 40.0073,
             lng: -105.2660,
         },
         image: "images/collegeLogos/University_of_Colorado_Boulder.png"
@@ -292,21 +292,21 @@ function initMap() {
             title: college.name,
         });
         marker.setMap(map);
-       
-        google.maps.event.addListener(marker, 'click', (event) => { 
+
+        google.maps.event.addListener(marker, 'click', (event) => {
             const contentString =
-            '<div id="content">' +
-            '<h1 id="collegeName" class="firstHeading">' + marker.getTitle() + '</h1>' +
-            '<img id="collegeImg" src =' + colleges.find(colleges=>colleges.name === marker.getTitle()).image + '>'+
-            "</div>"; 
+                '<div id="content">' +
+                '<h1 id="collegeName" class="firstHeading">' + marker.getTitle() + '</h1>' +
+                '<img id="collegeImg" src =' + colleges.find(colleges => colleges.name === marker.getTitle()).image + '>' +
+                "</div>";
             infoWindow.setContent(contentString);
-            map.panTo(marker.getPosition());  
+            map.panTo(marker.getPosition());
             infoWindow.open({
-                anchor:marker,
+                anchor: marker,
                 map
             });
         });
-       
+
         google.maps.event.addListener(map, 'click', (event) => {
             infoWindow.close();
         });

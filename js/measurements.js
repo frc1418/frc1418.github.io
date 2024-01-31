@@ -1,8 +1,8 @@
 const elem_measurements = document.getElementById('measurements'),
-      elem_unit = document.getElementById('unit');
+    elem_unit = document.getElementById('unit');
 
 const UNITS = ['meters', 'feet', 'fongs'];
-const MULTIPLIERS = [1, 3.28084, 1/1.48];
+const MULTIPLIERS = [1, 3.28084, 1 / 1.48];
 
 elem_unit.textContent = 'Units: ';
 var select = document.createElement('select');

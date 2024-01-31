@@ -12,48 +12,71 @@ scripts:
 description: Our robot and the challenge for the 2019 season
 ---
 <main>
-    <h1>2019 Robot</h1>
-    {% include banners.html year=2019 %}
-    <img src="/images/robots/2019/2019-profile.JPG" alt="Our current robot (side view).">
-    <img src="/images/robots/2019/2019-work.JPG" alt="This shows us working on our robot.">
-    <ul id="measurements">
-        <li>Height: <span class="measurement" magnitude=1.5></span></li>
-        <li>Height (extended): <span class="measurement" magnitude=3></span></li>
-        <li>Width: <span class="measurement" magnitude=0.7></span></li>
-        <li>Length: <span class="measurement" magnitude=1.02></span></li>
-    </ul>
-    <p id="unit"></p>
-    <p>The 2019 game's throwback to the Apollo 11 landing 50 years before provides a certain challenge for our team. It involves placing large balls and hatches into different locations on the field. To get a more detailed description of the game, see <a href="https://www.youtube.com/embed/Mew6G_og-PI">the official video reveal</a>.</p>
-    <h5>Robot Abilities</h5>
+  <h1>2019 Robot</h1>
+  {% include banners.html year=2019 %}
+  <img src="/images/robots/2019/2019-profile.JPG" alt="Our current robot (side view).">
+  <img src="/images/robots/2019/2019-work.JPG" alt="This shows us working on our robot.">
+  <ul id="measurements">
+    <li>Height: <span class="measurement" magnitude=1.5></span></li>
+    <li>Height (extended): <span class="measurement" magnitude=3></span></li>
+    <li>Width: <span class="measurement" magnitude=0.7></span></li>
+    <li>Length: <span class="measurement" magnitude=1.02></span></li>
+  </ul>
+  <p id="unit"></p>
+  <p>The 2019 game's throwback to the Apollo 11 landing 50 years before provides a certain challenge for our team. It
+    involves placing large balls and hatches into different locations on the field. To get a more detailed description
+    of the game, see <a href="https://www.youtube.com/embed/Mew6G_og-PI">the official video reveal</a>.</p>
+  <h5>Robot Abilities</h5>
+  <ul>
+    <li><strong>Drive Train:</strong> Our 2019 robot uses mecanum drive to allow for high maneuverability. The ability
+      to strafe allows us to line up with field elements quickly and easily, enabling fast cycling of both hatches and
+      cargo. Our wheels are connected to a pair of Andymark Nanotube transmissions. </li>
+    <li><strong>Elevator System:</strong> Our elevator is based on a highly modified Andymark kit. The three stages
+      allow us to reach all parts of the rocket. The elevator is driven by a single CIM motor connected to a Tough Box
+      transmission, powering a set of pulleys. </li>
     <ul>
-        <li><strong>Drive Train:</strong> Our 2019 robot uses mecanum drive to allow for high maneuverability. The ability to strafe allows us to line up with field elements quickly and easily, enabling fast cycling of both hatches and cargo. Our wheels are connected to a pair of Andymark Nanotube transmissions.  </li>
-        <li><strong>Elevator System:</strong> Our elevator is based on a highly modified Andymark kit. The three stages allow us to reach all parts of the rocket. The elevator is driven by a single CIM motor connected to a Tough Box transmission, powering a set of pulleys. </li>
-        <ul>
-          <li><strong>Cargo Intake:</strong> On the front of the elevator system lies a hinged arm with powered wheels which is used to collect and deliver cargo.  </li>
-          <li><strong>Hatch Delivery:</strong> Placed directly on top of the cargo instake system, a pair of pneumatic driven fingers allow us to collect hatches.</li>
-          <li><strong>Winch:</strong> Utilizing a massive speed reduction gearbox, our robot has the capabillity to reach the top of the rocket.</li>
-        </ul>
-        <li><strong>Climber Pistons:</strong> Our climbing mechanism consists of two pairs of pistons, located in the front and back of the robot. The first set lifts the front of the robot up, allowing us to drive forward onto the second level. The second set of pistons lifts the rear of the robot up, allowing us to drive forward onto the hab. All four pistons are capped by plastic wheels, allowing us to drive with either the front or the back extended. </li>
+      <li><strong>Cargo Intake:</strong> On the front of the elevator system lies a hinged arm with powered wheels which
+        is used to collect and deliver cargo. </li>
+      <li><strong>Hatch Delivery:</strong> Placed directly on top of the cargo instake system, a pair of pneumatic
+        driven fingers allow us to collect hatches.</li>
+      <li><strong>Winch:</strong> Utilizing a massive speed reduction gearbox, our robot has the capabillity to reach
+        the top of the rocket.</li>
     </ul>
-    <h5>Programming</h5>
-    <p>Just like in previous years, we used Python for our robot code. In addition to our robot code, we developed a dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot through a python-based tornado server. It is based on the <a href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
-    <p>We drive using a pilot-copilot operating system, with one driver controlling robot motion and the other controlling all other robot functions. This allows each driver to control their own independent task, making operating the robot more efficient.</p>
-    <ul>
-    <li><strong>Vision Software:</strong> With vision tape on the rocket and cargo ship, good vision software is very important to this challenge. Programmed in Python, this software uses data from a camera located on the elevator system and lots of math to position the robot correctly. There is also a button on one of the joysticks that runs the software in order to ensure the robot is perfectly lined up in TeleOp.
-    </ul>
-    <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub organization</a>. Here are some quick links:</p>
-    <ul>
-      <!--TODO: change the website code here-->
-        <li><a href="https://github.com/frc1418/2019-robot">Robot code</a></li>
-        <li><a href="https://github.com/frc1418/2019-dashboard">Dashboard code</a></li>
-        <li><a href="https://github.com/frc1418/2019-vision">Vision code</a></li>
-        <li><a href="https://github.com/frc1418/VictiScout">VictiScout scouting system</a></li>
-    </ul>
-    <h5>Competition Performance</h5>
-    <p>We will be competing in two competitions this year at Battlefield HS (March 1-3) and at Oxon Hill HS (March 22-24). You can find out more about our competition performance and schedule on <a href="https://www.thebluealliance.com/team/1418">our Blue Alliance page</a>.</p>
-    <div class="iframe-ext-wrapper">
-      <div class="iframe-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/KtN70-pMvhw" allowfullscreen></iframe>
-      </div>
+    <li><strong>Climber Pistons:</strong> Our climbing mechanism consists of two pairs of pistons, located in the front
+      and back of the robot. The first set lifts the front of the robot up, allowing us to drive forward onto the second
+      level. The second set of pistons lifts the rear of the robot up, allowing us to drive forward onto the hab. All
+      four pistons are capped by plastic wheels, allowing us to drive with either the front or the back extended. </li>
+  </ul>
+  <h5>Programming</h5>
+  <p>Just like in previous years, we used Python for our robot code. In addition to our robot code, we developed a
+    dashboard for our touchscreen driver station. It is written in JavaScript/HTML/CSS, and communicates with the robot
+    through a python-based tornado server. It is based on the <a
+      href="https://github.com/FRCDashboard/FRCDashboard">FRCDashboard</a> framework we developed in 2016.</p>
+  <p>We drive using a pilot-copilot operating system, with one driver controlling robot motion and the other controlling
+    all other robot functions. This allows each driver to control their own independent task, making operating the robot
+    more efficient.</p>
+  <ul>
+    <li><strong>Vision Software:</strong> With vision tape on the rocket and cargo ship, good vision software is very
+      important to this challenge. Programmed in Python, this software uses data from a camera located on the elevator
+      system and lots of math to position the robot correctly. There is also a button on one of the joysticks that runs
+      the software in order to ensure the robot is perfectly lined up in TeleOp.
+  </ul>
+  <p>As usual, our code is open source, and can be found on <a href="https://www.github.com/frc1418">our GitHub
+      organization</a>. Here are some quick links:</p>
+  <ul>
+    <!--TODO: change the website code here-->
+    <li><a href="https://github.com/frc1418/2019-robot">Robot code</a></li>
+    <li><a href="https://github.com/frc1418/2019-dashboard">Dashboard code</a></li>
+    <li><a href="https://github.com/frc1418/2019-vision">Vision code</a></li>
+    <li><a href="https://github.com/frc1418/VictiScout">VictiScout scouting system</a></li>
+  </ul>
+  <h5>Competition Performance</h5>
+  <p>We will be competing in two competitions this year at Battlefield HS (March 1-3) and at Oxon Hill HS (March 22-24).
+    You can find out more about our competition performance and schedule on <a
+      href="https://www.thebluealliance.com/team/1418">our Blue Alliance page</a>.</p>
+  <div class="iframe-ext-wrapper">
+    <div class="iframe-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KtN70-pMvhw" allowfullscreen></iframe>
+    </div>
   </div>
 </main>

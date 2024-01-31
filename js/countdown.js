@@ -4,20 +4,20 @@ var events = [
 		date: new Date(2018, 1, 20, 23, 59)
 	},
 	{
-    	name: 'CHS District Northern Virginia Event',
-    	date: new Date(2018, 2, 2, 11, 0)
+		name: 'CHS District Northern Virginia Event',
+		date: new Date(2018, 2, 2, 11, 0)
 	},
 	{
-    	name: 'CHS District Greater DC Event co-sponsored by Micron',
-    	date: new Date(2018, 2, 9, 11, 0)
+		name: 'CHS District Greater DC Event co-sponsored by Micron',
+		date: new Date(2018, 2, 9, 11, 0)
 	},
 	{
-    	name: 'FIRST Chesapeake District Championship',
-    	date: new Date(2018, 2, 28, 11, 0)
+		name: 'FIRST Chesapeake District Championship',
+		date: new Date(2018, 2, 28, 11, 0)
 	},
 	{
-    	name: 'FIRST Championship (Detroit)',
-    	date: new Date(2018, 3, 25)
+		name: 'FIRST Championship (Detroit)',
+		date: new Date(2018, 3, 25)
 	}
 ];
 
