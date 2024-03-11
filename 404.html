@@ -9,11 +9,33 @@
     <meta name="theme-color" content="#d12727">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <script>
+        window.onload = function () {
+            var count = 30;
+            var countdownElement = document.querySelector('h4');
+            var countdownInterval = setInterval(function () {
+                count--;
+                countdownElement.textContent = "Back to home in: " + count;
+                if (count <= 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = "/";
+                }
+            }, 1000);
+        };
+    </script>
 </head>
 
 <body>
-    <h1><a href="/">1<span></span>18</a></h1>
-    <h3>This page cannot be found.</h3>
+    <div class="container">
+        <div class="left">
+            <img src="/images/2023-404.png" alt="404 Image">
+        </div>
+        <div class="right">
+            <h2>Oh No!</h2>
+            <h1>F.R.E.D. could not find that</h1>
+            <h4>Back to home in: 30</h4>
+        </div>
+    </div>
 </body>
 
 </html>
