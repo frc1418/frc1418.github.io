@@ -4,7 +4,7 @@ header = document.getElementsByTagName('header')[0];
 
 function shrinkHeader() {
     if (document.documentElement.scrollTop > 50 || document.body.clientWidth <= headerShrinkWidth) {
-        header.className = 'shrink';
+        header.className = 'shrink'; 
     } else {
         header.className = '';
     }
@@ -28,7 +28,7 @@ body.onresize = () => {
 
     if (body.clientWidth > headerShrinkWidth) {
         if (nav.className == 'open') {
-            body.style.overflow = null;
+                body.style.overflow = null;
         }
     } else {
         if (nav.className == 'open') {
