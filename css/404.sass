@@ -2,6 +2,7 @@
 ---
 $grey: #333
 $vaered: #d12727
+$white: #fff
 $basicchars: U+0000-00FF
 
 @font-face
@@ -16,46 +17,49 @@ $basicchars: U+0000-00FF
 
 html, body
     height: 100%
+    overflow-x: hidden
+    overflow-y: hidden
 
 body
     font-family: 'Adam', 'Roboto', sans-serif
     background-color: $grey
-    color: #222
+    color: $white
     height: 100vh
-    padding: 50px
     text-align: center
     display: flex
-    justify-content: center
-    align-items: center
     flex-direction: column
 
-h1
-    font-size: 30vw
-    margin: 0
-    a
-        color: #222
-        text-decoration: none
-    span
+.left
+    img
+        padding-left: 10%
+        padding-right: 40%
+        width: 100%
+
+.right
+    padding-left: 40%
+    margin-top: -20%
+
+    h1
+        padding-top: 10px
+        padding-bottom: 20px
+        font-size: 40px
+        margin: 0
+        color: $white
+
+    h2
+        font-size: 55px
         color: $vaered
-        display: inline-block
-        &::after
-            width: 22vw
-            display: inline-block
-            content: '4'
-            animation: 1s linear infinite cycle
+    h4
+        padding-top: 20px
+        font-size: 15px
+        color: #4b4b4b
 
-@-webkit-keyframes cycle
-    0%
-        content: '4'
-    100%
-        content: '0'
-
-@keyframes cycle
-    0%
-        content: '4'
-    100%
-        content: '0'
-
-h3
-    font-size: 30px
-    max-width: 7.5in
+    .button
+        font-family: 'Adam'
+        padding: 12px 10px
+        text-align: right
+        margin: 20px
+        text-decoration: none
+        background: $vaered
+        color: white
+        border-radius: 7px
