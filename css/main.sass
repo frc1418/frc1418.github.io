@@ -307,12 +307,12 @@ main
         margin: 100px auto
 
 .img-row, table, .iframe-ext-wrapper
-    max-width: 10in
+    //max-width: 10in Still am not sure if this fixes the issue or creates new ones
     display: block
     margin: 5px auto
 
 .img-row-2, table, .iframe-ext-wrapper
-    max-width: 10in
+    //max-width: 10in Still am not sure if this fixes the issue or creates new ones
     display: block
     margin: 5px auto
 
@@ -376,11 +376,10 @@ tbody, tr
     display: block
     width: 100%
     margin: 0 auto
-    max-width: 8in
 
 td
+    width: auto //Fixes 3 rows but then creates scaling issue
     display: inline-block
-    width: 10 px
     vertical-align: top
     ul, li
         list-style-type: none
@@ -397,9 +396,12 @@ footer
         color: white
     table
         color: white
+        display: flex
+        width: 100%
         td
             padding: 20px
             vertical-align: middle
+            max-width: 200px
 
 .sponsor-large
     width: 60%
