@@ -6,60 +6,91 @@ $white: #fff
 $basicchars: U+0000-00FF
 
 @font-face
-    font-family: 'Adam'
-    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
-    unicode-range: $basicchars
+  font-family: 'Adam'
+  src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
+  unicode-range: $basicchars
 
 *
-    margin: 0
-    padding: 0
-    box-sizing: border-box
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 
 html, body
-    height: 100%
-    overflow-x: hidden
-    overflow-y: hidden
+  height: 100%
+  overflow-x: hidden
+  overflow-y: hidden
 
 body
-    font-family: 'Adam', 'Roboto', sans-serif
-    background-color: $grey
-    color: $white
-    height: 100vh
-    text-align: center
-    display: flex
-    flex-direction: column
+  font-family: 'Adam', 'Roboto', sans-serif
+  background-color: $grey
+  color: $white
+  height: 100vh
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.container
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  height: 100%
+  padding: 20px
 
 .left
-    img
-        padding-left: 10%
-        padding-right: 40%
-        width: 100%
+  flex: 1
+  img
+    width: 100%
+    max-width: 300px
+    padding: 0 20px
 
 .right
-    padding-left: 40%
-    margin-top: -20%
+  flex: 1
+  text-align: center
+  padding: 20px
 
+  h1
+    padding-top: 10px
+    padding-bottom: 20px
+    font-size: 30px
+    margin: 0
+    color: $white
+
+  h2
+    font-size: 45px
+    color: $vaered
+
+  h4
+    padding-top: 20px
+    font-size: 15px
+    color: #4b4b4b
+
+  .button
+    font-family: 'Adam'
+    padding: 12px 20px
+    text-align: center
+    margin: 20px 0
+    text-decoration: none
+    background: $vaered
+    color: $white
+    border-radius: 7px
+    display: inline-block
+
+body.mobile
+  .container
+    flex-direction: column
+    
+  .right
+    padding: 10px
+    padding-top: 50%
+    
     h1
-        padding-top: 10px
-        padding-bottom: 20px
-        font-size: 40px
-        margin: 0
-        color: $white
+      font-size: 24px
 
     h2
-        font-size: 55px
-        color: $vaered
-    h4
-        padding-top: 20px
-        font-size: 15px
-        color: #4b4b4b
+      font-size: 36px
 
     .button
-        font-family: 'Adam'
-        padding: 12px 10px
-        text-align: right
-        margin: 20px
-        text-decoration: none
-        background: $vaered
-        color: white
-        border-radius: 7px
+      width: 80%

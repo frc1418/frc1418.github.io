@@ -21,6 +21,21 @@
                     window.location.href = "/";
                 }
             }, 1000);
+
+            // Check if a phone or iPad
+            if (window.innerWidth <= 700 || /iPad|Tablet/i.test(navigator.userAgent) || (window.innerWidth > 700 && window.innerWidth <= 1024)) {
+                document.body.classList.add('mobile');
+
+                var leftElement = document.querySelector('.left');
+                if (leftElement) {
+                    leftElement.style.display = 'none';
+                }
+
+                var headerElement = document.querySelector('.right h1');
+                if (headerElement) {
+                    headerElement.textContent = "We could not find that";
+                }
+            }
         };
     </script>
 </head>
