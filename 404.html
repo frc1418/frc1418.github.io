@@ -22,8 +22,8 @@
                 }
             }, 1000);
 
-            // Check if a phone or iPad
-            if (window.innerWidth <= 700 || /iPad|Tablet/i.test(navigator.userAgent) || (window.innerWidth > 700 && window.innerWidth <= 1024)) {
+            // Check if a phone or iPad -> @media tags cant change actual text only js can
+            if (window.innerWidth <= 700 ||(window.innerWidth > 700 && window.innerWidth <= 1024)) {
                 document.body.classList.add('mobile');
 
                 var leftElement = document.querySelector('.left');
