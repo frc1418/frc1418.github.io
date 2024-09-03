@@ -1,5 +1,9 @@
 ---
 ---
+
+$vaered: #d12727
+
+
 .bg
     background:
         image: url(/assets/img/background-blur.jpg)
@@ -104,3 +108,53 @@ main
         margin-top: 65px
     article
         padding-top: 50px
+
+#countdown-section
+    margin: 20px auto
+    padding: 20px
+    text-align: center
+    background-color: #333
+    border-radius: 10px
+    width: 80%
+    max-width: 1200px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+
+    h1
+        font-size: 200%
+        margin-bottom: 20px
+        color: white
+
+    table
+        width: 100%
+        border-collapse: collapse
+        margin-top: 10px
+
+        th, td
+            padding: 10px
+            font-size: 250%
+            color: white
+            text-align: center
+
+        th
+            font-weight: normal
+            text-align: center
+
+        td
+            font-weight: bold
+        span
+            font-size: 300%
+            padding-top: 5px 
+            font-weight: bold
+
+
+@keyframes flash 
+    0%, 50% 
+        color: $vaered
+    100% 
+        color: white
+    
+
+
+#countdown-section.flashing 
+    animation: flash 1s infinite
+
