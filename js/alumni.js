@@ -229,12 +229,11 @@ function initMap() {
             lng: -98
         },
         zoom: 4,
-        maxZoom: 5,
         disableDefaultUI: true,
         zoomControl: true,
         mapTypeControl: false,
         streetViewControl: false,
-        rotateControl: true,
+        rotateControl: false,
         fullscreenControl: false,
         backgroundColor: '#333333',
         styles: [
@@ -322,11 +321,11 @@ function initMap() {
         ]
     });
 
-    var maxZoomLevel = 5;
+    var minZoomLevel = 3;
     google.maps.event.addListener(map, 'zoom_changed', function() {
         var currentZoom = map.getZoom();
-        if (currentZoom > maxZoomLevel) {
-            map.setZoom(maxZoomLevel);
+        if (currentZoom < minZoomLevel) {
+            map.setZoom(minZoomLevel);
         }
     });
 
