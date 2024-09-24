@@ -215,7 +215,7 @@ var companies = [
             lat: 37.422,
             lng: -122.084,
         },
-        image: "images/companyLogos/Google.png",
+        image: "images/companyLogos/google.png",
         link: "https://about.google/"
     }
 ];
