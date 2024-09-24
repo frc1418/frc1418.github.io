@@ -1,0 +1,190 @@
+# <img src="/images/team/placeholder.png">
+# <p class="label">🖥️ Programmer 🖥️</p>
+# <p class="label">🔌 Electrician 🔌</p>
+# <p class="label">🔧 Mechanic 🔧</p>
+# <p class="label">🚧 Safety 🚧</p>
+# <p class="label">⚙️ Member ⚙️</p>
+# <p class="label">⭐️ Team Captain ⭐️</p>
+# <h5>Name 'year</h5>
+# <p>Name is a first year subject.</p>
+
+team:
+  # Leads
+  - name: "Mya Taheri"
+    year: "'25"
+    role: "⭐️ Team Captain ⭐️"
+    image: "/images/team/mya-taheri.png"
+    bio: "Mya is a fourth-year programmer and team captain."
+
+  - name: "Ian Beaupain"
+    year: "'25"
+    role: "🔧 Mechanic Lead 🔧"
+    image: "/images/team/ian-beaupain.png"
+    bio: "Ian is a fourth-year mechanic."
+
+  - name: "Ben Berol"
+    year: "'25"
+    role: "🖥️ Programming Lead 🖥️"
+    image: "/images/team/ben-berol.png"
+    bio: "Ben is a fourth-year programmer."
+
+  - name: "Cameron Dunn"
+    year: "'25"
+    role: "🖥️ Programming Lead 🖥️"
+    image: "/images/team/cameron-dunn.png"
+    bio: "Cameron is a fourth-year programmer."
+
+  - name: "Nina Miller"
+    year: "'25"
+    role: "🔌 Electrician Lead 🔌"
+    image: "/images/team/nina-miller.png"
+    bio: "Nina is a fourth-year electrician."
+
+  # Programmers
+  - name: "CJ Artz"
+    year: "'26"
+    role: "🖥️ Programmer 🖥️"
+    image: "/images/team/cj-artz.png"
+    bio: "CJ is a second-year programmer."
+
+  - name: "Hannah Au"
+    year: "'26"
+    role: "🖥️ Programmer 🖥️"
+    image: "/images/team/hannah-au.png"
+    bio: "Hannah is a second-year programmer."
+
+  - name: "Oliver Hardi"
+    year: "'26"
+    role: "🖥️ Programmer 🖥️"
+    image: "/images/team/oliver-hardi.png"
+    bio: "Oliver is a second-year programmer."
+
+  - name: "Avery Hyra"
+    year: "'26"
+    role: "🖥️ Programmer 🖥️"
+    image: "/images/team/placeholder.png"
+    bio: "Avery is a first-year programmer."
+
+  - name: "Will Sucher"
+    year: "'28"
+    role: "🖥️ Programmer 🖥️"
+    image: "/images/team/placeholder.png"
+    bio: "Will is a first-year programmer."
+
+  # Mechanics
+  - name: "Zane Qumseya"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Zane is a third-year mechanic."
+
+  - name: "Rihanna Fajutrao"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/rihanna-fajutrao.png"
+    bio: "Rihanna is a second-year mechanic."
+
+  - name: "Oliver Csaszi"
+    year: "'25"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Oliver is a second-year mechanic."
+
+  - name: "Eleanor Johnson"
+    year: "'25"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Eleanor is a second-year mechanic."
+
+  - name: "Oles Solohub"
+    year: "'27"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Oles is a second-year mechanic."
+
+  - name: "Max Sadler"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Max is a first-year mechanic."
+
+  - name: "Tiberius Schmittel"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Tiberius is a first-year mechanic."
+
+  - name: "Karol Grondelski"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/team/placeholder.png"
+    bio: "Karol is a second-year mechanic."
+
+  # Electricians
+  - name: "Casey Dimock"
+    year: "'25"
+    role: "🔌 Electrician 🔌"
+    image: "/images/team/placeholder.png"
+    bio: "Casey is a second-year electrician."
+
+  - name: "Daniel Mohel"
+    year: "'27"
+    role: "🔌 Electrician 🔌"
+    image: "/images/team/placeholder.png"
+    bio: "Daniel is a second-year electrician."
+
+  # Safety
+  - name: "Sofia Kruszynski"
+    year: "'26"
+    role: "🚧 Safety 🚧"
+    image: "/images/team/placeholder.png"
+    bio: "Sofia is a second-year safety coordinator."
+
+  # Members
+  - name: "Lucas Jermakian"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Lucas is a first-year general member."
+
+  - name: "Miles Jermakian"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Miles is a first-year general member."
+
+  - name: "Trystan Brown"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Trystan is a first-year media team member."
+
+  - name: "Joan Davis"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Joan is a first-year general member."
+
+  - name: "Ali Holzer"
+    year: "'26"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Ali is a second-year general member."
+
+  - name: "Alec Mahini"
+    year: "'26"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Alec is a second-year general member."
+
+  - name: "Arsema Yifter"
+    year: "'27"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Arsema is a first-year general member."
+
+  - name: "Henry Hermann"
+    year: "'26"
+    role: "⚙️ Member ⚙️"
+    image: "/images/team/placeholder.png"
+    bio: "Henry is a second-year member."

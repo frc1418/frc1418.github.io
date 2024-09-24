@@ -18,7 +18,7 @@ $basicchars: U+0000-00FF
 
 @font-face
     font-family: 'Roboto'
-    font-weight: 300
+    font-weight: 350
     src: local('Roboto Light'), local('Roboto-Light')
     src: url(../assets/font/roboto.woff2) format('woff2')
     unicode-range: $basicchars
@@ -31,9 +31,9 @@ $basicchars: U+0000-00FF
 
 body
     font-family: $parafont
-    font-weight: 100
+    font-weight: 150
     color: white
-    background: $grey
+    background: #222
     overflow-x: hidden
     line-height: 1
     -webkit-font-smoothing: antialiased
@@ -287,6 +287,10 @@ nav
     color: white
     border-radius: 7px
 
+.button:hover
+    background: #9e2020
+    border-radius: 4px
+
 main
     padding: 40px
     background: #222
@@ -307,12 +311,10 @@ main
         margin: 100px auto
 
 .img-row, table, .iframe-ext-wrapper
-    max-width: 10in
     display: block
     margin: 5px auto
 
 .img-row-2, table, .iframe-ext-wrapper
-    max-width: 10in
     display: block
     margin: 5px auto
 
@@ -376,11 +378,10 @@ tbody, tr
     display: block
     width: 100%
     margin: 0 auto
-    max-width: 8in
 
 td
+    width: auto
     display: inline-block
-    width: 10 px
     vertical-align: top
     ul, li
         list-style-type: none
@@ -397,9 +398,12 @@ footer
         color: white
     table
         color: white
+        display: flex
+        width: 100%
         td
             padding: 20px
             vertical-align: middle
+            max-width: 200px
 
 .sponsor-large
     width: 60%
@@ -431,8 +435,8 @@ footer ul
         flex-direction: column
         &.open
             right: 0
-            -webkit-transition: .3s
-            transition: .3s
+            -webkit-transition: .2s
+            transition: .2s
             visibility: visible
             position: fixed
         > ul
