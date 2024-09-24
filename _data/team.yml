@@ -16,17 +16,17 @@ team:
     image: "/images/team/mya-taheri.png"
     bio: "Mya is a fourth-year programmer and team captain."
 
-  - name: "Ian Beaupain"
-    year: "'25"
-    role: "🔧 Mechanic Lead 🔧"
-    image: "/images/team/ian-beaupain.png"
-    bio: "Ian is a fourth-year mechanic."
-
   - name: "Ben Berol"
     year: "'25"
     role: "🖥️ Programming Lead 🖥️"
     image: "/images/team/ben-berol.png"
     bio: "Ben is a fourth-year programmer."
+
+  - name: "Ian Beaupain"
+    year: "'25"
+    role: "🔧 Mechanic Lead 🔧"
+    image: "/images/team/ian-beaupain.png"
+    bio: "Ian is a fourth-year mechanic."
 
   - name: "Cameron Dunn"
     year: "'25"
