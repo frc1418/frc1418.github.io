@@ -22,10 +22,10 @@
                 }
             }, 1000);
 
-            // Check if a phone or iPad -> @media tags cant change actual text only js can
-            if (window.innerWidth <= 700 ||(window.innerWidth > 700 && window.innerWidth <= 1024)) {
+            // Check if a phone or iPad -> @media tags cant change actual text only js
+            if (window.innerWidth <= 700 || (window.innerWidth > 700 && window.innerWidth <= 1024)) {
                 document.body.classList.add('mobile');
-
+                
                 var leftElement = document.querySelector('.left');
                 if (leftElement) {
                     leftElement.style.display = 'none';
@@ -48,8 +48,6 @@
         <div class="right">
             <h2>Oh No!</h2>
             <h1>F.R.E.D. could not find that</h1>
-            <h1 id="mobile">We could not find that</h1>
-
             <a href="/" class="button">Back To Home</a>
             <h4>Back to home in: 30</h4>
         </div>
