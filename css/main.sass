@@ -9,12 +9,11 @@ $titlefont: 'Adam', 'Roboto', sans-serif
 $vaered: #d12727
 $lightvaered: #D94F4F
 $basicchars: U+0000-00FF
-
+ 
 @font-face
     font-family: 'Adam'
     src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
     unicode-range: $basicchars
-
 
 @font-face
     font-family: 'Roboto'
@@ -71,7 +70,8 @@ header
     height: 140px
     width: 100%
     padding: 15px 15px 0
-    background: $grey
+    background: rgba(51, 51, 51, 0.85)
+    backdrop-filter: saturate(200%) blur(20px)
     box-shadow: 3px 3px 12px rgba(12, 12, 12, 0.5)
     -webkit-transition: height 0.2s
     transition: height 0.2s
@@ -148,7 +148,6 @@ header.shrink
             position: relative
             width: max-content
             margin-top: 1px
-
 
 // Social buttons
 .social:first-child
@@ -351,10 +350,10 @@ main > img, .img-row, table
         height: 100%
 
 table img
-    width: 100%
+        width: 100%
 
 main h1
-    text-align: center
+        text-align: center
 
 h5
     margin-top: 30px
@@ -363,7 +362,6 @@ h5
 blockquote
     font-size: 25px
     font-style: italic
-
 
 main
     ul
@@ -452,9 +450,9 @@ footer ul
             &:last-of-type
                 margin-bottom: 15px
         ul ul
-            display: block
-            position: static
-            background: none
+                display: block
+                position: static
+                background: none
             li
                 margin-left: 20px
                 padding-left: 10px
@@ -484,8 +482,8 @@ footer ul
             margin-top: -40px
             margin-bottom: 20px
         .social:first-child
-                margin-left: 0px
-                margin-right: 20px
+            margin-left: 0px
+            margin-right: 20px
         .active
             background: $grey
             &:hover
@@ -510,7 +508,7 @@ footer ul
         > ul > li:last-child ul
             margin-left: 0
     main img
-        width: 100%
+            width: 100%
     footer
         h5, table
             display: none

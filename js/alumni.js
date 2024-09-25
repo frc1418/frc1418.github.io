@@ -347,6 +347,8 @@ function initMap() {
                 '</a>' +
                 "</div>";
             infoWindow.setContent(contentString);
+            map.setZoom(5);
+            map.setZoom(7);
             map.panTo(marker.getPosition());
             infoWindow.open({
                 anchor: marker,
@@ -372,6 +374,8 @@ function initMap() {
                 '</a>' +
                 "</div>";
             infoWindow.setContent(contentString);
+            map.setZoom(5);
+            map.setZoom(7);
             map.panTo(marker1.getPosition());
             infoWindow.open({
                 anchor: marker1,
