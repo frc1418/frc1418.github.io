@@ -1,7 +1,7 @@
 var events = [
     {
         name: '2025 FIRST Robotics Competition Kickoff',
-        date: new Date(2025, 0, 4, 12, 0) // (year, month - 1 (jan is 0 dec is 11), day, hour, minutes)
+        date: new Date(Date.UTC(2025, 0, 4, 17, 0)) // (year, month - 1 (jan is 0 dec is 11), day, hour, minutes) USE GMT
     }
 ];
 
