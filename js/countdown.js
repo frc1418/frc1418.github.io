@@ -26,9 +26,10 @@ const start = setInterval(() => {
         if (i < events.length - 1) {
             i++;
         } else {
-            clearInterval(start)
-            clock.section.style.display = 'none';
+            clearInterval(start);
         }
+    } else { 
+        clock.section.style.display = 'block';
     }
 
     // Calculate times left
