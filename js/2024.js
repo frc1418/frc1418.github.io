@@ -51,12 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Animate title between frames 33 and 37
     function animateTitle(frame) {
-        if (frame < startTitleFrame) {
-            title.style.opacity = '1';
-        }
-        if (frame > endTitleFrame) {
-            title.style.opacity = '0';
-        }
         if (frame >= startTitleFrame && frame <= endTitleFrame) {
             const progress = (frame - startTitleFrame) / (endTitleFrame - startTitleFrame);
             const scale = 1 + progress * 0.02;
