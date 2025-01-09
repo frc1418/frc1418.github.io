@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     const animationContainer = document.getElementById('animation-container');
     const canvas = document.getElementById('animation-canvas');
     const title = document.getElementById('title');
@@ -146,4 +145,3 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(scrollPercentage);
         console.log("frame:" + validFrame);
     });
-});
