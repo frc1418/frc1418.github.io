@@ -40,12 +40,15 @@ team:
     image: "/images/team/nina-miller.png"
     bio: "Nina is a fourth-year electrician."
 
-  # Programmers
-  - name: "CJ Artz"
+  # Safety
+  - name: "Sofia Kruszynski"
     year: "'26"
-    role: "🖥️ Programmer 🖥️"
-    image: "/images/team/cj-artz.png"
-    bio: "CJ is a second-year programmer."
+    role: "🚧 Safety 🚧"
+    image: "/images/newimgs/sofia.png"
+    bio: "Sofia is a second-year safety coordinator."
+
+  # Programmers
+  
 
   - name: "Hannah Au"
     year: "'26"
@@ -59,23 +62,12 @@ team:
     image: "/images/team/oliver-hardi.png"
     bio: "Oliver is a second-year programmer."
 
-  - name: "Avery Hyra"
-    year: "'26"
-    role: "🖥️ Programmer 🖥️"
-    image: "/images/team/placeholder.png"
-    bio: "Avery is a first-year programmer."
-
-  - name: "Will Sucher"
-    year: "'28"
-    role: "🖥️ Programmer 🖥️"
-    image: "/images/team/placeholder.png"
-    bio: "Will is a first-year programmer."
 
   # Mechanics
   - name: "Zane Qumseya"
     year: "'26"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/zane (1).png"
     bio: "Zane is a third-year mechanic."
 
   - name: "Rihanna Fajutrao"
@@ -84,107 +76,162 @@ team:
     image: "/images/team/rihanna-fajutrao.png"
     bio: "Rihanna is a second-year mechanic."
 
-  - name: "Oliver Csaszi"
-    year: "'25"
-    role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
-    bio: "Oliver is a second-year mechanic."
-
   - name: "Eleanor Johnson"
     year: "'25"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/eleanor (1).png"
     bio: "Eleanor is a second-year mechanic."
 
   - name: "Oles Solohub"
     year: "'27"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/oles.png"
     bio: "Oles is a second-year mechanic."
 
   - name: "Max Sadler"
     year: "'26"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/max.png"
     bio: "Max is a first-year mechanic."
 
   - name: "Tiberius Schmittel"
     year: "'26"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/tiberius.png"
     bio: "Tiberius is a first-year mechanic."
 
   - name: "Karol Grondelski"
     year: "'26"
     role: "🔧 Mechanic 🔧"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/karol.png"
     bio: "Karol is a second-year mechanic."
+
+  - name: "Aiden Harper"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/web-new/aiden.png"
+    bio: "Aiden is a first-year mechanic."
+
+  - name: "Solomon Modell"
+    year: "'26"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/web-new/sol.png"
+    bio: "Sol is a first-year mechanic."
+
+  - name: "Daniel Mohel"
+    year: "'27"
+    role: "🔧 Mechanic 🔧"
+    image: "/images/newimgs/daniel.png"
+    bio: "Daniel is a second-year year."
+
+
+
+ 
 
   # Electricians
   - name: "Casey Dimock"
     year: "'25"
     role: "🔌 Electrician 🔌"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/casey.png"
     bio: "Casey is a second-year electrician."
 
-  - name: "Daniel Mohel"
+  - name: "Edan Thomton"
     year: "'27"
     role: "🔌 Electrician 🔌"
-    image: "/images/team/placeholder.png"
-    bio: "Daniel is a second-year electrician."
+    image: "/images/newimgs/edan.png"
+    bio: "Edan is a second-year electrician."
 
-  # Safety
-  - name: "Sofia Kruszynski"
-    year: "'26"
-    role: "🚧 Safety 🚧"
-    image: "/images/team/placeholder.png"
-    bio: "Sofia is a second-year safety coordinator."
+  - name: "Will Sucher"
+    year: "'28"
+    role: "🔌 Electrician 🔌"
+    image: "/images/web-new/sucher.png"
+    bio: "Will is a first-year electrician."
+
+ 
+
+  
 
   # Members
   - name: "Lucas Jermakian"
     year: "'28"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/lucas.png"
     bio: "Lucas is a first-year general member."
 
   - name: "Miles Jermakian"
     year: "'28"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/miles.png"
     bio: "Miles is a first-year general member."
 
   - name: "Trystan Brown"
     year: "'28"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/web-new/trystan.png"
     bio: "Trystan is a first-year media team member."
-
-  - name: "Joan Davis"
-    year: "'28"
-    role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
-    bio: "Joan is a first-year general member."
 
   - name: "Ali Holzer"
     year: "'26"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/Ali (1).png"
     bio: "Ali is a second-year general member."
 
   - name: "Alec Mahini"
     year: "'26"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/alec.png"
     bio: "Alec is a second-year general member."
 
   - name: "Arsema Yifter"
     year: "'27"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/arsema.png"
     bio: "Arsema is a first-year general member."
 
   - name: "Henry Hermann"
     year: "'26"
     role: "⚙️ Member ⚙️"
-    image: "/images/team/placeholder.png"
+    image: "/images/newimgs/henry.png"
     bio: "Henry is a second-year member."
+
+  - name: "Will Creswick"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/newimgs/creswick.png"
+    bio: "Will is a first-year member."
+
+  - name: "Amin Smith"
+    year: "'26"
+    role: "⚙️ Member ⚙️"
+    image: "/images/newimgs/amin (1).png"
+    bio: "Amin is a first-year member."
+
+  - name: "Markus Miller"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/web-new/markus.png"
+    bio: "Markus is a first-year member."
+
+  - name: "Jack Rasmussen"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/web-new/jack.png"
+    bio: "Jack is a first-year member."
+  
+  - name: "Anna Gray"
+    year: "'26"
+    role: "⚙️ Member ⚙️"
+    image: "/images/web-new/anna.png"
+    bio: "Anna is a first-year member."
+
+  - name: "Jake Aylward"
+    year: "'28"
+    role: "⚙️ Member ⚙️"
+    image: "/images/web-new/evil dante.png"
+    bio: "Jake is a first-year member."
+
+  
+ 
+
+
+ 
