@@ -1,8 +1,8 @@
 // Array of events with the event name and date
 var events = [
     {
-        name: '2025 FIRST Robotics Competition Kickoff',
-        date: new Date(2025, 0, 4, 12, 0) // (year, month - 1 (jan is 0 dec is 11), day, hour, minute)s
+        name: 'Week 2: March 8th Competition',
+        date: new Date(2025, 2, 8, 0, 0) // (year, month - 1 (jan is 0 dec is 11), day, hour, minute)s
     }
 ];
 
@@ -43,10 +43,10 @@ setInterval(() => {
 
     	// Display times left
     clock.title.textContent = events[0].name +':';
-    clock.d.textContent = days;
-    clock.hr.textContent = hours;
-    clock.min.textContent = minutes;
-	clock.s.textContent = seconds;
+    clock.d.textContent = days + ':';
+    clock.hr.textContent = hours +':';
+    clock.min.textContent = minutes +':';
+	clock.s.textContent = seconds; +':'
 
 	if (days === '00' && hours === '00' && parseInt(minutes) < 10) {
         document.querySelector('#countdown-section').classList.add('flashing');
@@ -54,8 +54,3 @@ setInterval(() => {
         document.querySelector('#countdown-section').classList.remove('flashing');
     }
 }, 100);
-
-	//Add :
-clock.d.insertAdjacentHTML('afterend', '<span>:</span>');
-clock.hr.insertAdjacentHTML('afterend', '<span>:</span>');
-clock.min.insertAdjacentHTML('afterend', '<span>:</span>');

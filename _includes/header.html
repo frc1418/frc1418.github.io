@@ -1,12 +1,60 @@
 <a id="content-skip" href="#content" tabindex="1">Skip to content</a>
-<header>
-    <a href="/"><img id="logo" src="/images/fist.svg" alt="1418 logo"></a>
+
+<style>
+    .ohio{
+        display: none;
+        margin-left: 650px;
+        width: 8vh;
+    }
+
+    @media screen and (max-width: 1099px) {
+            .ohio {
+              display: flex; 
+              right: 10px;
+            }
+        }
+    .navwindow {
+        background-color:#2b2a28;
+        margin-top: 80px;
+        margin-left: -200px;
+        transform: translateX(100%);
+        display: block;
+        height: 1000px;
+    
+        
+        
+    }
+    .links{
+        margin-top: 15px;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .nestedlinks{
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+
+    }
+   
+    
+    
+
+   
+    
+
+    
+    
+   
+</style>
+<header id="canvafein">
+    <a href="/"><img id="logo" src="/images/fist.svg" alt="1418 logo" ></a>
     <div class="header-group">
         <h2 class="title"><a href="/">Vae Victis</a></h2>
-        <h5 class="title-simple"><a id="title-mini" href="/">TEAM 1418</a></h2>
+        <h5 class="title-simple"><a id="title-mini" href="/" >TEAM 1418</a></h2>
         <h3><a href="/">FRC Team 1418 - Meridian High School</a></h3>
     </div>
     <div id="nav-button"><span></span><span></span><span></span></div>
+    <img src="/images/navnew.png" class="ohio" id="ohioskullemoji">
     <nav>
         <div class="social-container">
             <div class="social" id="social">
@@ -24,6 +72,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/robots">Robots</a>
                 <ul>
+                    <li><a href="/robot/2024">2024</a></li>
                     <li><a href="/robot/2023">2023</a></li>
                     <li><a href="/robot/2022">2022</a></li>
                     <li><a href="/robot/2020-21">2021</a></li>
@@ -54,9 +103,107 @@
                     <li><a href="/resources">Resources</a><li>
                 </ul>
             </li>
+            
         </ul>
+      
     </nav>
-    <div id="content"></div>
     <script src="/js/scripts.js"></script>
     <script src="/js/header.js"></script>
+   
+   
+    </h2>
+
+    
+    
+
 </header>
+<nav>
+    <header class="navwindow" id="navid">
+        <div>
+            <ul class="links">
+                <a href="/">HOME</a>
+            </ul>
+            <ul class="links">
+                <a href="/robots" >ROBOTS</a>
+            
+            </ul> 
+                 <ul>
+                <a href="/robot/2024" class="nestedlinks">2024</a>
+                </ul>
+                <ul>
+                <a href="/robot/2023" class="nestedlinks">2023</a>
+                </ul>
+                <ul>
+                <a href="/robot/2022" class="nestedlinks">2022</a>
+                </ul>
+                <ul>
+                <a href="/robot/2020" class="nestedlinks">2020</a>
+                </ul>
+                <ul>
+                <a href="/robot/2019" class="nestedlinks">2019</a>
+                </ul>
+                <ul>
+                <a href="/robot/2018" class="nestedlinks">2018</a>
+                </ul>
+                <ul>
+                <a href="/robot/2017" class="nestedlinks">2017</a>
+                </ul>
+                <ul>
+                <a href="/robot/2016" class="nestedlinks">2016</a>
+                </ul>
+                <ul>
+                <a href="/robot/2015" class="nestedlinks">2015</a>
+                </ul>
+                <ul>
+                <a href="/robot/2014" class="nestedlinks">2014</a>
+                </ul>
+                <ul>
+                <a href="/robot/2013" class="nestedlinks">2013</a>
+                </ul>
+                <ul>
+                <a href="/robot/2012" class="nestedlinks">2012</a>
+                </ul>
+
+            
+           
+            <ul class="links">
+                <a href="/team">THE TEAM</a>
+            </ul>
+            <ul>
+                <a href="/alumni" class="nestedlinks">ALUMNI</a>
+            </ul>
+                
+                
+            
+            <ul class="links">
+                <a href="/sponsorship">SPONSOR US</a>
+            </ul>
+            <ul class="links">
+                <p>MORE</p>
+            </ul>
+                <ul>
+                <a href="/outreach" class="nestedlinks">OUTREACH</a>
+            </ul>
+            <ul>
+                <a href="/contact"   class="nestedlinks">CONTACT</a>
+            </ul>
+            <ul>
+                <a href="/branding"   class="nestedlinks">BRANDING</a>
+            </ul>
+            <ul>
+                <a href="/resources"    class="nestedlinks">RESOURCES</a>
+            </ul>
+          
+              
+           
+        </div>
+
+    </header>
+  
+
+</nav>
+
+
+
+
+
