@@ -1,4 +1,11 @@
-# Team 1418 Website
+# Team 1418 Website (Archived)
+
+> **Status:** Archived
+>
+> This repository is no longer actively maintained and is **not** the source currently served at **[1418.team](https://1418.team)**. It is preserved for reference only.
+
+---
+
 This repository contains the content that is served on [1418.team](https://1418.team).
 
 This website uses the Jekyll templating system and is hosted as a GitHub page out of this repository.
